@@ -1,0 +1,2865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergent Urban Social Resilience: Mapping Agency in Actor Landscapes and Co-Designing Regenerative Green-Social Infrastructures as Urban Commons</title>
+  <meta name="description" content="PhD Research Proposal Interactive Showcase at Aalborg University (WeGrowCircle).">
+  
+  <!-- Embedded Fonts & Bulletproof Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+    :root {
+      --bg-primary: #FBF9F5;
+      --bg-secondary: #F3EFE6;
+      --bg-surface: #FFFFFF;
+      --bg-surface-translucent: rgba(255, 255, 255, 0.95);
+      --bg-dark: #122118;
+
+      --forest-900: #0E1B13;
+      --forest-800: #183324;
+      --forest-700: #234834;
+      --forest-600: #2F5E44;
+      --forest-500: #3E7958;
+      --forest-400: #589A74;
+      --forest-200: #B7D9C6;
+      --forest-100: #E0EFE6;
+      --forest-50: #EFF7F2;
+
+      --clay-700: #8C4029;
+      --clay-500: #B8593B;
+      --clay-100: #F8EAE5;
+      --sand-500: #C2B6A1;
+      --sand-200: #E7E2D6;
+      --sand-100: #F3EFE8;
+      --blue-700: #1E4D63;
+      --blue-500: #356F8D;
+      --blue-100: #E3EFF5;
+
+      --text-main: #18221B;
+      --text-muted: #47554C;
+      --text-subtle: #718276;
+      --text-light: #FFFFFF;
+      --text-light-muted: #C1D0C7;
+
+      --border-light: rgba(24, 34, 27, 0.08);
+      --border-medium: rgba(24, 34, 27, 0.16);
+      --border-strong: rgba(24, 34, 27, 0.28);
+
+      --shadow-sm: 0 2px 8px rgba(20, 36, 27, 0.04);
+      --shadow-md: 0 8px 24px rgba(20, 36, 27, 0.07);
+      --shadow-lg: 0 16px 40px rgba(20, 36, 27, 0.1);
+
+      --font-serif: 'Fraunces', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --max-width: 1360px;
+      --header-height: 84px;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-full: 9999px;
+      --transition-fast: 0.18s ease;
+      --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      background: radial-gradient(circle at 12% 18%, rgba(183, 217, 198, 0.22) 0%, transparent 45%),
+                  radial-gradient(circle at 88% 75%, rgba(227, 239, 245, 0.28) 0%, transparent 50%),
+                  radial-gradient(circle at 50% 90%, rgba(248, 234, 229, 0.18) 0%, transparent 55%),
+                  var(--bg-primary);
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-surface-translucent);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.85rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .proposal-title-header {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--forest-900);
+      letter-spacing: -0.015em;
+      text-decoration: none;
+    }
+
+    .proposal-title-header span.subtitle-inline {
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      display: inline;
+      margin-left: 0.5rem;
+    }
+
+    .header-meta-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--forest-700);
+      background: var(--forest-100);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+
+    .module-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .module-tabs-list {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--sand-100);
+      padding: 0.3rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+    }
+
+    .module-tab-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+
+    .module-tab-btn:hover {
+      color: var(--forest-900);
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .module-tab-btn.active {
+      background: var(--bg-surface);
+      color: var(--forest-900);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .module-tab-btn svg {
+      width: 15px;
+      height: 15px;
+      stroke-width: 2;
+    }
+
+    .header-utility-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      border: 1px solid var(--border-medium);
+      background: var(--bg-surface);
+      color: var(--forest-800);
+    }
+
+    .btn-pill:hover {
+      background: var(--forest-50);
+      border-color: var(--forest-400);
+    }
+
+    .btn-pill-primary {
+      background: var(--forest-800);
+      color: #fff;
+      border-color: var(--forest-800);
+    }
+
+    .btn-pill-primary:hover {
+      background: var(--forest-700);
+      color: #fff;
+    }
+
+    /* Main Container & Module Views */
+    .main-wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.75rem 1.75rem 5rem 1.75rem;
+      min-height: calc(100vh - var(--header-height));
+    }
+
+    .module-view {
+      display: none;
+      animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .module-view.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .view-header {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .view-kicker {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-600);
+    }
+
+    .view-title {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--forest-900);
+      line-height: 1.25;
+    }
+
+    .view-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 950px;
+    }
+
+    /* MODULE 1: Split Presentation Deck */
+    .deck-split-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    .agenda-rail-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .agenda-header {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-800);
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .agenda-item-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0.85rem;
+      border-radius: var(--radius-md);
+      background: transparent;
+      border: 1px solid transparent;
+      text-align: left;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      width: 100%;
+    }
+
+    .agenda-item-btn:hover {
+      background: var(--sand-100);
+    }
+
+    .agenda-item-btn.active {
+      background: var(--forest-50);
+      border-color: var(--forest-200);
+    }
+
+    .agenda-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--sand-200);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .agenda-item-btn.active .agenda-num {
+      background: var(--forest-800);
+      color: #fff;
+    }
+
+    .agenda-text-wrap strong {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--forest-900);
+      line-height: 1.25;
+    }
+
+    .agenda-text-wrap span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .deck-stage-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 2.5rem;
+      min-height: 580px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-tag-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-700);
+      background: var(--forest-50);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--forest-200);
+      width: fit-content;
+      margin-bottom: 0.85rem;
+    }
+
+    .slide-main-title {
+      font-family: var(--font-serif);
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: var(--forest-900);
+      line-height: 1.2;
+      margin-bottom: 0.85rem;
+    }
+
+    .slide-main-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.75rem;
+    }
+
+    .slide-body-slot {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .slide-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .slide-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .card-block {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+    }
+
+    .card-block h5 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--forest-900);
+      margin-bottom: 0.4rem;
+    }
+
+    .card-block p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .quote-highlight-box {
+      background: var(--forest-50);
+      border-left: 4px solid var(--forest-500);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--forest-900);
+      font-style: italic;
+    }
+
+    .speaker-notes-drawer {
+      background: var(--forest-900);
+      color: var(--text-light-muted);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.75rem;
+      display: none;
+    }
+
+    .speaker-notes-drawer.open {
+      display: block;
+    }
+
+    .speaker-notes-drawer h6 {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-300);
+      margin-bottom: 0.35rem;
+    }
+
+    .speaker-notes-drawer p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    /* MODULE 2: Triad */
+    .triad-framework-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .triad-interactive-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .triad-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .triad-pill-btn {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-medium);
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .triad-pill-btn:hover {
+      background: var(--sand-100);
+      color: var(--forest-900);
+    }
+
+    .triad-pill-btn.active {
+      background: var(--forest-800);
+      color: #fff;
+      border-color: var(--forest-800);
+    }
+    :root {
+      --rose: #B5838D;
+      --rosef: #F6ECEE;
+      --blue: #6D8299;
+      --bluef: #ECF0F4;
+      --sage: #7F9C85;
+      --sagef: #EDF3EE;
+      --gold: #C8A45F;
+      --goldf: #FBF5E6;
+      --ink: #2B2F36;
+      --line: #9AA1AB;
+      --soft: #C5CAD1;
+    }
+
+    .triad-svg-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .triad-svg-wrapper svg.triad-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      overflow: visible;
+      filter: none;
+    }
+
+    .triad-svg-wrapper .t-name {
+      font-family: var(--font-serif, Georgia, serif);
+      font-size: 29px;
+      fill: var(--ink, #2B2F36);
+      font-weight: 400;
+    }
+
+    .triad-svg-wrapper .t-edge {
+      font-family: var(--font-serif, Georgia, serif);
+      font-style: italic;
+      font-size: 27px;
+      fill: var(--ink, #2B2F36);
+      paint-order: stroke fill;
+      stroke: var(--bg-surface, #FFFFFF);
+      stroke-width: 6px;
+      stroke-linejoin: round;
+    }
+
+    .triad-svg-wrapper .t-core {
+      font-family: var(--font-serif, Georgia, serif);
+      font-size: 27px;
+      fill: var(--ink, #2B2F36);
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .triad-svg-wrapper .t-name { font-size: 34px; }
+      .triad-svg-wrapper .t-edge { font-size: 32px; }
+      .triad-svg-wrapper .t-core { font-size: 28px; }
+    }
+
+    .triad-svg-wrapper .triad-svg-node {
+      cursor: pointer;
+      outline: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .triad-svg-wrapper .triad-svg-node .hit {
+      fill: transparent;
+      stroke: transparent;
+    }
+
+    .triad-svg-wrapper .nc {
+      fill: var(--f);
+      stroke: var(--c);
+      stroke-width: 2px;
+      transition: stroke-width 0.2s ease, filter 0.2s ease;
+    }
+
+    .triad-svg-wrapper .edge {
+      stroke: var(--line, #9AA1AB);
+      stroke-width: 1.6px;
+      fill: none;
+      stroke-linecap: round;
+      transition: stroke 0.2s ease, stroke-width 0.2s ease;
+    }
+
+    .triad-svg-wrapper .spoke {
+      stroke: var(--soft, #C5CAD1);
+      stroke-width: 1.4px;
+      stroke-dasharray: 1.5 6;
+      stroke-linecap: round;
+      fill: none;
+    }
+
+    /* Hover & Focus-visible */
+    .triad-svg-wrapper .triad-svg-node:hover .nc,
+    .triad-svg-wrapper .triad-svg-node:focus-visible .nc {
+      stroke-width: 4px;
+    }
+
+    .triad-svg-wrapper .triad-svg-node:hover .edge,
+    .triad-svg-wrapper .triad-svg-node:focus-visible .edge {
+      stroke: var(--ink, #2B2F36);
+      stroke-width: 2.6px;
+    }
+
+    .triad-svg-wrapper .triad-svg-node:focus-visible .hit {
+      stroke: var(--ink, #2B2F36);
+      stroke-dasharray: 4 4;
+      stroke-width: 1.5px;
+    }
+
+    /* Active Selected State */
+    .triad-svg-wrapper .triad-svg-node.active .nc {
+      stroke-width: 4.5px;
+      filter: drop-shadow(0 0 10px var(--c));
+    }
+
+    .triad-svg-wrapper .triad-svg-node.active .edge {
+      stroke: var(--ink, #2B2F36);
+      stroke-width: 3px;
+    }
+
+    .triad-svg-wrapper .triad-svg-node.active .t-name,
+    .triad-svg-wrapper .triad-svg-node.active .t-edge,
+    .triad-svg-wrapper .triad-svg-node.active .t-core {
+      font-weight: 700;
+    }
+
+    /* Focus-fade (22% opacity for non-related items) */
+    @media (prefers-reduced-motion: reduce) {
+      .triad-svg-wrapper .triad-svg-node {
+        transition: none !important;
+      }
+    }
+
+    .triad-svg-wrapper .triad-svg-node {
+      opacity: 1;
+    }
+
+    /* Focus-fade selectors for each selected item */
+    .triad-svg-wrapper svg.triad-svg[data-active="social"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="social"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="social"] .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg[data-active="social"] .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg[data-active="social"] .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg[data-active="social"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="social"]) .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="social"]) .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="social"]) .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="social"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="institutional"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="institutional"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="institutional"] .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg[data-active="institutional"] .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg[data-active="institutional"] .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg[data-active="institutional"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="institutional"]) .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="institutional"]) .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="institutional"]) .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="institutional"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="material"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="material"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="material"] .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg[data-active="material"] .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg[data-active="material"] .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg[data-active="material"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="material"]) .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="material"]) .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="material"]) .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="material"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="coproduction"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="coproduction"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="coproduction"] .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg[data-active="coproduction"] .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg[data-active="coproduction"] .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg[data-active="coproduction"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="coproduction"]) .triad-svg-node[data-triad="coproduction"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="coproduction"]) .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="coproduction"]) .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="coproduction"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="everyday"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="everyday"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="everyday"] .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg[data-active="everyday"] .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg[data-active="everyday"] .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg[data-active="everyday"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="everyday"]) .triad-svg-node[data-triad="everyday"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="everyday"]) .triad-svg-node[data-triad="social"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="everyday"]) .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="everyday"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="statutory"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="statutory"]) .triad-svg-node {
+      opacity: 0.22;
+    }
+    .triad-svg-wrapper svg.triad-svg[data-active="statutory"] .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg[data-active="statutory"] .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg[data-active="statutory"] .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg[data-active="statutory"] .triad-svg-node[data-triad="emergent"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="statutory"]) .triad-svg-node[data-triad="statutory"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="statutory"]) .triad-svg-node[data-triad="institutional"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="statutory"]) .triad-svg-node[data-triad="material"],
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="statutory"]) .triad-svg-node[data-triad="emergent"] {
+      opacity: 1;
+    }
+
+    .triad-svg-wrapper svg.triad-svg[data-active="emergent"] .triad-svg-node,
+    .triad-svg-wrapper svg.triad-svg:has(.triad-svg-node.active[data-triad="emergent"]) .triad-svg-node {
+      opacity: 1;
+    }
+
+    .triad-detail-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .triad-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      width: fit-content;
+    }
+
+    .triad-panel-title {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--forest-900);
+      line-height: 1.25;
+    }
+
+    .triad-panel-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--forest-800);
+      padding-left: 0.85rem;
+      border-left: 3px solid var(--forest-400);
+    }
+
+    .triad-panel-desc {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+
+    .triad-evidence-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      font-size: 0.82rem;
+      color: var(--forest-700);
+      line-height: 1.55;
+    }
+
+    /* MODULE 3: Aalborg Living Lab */
+    .lab-split-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    .lab-map-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lab-map-toolbar {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-light);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .time-toggle-group {
+      display: flex;
+      background: var(--bg-surface);
+      padding: 0.25rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-medium);
+    }
+
+    .time-btn {
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .time-btn.active {
+      background: var(--forest-800);
+      color: #fff;
+    }
+
+    .layer-controls-strip {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(248, 246, 240, 0.7);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .layer-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      color: var(--text-muted);
+    }
+
+    .layer-btn.active {
+      background: var(--forest-50);
+      border-color: var(--forest-600);
+      color: var(--forest-900);
+    }
+
+    .map-stage-wrapper {
+      height: 500px;
+      position: relative;
+      background: #EAE6DC;
+      overflow: hidden;
+    }
+
+    .aalborg-map-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .hotspot-pin {
+      cursor: pointer;
+      transform-box: fill-box;
+      transform-origin: center;
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease;
+    }
+
+    .hotspot-pin:hover {
+      transform: scale(1.25);
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    }
+
+    .hotspot-pin.active {
+      transform: scale(1.22);
+      filter: drop-shadow(0 0 10px rgba(41, 82, 59, 0.7));
+    }
+
+    .hotspot-pin:focus-visible {
+      outline: 2px dashed var(--forest-800);
+      outline-offset: 4px;
+    }
+
+    .lab-sidebar-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .dimensions-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .dimensions-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .dimensions-card-header h5 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--forest-900);
+    }
+
+    .dimension-badge-time {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--forest-700);
+    }
+
+    .dimensions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .dimension-row {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .dim-name-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--forest-900);
+    }
+
+    .dim-state-text {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .hotspot-detail-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .hotspot-detail-card h6 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--forest-900);
+    }
+
+    .hotspot-detail-card p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .planning-friction-box {
+      background: var(--bg-primary);
+      border-left: 3px solid var(--forest-500);
+      padding: 0.75rem 1rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.78rem;
+      color: var(--forest-800);
+    }
+
+    /* MODULE 4: Co-Design Charrette */
+    .codesign-split-layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 1.75rem;
+      align-items: start;
+    }
+
+    .charrette-canvas-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .charrette-header-bar {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-light);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .charrette-stage-view {
+      height: 480px;
+      position: relative;
+      background: #E6E2D6;
+      overflow: hidden;
+    }
+
+    .charrette-map-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .gsi-intervention-node {
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+    }
+
+    .gsi-intervention-node:hover rect {
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.18));
+      stroke: var(--forest-700);
+    }
+
+    .gsi-intervention-node.active rect {
+      stroke: var(--clay-500);
+      stroke-width: 3.5px;
+    }
+
+    .codesign-sidebar-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .gsi-detail-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .gsi-detail-card h5 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--forest-900);
+    }
+
+    .gsi-detail-card p.gsi-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .stakeholder-voices-box {
+      background: var(--bg-primary);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border: 1px solid var(--border-light);
+    }
+
+    .voice-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
+    .voice-avatar {
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .voice-speech strong {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      color: var(--forest-800);
+    }
+
+    .voice-speech span {
+      color: var(--text-muted);
+    }
+
+    .ostrom-charter-box {
+      background: #fff;
+      border: 1px solid var(--forest-200);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-size: 0.78rem;
+      color: var(--forest-800);
+      line-height: 1.5;
+    }
+
+    .charrette-process-guide {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      margin-top: 1.75rem;
+    }
+
+    .charrette-process-guide h6 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--forest-900);
+      margin-bottom: 0.85rem;
+    }
+
+    .process-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .process-step-item {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .step-badge {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--forest-700);
+    }
+
+    .process-step-item strong {
+      font-family: var(--font-serif);
+      font-size: 0.95rem;
+      color: var(--forest-900);
+    }
+
+    .process-step-item span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* MODULE 5: Proposal Reader */
+    .reader-split-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .reader-toc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: calc(var(--header-height) + 1.5rem);
+    }
+
+    .reader-toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-top: 0.75rem;
+    }
+
+    .reader-toc-link {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.4rem 0.65rem;
+      border-radius: var(--radius-sm);
+      display: block;
+      transition: all var(--transition-fast);
+    }
+
+    .reader-toc-link:hover, .reader-toc-link.active {
+      background: var(--forest-50);
+      color: var(--forest-900);
+      font-weight: 600;
+    }
+
+    .reader-article-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      max-width: 900px;
+    }
+
+    .reader-article-card h2 {
+      font-family: var(--font-serif);
+      font-size: 1.65rem;
+      color: var(--forest-900);
+      margin: 2rem 0 1rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .reader-article-card p {
+      font-size: 0.96rem;
+      line-height: 1.75;
+      color: var(--text-main);
+      margin-bottom: 1.15rem;
+    }
+
+    .citation-chip {
+      background: var(--forest-50);
+      color: var(--forest-700);
+      padding: 0.15rem 0.4rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85em;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--forest-200);
+      transition: all var(--transition-fast);
+    }
+
+    .citation-chip:hover {
+      background: var(--forest-200);
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(18, 33, 24, 0.65);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      max-width: 620px;
+      width: 100%;
+      padding: 2.25rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: var(--bg-secondary);
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 1080px) {
+      .deck-split-layout,
+      .triad-framework-layout,
+      .lab-split-layout,
+      .codesign-split-layout,
+      .reader-split-layout {
+        grid-template-columns: 1fr;
+      }
+      .process-steps-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .module-tabs-list {
+        overflow-x: auto;
+        width: 100%;
+      }
+      .slide-grid-3, .slide-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .process-steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .slide-main-title {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header: Clean, Exact Proposal Title -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <a href="#" class="proposal-title-header" id="brand-title-link">
+          Emergent Urban Social Resilience: 
+          <span class="subtitle-inline">Mapping Agency in Actor Landscapes and Co-Designing Regenerative Green-Social Infrastructures as Urban Commons</span>
+        </a>
+        <span class="header-meta-badge">Aalborg University • WeGrowCircle</span>
+      </div>
+
+      <!-- Module Navigation Bar -->
+      <div class="module-nav-bar">
+        <nav class="module-tabs-list" role="tablist" aria-label="Research Modules">
+          <button class="module-tab-btn active" data-target="module-deck" id="tab-deck">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Pitch &amp; Propositions
+          </button>
+          <button class="module-tab-btn" data-target="module-triad" id="tab-triad">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="12 2 2 22 22 22"/></svg>
+            Socio-Material Triad
+          </button>
+          <button class="module-tab-btn" data-target="module-lab" id="tab-lab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            Aalborg Living Lab
+          </button>
+          <button class="module-tab-btn" data-target="module-codesign" id="tab-codesign">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            Co-Design Charrette
+          </button>
+          <button class="module-tab-btn" data-target="module-reader" id="tab-reader">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Proposal Reader
+          </button>
+        </nav>
+
+        <div class="header-utility-actions">
+          <button class="btn-pill" id="toggle-notes-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Speaker Notes</span>
+          </button>
+          <button class="btn-pill btn-pill-primary" id="fullscreen-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+            <span>Present</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- ====================================================================
+         MODULE 1: Pitch & Propositions (Split Agenda + Deep Stage)
+         ==================================================================== -->
+    <section class="module-view active" id="module-deck">
+      <div class="view-header">
+        <span class="view-kicker">Module 1 • Executive Pitch &amp; Core Propositions</span>
+        <h2 class="view-title">Research Vision, Problem &amp; Methodological Roadmap</h2>
+        <p class="view-sub">Select any topic in the agenda rail to inspect the proposition, theoretical grounding, and presentation talking points.</p>
+      </div>
+
+      <div class="deck-split-layout">
+        <!-- Left Agenda Rail -->
+        <div class="agenda-rail-card">
+          <div class="agenda-header">Presentation Outline</div>
+          <button class="agenda-item-btn active" data-slide="0">
+            <span class="agenda-num">1</span>
+            <div class="agenda-text-wrap">
+              <strong>Overview &amp; Vision</strong>
+              <span>Resilience as an emergent quality</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="1">
+            <span class="agenda-num">2</span>
+            <div class="agenda-text-wrap">
+              <strong>The "Pilot Trap" Dilemma</strong>
+              <span>Consultative tokenism in greening</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="2">
+            <span class="agenda-num">3</span>
+            <div class="agenda-text-wrap">
+              <strong>Theoretical Triad</strong>
+              <span>Social, Institutional, Material</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="3">
+            <span class="agenda-num">4</span>
+            <div class="agenda-text-wrap">
+              <strong>Aim &amp; Research Questions</strong>
+              <span>Main RQ, SRQ1, SRQ2, SRQ3</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="4">
+            <span class="agenda-num">5</span>
+            <div class="agenda-text-wrap">
+              <strong>Longitudinal 4-Phase Design</strong>
+              <span>Baseline vs. Re-Mapping</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="5">
+            <span class="agenda-num">6</span>
+            <div class="agenda-text-wrap">
+              <strong>Aalborg Living Lab Case</strong>
+              <span>Aalborg Øst socio-spatial context</span>
+            </div>
+          </button>
+          <button class="agenda-item-btn" data-slide="6">
+            <span class="agenda-num">7</span>
+            <div class="agenda-text-wrap">
+              <strong>Contributions &amp; Impact</strong>
+              <span>Theory, methods &amp; policy integration</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Right Stage Card -->
+        <div class="deck-stage-card" id="deck-stage-card">
+          <span class="slide-tag-pill" id="slide-tag">Proposition 1 • Core Vision</span>
+          <h3 class="slide-main-title" id="slide-title">Emergent Urban Social Resilience</h3>
+          <p class="slide-main-subtitle" id="slide-subtitle">
+            Reframing resilience from a top-down policy decree to an emergent socio-material quality.
+          </p>
+
+          <div class="slide-body-slot" id="slide-body">
+            <!-- Populated via JS -->
+          </div>
+
+          <!-- Bottom Speaker Notes Drawer -->
+          <div class="speaker-notes-drawer" id="speaker-notes-drawer">
+            <h6>Defense Talking Points &amp; Committee Context</h6>
+            <p id="speaker-notes-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MODULE 2: Socio-Material Triad Conceptual Framework Explorer
+         ==================================================================== -->
+    <section class="module-view" id="module-triad">
+      <div class="view-header">
+        <span class="view-kicker">Module 2 • Theoretical Architecture</span>
+        <h2 class="view-title">The Resilient Urban Commons Framework</h2>
+        <p class="view-sub">Click directly on the SVG circles, intersection zones, or selector buttons to inspect how social actors, statutory institutions, and physical landscapes co-produce resilience.</p>
+      </div>
+
+      <div class="triad-framework-layout">
+        <!-- Interactive Triad Canvas Card -->
+        <div class="triad-interactive-card">
+          <div class="triad-pills-row">
+            <button class="triad-pill-btn active" data-triad="emergent">⭐ Agency &amp; Emergent Core</button>
+            <button class="triad-pill-btn" data-triad="social">Social Dynamics</button>
+            <button class="triad-pill-btn" data-triad="institutional">Institutional Frameworks</button>
+            <button class="triad-pill-btn" data-triad="material">Material-Spatial Configurations</button>
+            <button class="triad-pill-btn" data-triad="everyday">Everyday Commons</button>
+            <button class="triad-pill-btn" data-triad="coproduction">Co-Production Openings</button>
+            <button class="triad-pill-btn" data-triad="statutory">Statutory Spatial Governance</button>
+          </div>
+
+          <div class="triad-svg-wrapper">
+            <svg class="triad-svg" id="fig" viewBox="0 80 1000 640" role="group" aria-label="Interactive framework diagram" data-active="emergent">
+              <!-- Decorative dotted spoke lines joining each node to the core -->
+              <g class="triad-decorative-spokes" aria-hidden="true">
+                <line class="spoke" x1="500" y1="226" x2="500" y2="354"/>
+                <line class="spoke" x1="233" y1="565.7" x2="411.9" y2="488.2"/>
+                <line class="spoke" x1="767" y1="565.7" x2="588.1" y2="488.2"/>
+              </g>
+
+              <!-- Relational Interacting Lines (Selectable) -->
+              <!-- 1. Co-Production Openings (Social to Institutional) -->
+              <g class="triad-svg-node" data-triad="coproduction" data-id="coprod" tabindex="0" role="button" aria-label="Co-production">
+                <line class="hit" x1="450" y1="255" x2="250" y2="515" stroke-width="44"/>
+                <line class="edge" x1="478" y1="219" x2="222" y2="551"/>
+                <text class="t-edge" x="325" y="375" text-anchor="end">co-production</text>
+              </g>
+
+              <!-- 2. Everyday Commons (Social to Material) -->
+              <g class="triad-svg-node" data-triad="everyday" data-id="commoning" tabindex="0" role="button" aria-label="Everyday commons">
+                <line class="hit" x1="550" y1="255" x2="750" y2="515" stroke-width="44"/>
+                <line class="edge" x1="522" y1="219" x2="778" y2="551"/>
+                <text class="t-edge" x="675" y="375" text-anchor="start">everyday commons</text>
+              </g>
+
+              <!-- 3. Statutory Spatial Governance (Institutional to Material) -->
+              <g class="triad-svg-node" data-triad="statutory" data-id="planning" tabindex="0" role="button" aria-label="Statutory spatial governance">
+                <line class="hit" x1="250" y1="580" x2="750" y2="580" stroke-width="44"/>
+                <line class="edge" x1="236" y1="580" x2="764" y2="580"/>
+                <text class="t-edge" x="500" y="624" text-anchor="middle">statutory spatial governance</text>
+              </g>
+
+              <!-- Dimension Nodes -->
+              <!-- 4. Social Dynamics (Top Node) -->
+              <g class="triad-svg-node" data-triad="social" data-id="social" tabindex="0" role="button" aria-label="Social dynamics" style="--c:var(--rose, #B5838D);--f:var(--rosef, #F6ECEE)">
+                <rect class="hit" x="340" y="90" width="320" height="145" rx="16"/>
+                <circle class="nc" cx="500" cy="190" r="36"/>
+                <text class="t-name" x="500" y="136" text-anchor="middle">Social dynamics</text>
+              </g>
+
+              <!-- 5. Institutional Frameworks (Bottom-Left Node) -->
+              <g class="triad-svg-node" data-triad="institutional" data-id="institutional" tabindex="0" role="button" aria-label="Institutional frameworks" style="--c:var(--blue, #6D8299);--f:var(--bluef, #ECF0F4)">
+                <rect class="hit" x="70" y="540" width="260" height="180" rx="16"/>
+                <circle class="nc" cx="200" cy="580" r="36"/>
+                <text class="t-name" x="200" y="654" text-anchor="middle">Institutional</text>
+                <text class="t-name" x="200" y="686" text-anchor="middle">frameworks</text>
+              </g>
+
+              <!-- 6. Material-Spatial Configurations (Bottom-Right Node) -->
+              <g class="triad-svg-node" data-triad="material" data-id="material" tabindex="0" role="button" aria-label="Material-spatial configurations" style="--c:var(--sage, #7F9C85);--f:var(--sagef, #EDF3EE)">
+                <rect class="hit" x="670" y="540" width="260" height="180" rx="16"/>
+                <circle class="nc" cx="800" cy="580" r="36"/>
+                <text class="t-name" x="800" y="654" text-anchor="middle">Material-spatial</text>
+                <text class="t-name" x="800" y="686" text-anchor="middle">configurations</text>
+              </g>
+
+              <!-- 7. Agency & Emergent Resilience (Center Core) -->
+              <g class="triad-svg-node active" data-triad="emergent" data-id="core" tabindex="0" role="button" aria-label="Emergent urban social resilience" style="--c:var(--gold, #C8A45F);--f:var(--goldf, #FBF5E6)">
+                <circle class="hit" cx="500" cy="450" r="102"/>
+                <circle cx="500" cy="450" r="96" fill="none" stroke="var(--gold, #C8A45F)" stroke-opacity="0.45" stroke-width="1.4"/>
+                <circle class="nc" cx="500" cy="450" r="78"/>
+                <text class="t-core" x="500" y="432" text-anchor="middle">Emergent</text>
+                <text class="t-core" x="500" y="457" text-anchor="middle">urban social</text>
+                <text class="t-core" x="500" y="482" text-anchor="middle">resilience</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Detail Inspection Panel -->
+        <div class="triad-detail-panel">
+          <span class="triad-badge-pill" id="triad-pill" style="background:var(--clay-100); color:var(--clay-700);">Analytical Core</span>
+          <h4 class="triad-panel-title" id="triad-title">Agency as the Central Analytical Concept</h4>
+          <p class="triad-panel-quote" id="triad-quote">
+            "Agency is defined as the capacity of actors to shape decisions, practices, and spaces."
+          </p>
+          <p class="triad-panel-desc" id="triad-desc">
+            Urban social resilience is not a fixed attribute of a neighborhood, but an emergent property generated when diverse actors gain the capacity to negotiate statutory rules and steward their physical environments. Agency is relational: it expands when institutions provide legal openings and physical spaces offer affordances for collective care.
+          </p>
+          <div class="triad-evidence-box" id="triad-evidence">
+            <strong>Theoretical Pillars:</strong> Davoudi et al. (2012) Evolutionary Resilience • Healey (2007) Relational Planning • Ostrom (1990) Commoning • Brandsen et al. (2018) Co-Creation.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MODULE 3: Aalborg Living Lab Simulator (4 WeGrowCircle Dimensions)
+         ==================================================================== -->
+    <section class="module-view" id="module-lab">
+      <div class="view-header">
+        <span class="view-kicker">Module 3 • Empirical Grounding</span>
+        <h2 class="view-title">Aalborg Øst Living Lab: Kildeparken &amp; Tornhøj</h2>
+        <p class="view-sub">Toggle between Year 1 (Baseline) and Year 3 (Re-Mapped Commons) to inspect how the 4 WeGrowCircle evaluation dimensions evolve, and click hotspot pins on the district map.</p>
+      </div>
+
+      <div class="lab-split-layout">
+        <!-- Interactive Vector Map Stage -->
+        <div class="lab-map-card">
+          <div class="lab-map-toolbar">
+            <div>
+              <strong style="font-family:var(--font-serif); font-size:1.1rem; color:var(--forest-900);">Aalborg Øst Spatial Canvas</strong>
+              <div style="font-size:0.78rem; color:var(--text-muted);">Kildeparken Central Green Spine &amp; Stormwater Retention Corridor</div>
+            </div>
+
+            <!-- Year Switcher -->
+            <div class="time-toggle-group">
+              <button class="time-btn active" id="lab-year1-btn">Year 1: Baseline</button>
+              <button class="time-btn" id="lab-year3-btn">Year 3: Re-Mapped Commons</button>
+            </div>
+          </div>
+
+          <!-- Layer Controls -->
+          <div class="layer-controls-strip">
+            <span style="font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--text-muted);">Layers:</span>
+            <button class="layer-btn active" id="layer-spatial-btn">🌿 Material-Spatial GSIs</button>
+            <button class="layer-btn active" id="layer-inst-btn">🏛️ Statutory Jurisdictions</button>
+            <button class="layer-btn active" id="layer-social-btn">👥 Social Relational Networks</button>
+          </div>
+
+          <div class="map-stage-wrapper">
+            <svg class="aalborg-map-svg" viewBox="0 0 850 500" id="lab-svg-map">
+              <defs>
+                <pattern id="lab-grid-pattern" width="36" height="36" patternUnits="userSpaceOnUse">
+                  <path d="M 36 0 L 0 0 0 36" fill="none" stroke="rgba(0,0,0,0.035)" stroke-width="1"/>
+                </pattern>
+                <linearGradient id="lab-stream-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#9BC0CF"/>
+                  <stop offset="100%" stop-color="#5E96AB"/>
+                </linearGradient>
+                <linearGradient id="lab-spine-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#C2DEC8"/>
+                  <stop offset="100%" stop-color="#7CB48B"/>
+                </linearGradient>
+              </defs>
+
+              <rect width="100%" height="100%" fill="#EFECE4"/>
+              <rect width="100%" height="100%" fill="url(#lab-grid-pattern)"/>
+
+              <!-- Roads -->
+              <path d="M 40 140 Q 280 120 520 160 T 820 170" fill="none" stroke="#DCD7CA" stroke-width="24" stroke-linecap="round"/>
+              <path d="M 360 20 L 370 480" fill="none" stroke="#DCD7CA" stroke-width="20" stroke-linecap="round"/>
+              <path d="M 100 270 Q 380 310 780 280" fill="none" stroke="#E5E0D4" stroke-width="16" stroke-linecap="round"/>
+
+              <!-- Stormwater Canal (Blue Infrastructure) -->
+              <path d="M 20 420 Q 240 380 460 410 T 830 370" fill="none" stroke="url(#lab-stream-grad)" stroke-width="18" stroke-linecap="round"/>
+
+              <!-- Material-Spatial Layer -->
+              <g id="lab-layer-spatial">
+                <!-- Kildeparken Green Spine -->
+                <path d="M 130 150 Q 330 190 400 250 T 540 350" fill="none" stroke="url(#lab-spine-grad)" stroke-width="46" opacity="0.85" stroke-linecap="round"/>
+                <!-- Tornhøj Green Commons -->
+                <rect x="560" y="200" width="180" height="130" rx="18" fill="#B4D7BC" opacity="0.8" stroke="#4E8C68" stroke-width="2"/>
+                <text x="650" y="265" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3C2B" text-anchor="middle">Tornhøj Green Commons</text>
+                <!-- Housing Blocks -->
+                <rect x="160" y="65" width="130" height="75" rx="8" fill="#D6CFBF" stroke="#B8AEA0" stroke-width="1.5"/>
+                <rect x="200" y="200" width="110" height="65" rx="8" fill="#D6CFBF" stroke="#B8AEA0" stroke-width="1.5"/>
+                <rect x="420" y="75" width="125" height="70" rx="8" fill="#D6CFBF" stroke="#B8AEA0" stroke-width="1.5"/>
+                <text x="225" y="105" font-size="10" font-weight="600" fill="#4A453A" text-anchor="middle">Kildeparken Blocks</text>
+                <text x="480" y="115" font-size="10" font-weight="600" fill="#4A453A" text-anchor="middle">Tornhøjgård Housing</text>
+              </g>
+
+              <!-- Institutional Layer -->
+              <g id="lab-layer-inst">
+                <rect x="30" y="30" width="790" height="440" fill="none" stroke="#3E6B7A" stroke-width="2" stroke-dasharray="8,6" opacity="0.6"/>
+                <text x="60" y="55" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#1D5687" font-weight="600">Aalborg Municipality Statutory Boundary (Kommuneplan)</text>
+                <rect x="140" y="50" width="220" height="230" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-dasharray="4,4" opacity="0.7"/>
+                <text x="250" y="275" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#1D4ED8" text-anchor="middle">Himmerland Boligforening Boundary</text>
+                <circle cx="680" cy="370" r="70" fill="none" stroke="#0D9488" stroke-width="2" stroke-dasharray="5,4" opacity="0.7"/>
+                <text x="680" y="375" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#0F766E" text-anchor="middle">Skybrudssikring Retention Mandate</text>
+              </g>
+
+              <!-- Social Relational Layer -->
+              <g id="lab-layer-social">
+                <g id="lab-relational-lines"></g>
+                <circle cx="250" cy="180" r="13" fill="#C87D32" opacity="0.88"/>
+                <text x="250" y="160" font-size="9.5" font-weight="700" fill="#78350F" text-anchor="middle">Resident Assembly</text>
+                <circle cx="630" cy="260" r="13" fill="#C87D32" opacity="0.88"/>
+                <text x="630" y="240" font-size="9.5" font-weight="700" fill="#78350F" text-anchor="middle">Gardening Collective</text>
+                <circle cx="470" cy="310" r="13" fill="#C87D32" opacity="0.88"/>
+                <text x="470" y="338" font-size="9.5" font-weight="700" fill="#78350F" text-anchor="middle">Youth Climate Stewards</text>
+              </g>
+
+              <!-- Hotspots 1, 2, 3, 4 -->
+              <g class="hotspot-pin" data-spot="1">
+                <circle cx="620" cy="250" r="16" fill="rgba(78, 140, 104, 0.3)"/>
+                <circle cx="620" cy="250" r="9" fill="#29523B" stroke="#FFFFFF" stroke-width="2.5"/>
+                <text x="620" y="253" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+              </g>
+              <g class="hotspot-pin" data-spot="2">
+                <circle cx="320" cy="210" r="16" fill="rgba(200, 125, 50, 0.3)"/>
+                <circle cx="320" cy="210" r="9" fill="#C87D32" stroke="#FFFFFF" stroke-width="2.5"/>
+                <text x="320" y="213" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+              </g>
+              <g class="hotspot-pin" data-spot="3">
+                <circle cx="450" cy="120" r="16" fill="rgba(62, 107, 122, 0.3)"/>
+                <circle cx="450" cy="120" r="9" fill="#3E6B7A" stroke="#FFFFFF" stroke-width="2.5"/>
+                <text x="450" y="123" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+              </g>
+              <g class="hotspot-pin" data-spot="4">
+                <circle cx="670" cy="370" r="16" fill="rgba(184, 93, 67, 0.3)"/>
+                <circle cx="670" cy="370" r="9" fill="#B8593B" stroke="#FFFFFF" stroke-width="2.5"/>
+                <text x="670" y="373" font-size="8.5" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Sidebar: 4 WeGrowCircle Evaluation Dimensions -->
+        <div class="lab-sidebar-panel">
+          <div class="dimensions-card">
+            <div class="dimensions-card-header">
+              <h5>WeGrowCircle Evaluation Dimensions</h5>
+              <span class="dimension-badge-time" id="dim-time-label">Year 1: Baseline</span>
+            </div>
+            <div class="dimensions-list" id="dimensions-list">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+
+          <div class="hotspot-detail-card" id="hotspot-detail-card">
+            <h6 id="spot-title">Hotspot 1: Tornhøj Green Commons &amp; Swale</h6>
+            <p id="spot-desc">Year 1 Baseline: A fenced municipal stormwater retention basin. High maintenance cost for the city, zero resident interaction, perceived as an unsafe physical barrier.</p>
+            <div class="planning-friction-box" id="spot-planning">
+              <strong>Planning Translation:</strong> From single-purpose flood engineering to certified multi-use urban commons in the Aalborg Kommuneplan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MODULE 4: Co-Design & Generative Mapping Sandbox (Pre-Populated GSI Model)
+         ==================================================================== -->
+    <section class="module-view" id="module-codesign">
+      <div class="view-header">
+        <span class="view-kicker">Module 4 • Participatory Action Research</span>
+        <h2 class="view-title">Generative Mapping &amp; Co-Design Charrette Sandbox</h2>
+        <p class="view-sub">Pre-populated with an interactive spatial model of Aalborg Øst. Click any green-social infrastructure (GSI) intervention below to inspect its multi-stakeholder dialogue and Ostrom stewardship charter.</p>
+      </div>
+
+      <div class="codesign-split-layout">
+        <!-- Interactive Charrette Canvas -->
+        <div class="charrette-canvas-card">
+          <div class="charrette-header-bar">
+            <div>
+              <strong style="font-family:var(--font-serif); font-size:1.1rem; color:var(--forest-900);">Aalborg Øst Co-Design Model</strong>
+              <div style="font-size:0.78rem; color:var(--text-muted);">Generative Mapping as a Boundary Object (Star &amp; Griesemer, 1989)</div>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--forest-700); background:#fff; padding:0.25rem 0.65rem; border-radius:var(--radius-full); border:1px solid var(--border-medium);">
+              Click an intervention on the map
+            </span>
+          </div>
+
+          <div class="charrette-stage-view">
+            <svg class="charrette-map-svg" viewBox="0 0 800 480" id="codesign-svg">
+              <defs>
+                <pattern id="charrette-dot-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.2" fill="rgba(30,60,43,0.12)"/>
+                </pattern>
+              </defs>
+
+              <rect width="100%" height="100%" fill="#EFECE4"/>
+              <rect width="100%" height="100%" fill="url(#charrette-dot-grid)"/>
+
+              <!-- Kildeparken Green Spine Corridor -->
+              <path d="M 80 180 Q 300 220 420 280 T 720 320" fill="none" stroke="#D3E8D9" stroke-width="64" stroke-linecap="round"/>
+              <path d="M 80 180 Q 300 220 420 280 T 720 320" fill="none" stroke="#7CB48B" stroke-width="12" stroke-linecap="round"/>
+
+              <!-- Pedestrian Boardwalks -->
+              <path d="M 220 100 L 230 380" fill="none" stroke="#C4B9A5" stroke-width="6" stroke-dasharray="8,6"/>
+              <path d="M 520 80 L 530 400" fill="none" stroke="#C4B9A5" stroke-width="6" stroke-dasharray="8,6"/>
+
+              <!-- Intervention 1: Community Agroforestry Hub -->
+              <g class="gsi-intervention-node active" data-gsi="orchard">
+                <rect x="120" y="210" width="160" height="90" rx="12" fill="#FFFFFF" stroke="#2F5E44" stroke-width="2.5" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.08))"/>
+                <text x="135" y="240" font-size="18">🍎</text>
+                <text x="160" y="240" font-family="'Fraunces', serif" font-weight="700" font-size="12" fill="#183324">Agroforestry Hub</text>
+                <text x="135" y="262" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#589A74">Community orchard &amp; soil care</text>
+                <text x="135" y="282" font-family="'JetBrains Mono', monospace" font-size="8" fill="#B8593B">Commoning • Ostrom Rule 1</text>
+              </g>
+
+              <!-- Intervention 2: Rainwater Commons & Stepped Bioswale -->
+              <g class="gsi-intervention-node" data-gsi="swale">
+                <rect x="340" y="140" width="175" height="90" rx="12" fill="#FFFFFF" stroke="#356F8D" stroke-width="2.5" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.08))"/>
+                <text x="355" y="170" font-size="18">💧</text>
+                <text x="380" y="170" font-family="'Fraunces', serif" font-weight="700" font-size="12" fill="#1E4D63">Rainwater Commons</text>
+                <text x="355" y="192" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#356F8D">Stepped bioswale &amp; water deck</text>
+                <text x="355" y="212" font-family="'JetBrains Mono', monospace" font-size="8" fill="#B8593B">Skybrudssikring Mandate</text>
+              </g>
+
+              <!-- Intervention 3: Circular Tool & Repair Shed -->
+              <g class="gsi-intervention-node" data-gsi="repair">
+                <rect x="330" y="300" width="165" height="90" rx="12" fill="#FFFFFF" stroke="#8C4029" stroke-width="2.5" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.08))"/>
+                <text x="345" y="330" font-size="18">🪵</text>
+                <text x="370" y="330" font-family="'Fraunces', serif" font-weight="700" font-size="12" fill="#6B2E1D">Circular Repair Shed</text>
+                <text x="345" y="352" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#8C4029">Shared tools, timber &amp; craft</text>
+                <text x="345" y="372" font-family="'JetBrains Mono', monospace" font-size="8" fill="#B8593B">Sufficiency &amp; Mutual Aid</text>
+              </g>
+
+              <!-- Intervention 4: Native Pollinator Micro-Forest -->
+              <g class="gsi-intervention-node" data-gsi="forest">
+                <rect x="550" y="210" width="175" height="90" rx="12" fill="#FFFFFF" stroke="#3E7958" stroke-width="2.5" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.08))"/>
+                <text x="565" y="240" font-size="18">🌿</text>
+                <text x="590" y="240" font-family="'Fraunces', serif" font-weight="700" font-size="12" fill="#183324">Native Micro-Forest</text>
+                <text x="565" y="262" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#3E7958">Dense biodiversity &amp; sound buffer</text>
+                <text x="565" y="282" font-family="'JetBrains Mono', monospace" font-size="8" fill="#B8593B">Active Material Participant</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Sidebar: Stakeholder Negotiation Dialogue & Ostrom Charter -->
+        <div class="codesign-sidebar-panel">
+          <div class="gsi-detail-card">
+            <h5 id="gsi-title">🍎 Community Agroforestry Corridor</h5>
+            <p class="gsi-desc" id="gsi-desc">
+              Transforming 1,200m² of monoculture lawn into an edible landscape of fruit trees, berry bushes, and perennial herb guilds. Serves as a social anchor for cross-generational gathering and collective food growing.
+            </p>
+
+            <div class="stakeholder-voices-box">
+              <div class="voice-item">
+                <div class="voice-avatar">🏘️</div>
+                <div class="voice-speech">
+                  <strong>Social Housing Tenant</strong>
+                  <span id="gsi-tenant">"Having fruit trees here gives our families a reason to spend weekends outdoors together and harvest fresh apples without fencing."</span>
+                </div>
+              </div>
+              <div class="voice-item">
+                <div class="voice-avatar">🏛️</div>
+                <div class="voice-speech">
+                  <strong>Aalborg Municipal Planner</strong>
+                  <span id="gsi-planner">"Agroforestry improves local rainwater infiltration and requires minimal municipal mowing operations, saving budget."</span>
+                </div>
+              </div>
+              <div class="voice-item">
+                <div class="voice-avatar">🌿</div>
+                <div class="voice-speech">
+                  <strong>Material Ecology</strong>
+                  <span id="gsi-ecology">"Provides diverse perennial root structures and rich floral nectar for native wild pollinator populations."</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ostrom-charter-box" id="gsi-charter">
+              <strong>Ostrom Stewardship Charter:</strong> Collective harvesting rota managed by tenant assembly; municipal groundskeepers provide free compost in exchange for community weeding.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Step Process Guide Strip -->
+      <div class="charrette-process-guide">
+        <h6>The 4-Stage Co-Design Charrette Process (Star &amp; Griesemer, 1989; Brandsen et al., 2018)</h6>
+        <div class="process-steps-grid">
+          <div class="process-step-item">
+            <span class="step-badge">Stage 1</span>
+            <strong>Relational Diagnosis</strong>
+            <span>Mapping community routines, neglected areas, and exclusion barriers using participatory GIS.</span>
+          </div>
+          <div class="process-step-item">
+            <span class="step-badge">Stage 2</span>
+            <strong>Boundary Object Prototyping</strong>
+            <span>Co-designing GSI configurations on physical/digital maps as shared negotiation surfaces.</span>
+          </div>
+          <div class="process-step-item">
+            <span class="step-badge">Stage 3</span>
+            <strong>Stewardship Charters</strong>
+            <span>Formulating Ostrom commons rules for maintenance, access, and shared responsibilities.</span>
+          </div>
+          <div class="process-step-item">
+            <span class="step-badge">Stage 4</span>
+            <strong>Statutory Integration</strong>
+            <span>Embedding community agreements into the Aalborg Kommuneplan and local plans (Lokalplaner).</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         MODULE 5: Proposal Reader & Interactive Citations
+         ==================================================================== -->
+    <section class="module-view" id="module-reader">
+      <div class="view-header">
+        <span class="view-kicker">Module 5 • Full Proposal Documentation</span>
+        <h2 class="view-title">Research Proposal Annotated Reader</h2>
+        <p class="view-sub">Complete textual proposal with table of contents and interactive citation popovers linking to peer-reviewed planning literature.</p>
+      </div>
+
+      <div class="reader-split-layout">
+        <!-- Table of Contents -->
+        <div class="reader-toc-card">
+          <strong style="font-family:var(--font-mono); font-size:0.75rem; text-transform:uppercase; color:var(--forest-800);">Sections</strong>
+          <ul class="reader-toc-list">
+            <li><a href="#doc-abstract" class="reader-toc-link">Abstract</a></li>
+            <li><a href="#doc-problem" class="reader-toc-link">1. Background and Problem</a></li>
+            <li><a href="#doc-framework" class="reader-toc-link">2. Conceptual Framework</a></li>
+            <li><a href="#doc-aims" class="reader-toc-link">3. Aim, RQs &amp; Objectives</a></li>
+            <li><a href="#doc-design" class="reader-toc-link">4. Research Design &amp; Methods</a></li>
+            <li><a href="#doc-contributions" class="reader-toc-link">5. Expected Contributions</a></li>
+            <li><a href="#doc-references" class="reader-toc-link">References</a></li>
+          </ul>
+
+          <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light);">
+            <input type="text" id="reader-search-input" placeholder="Search keywords..." style="width:100%; padding:0.45rem 0.65rem; border-radius:var(--radius-sm); border:1px solid var(--border-medium); font-size:0.8rem;">
+          </div>
+        </div>
+
+        <!-- Article Document Body -->
+        <article class="reader-article-card" id="reader-body">
+          <div style="border-bottom:2px solid var(--sand-200); padding-bottom:1.5rem; margin-bottom:2rem;">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--forest-700); text-transform:uppercase;">PhD Research Proposal • Aalborg University • WeGrowCircle</span>
+            <h1 style="font-family:var(--font-serif); font-size:2.3rem; font-weight:700; line-height:1.2; color:var(--forest-900); margin:0.5rem 0 0.85rem 0;">
+              Emergent Urban Social Resilience: Mapping Agency in Actor Landscapes and Co-Designing Regenerative Green-Social Infrastructures as Urban Commons
+            </h1>
+            <p style="font-size:1.05rem; color:var(--text-muted);">Preliminary research proposal for the PhD position on Urban Social Resilience in the WeGrowCircle project.</p>
+          </div>
+
+          <section id="doc-abstract">
+            <h2>Abstract</h2>
+            <p>
+              This project studies how urban social resilience emerges from the interplay of social dynamics, institutional frameworks, and material-spatial configurations. Taking a socio-material planning and design perspective, it asks how social actors, relations, and practices gain agency in resilience-building.
+            </p>
+            <p>
+              Through analytical and generative mapping and an inclusive co-design process, the project develops regenerative green-social infrastructures (GSIs) as urban commons in the Aalborg Living Lab, in close relation to local planning practice. It contributes a <strong>Resilient Urban Commons Framework</strong>, a tested co-creation approach, and recommendations for integrating GSIs into local planning, climate action, and community practice.
+            </p>
+          </section>
+
+          <section id="doc-problem">
+            <h2>1. Background and Problem</h2>
+            <p>
+              Cities face climate impacts, social fragmentation, and biodiversity loss, and urban social resilience has become a pressing planning concern. Yet resilience is still often treated as a fixed outcome of policy or a pre-existing trait of communities. This view separates the social from the institutional and the material, and it overlooks who is able to act in resilience-building and who is not.
+            </p>
+            <div class="quote-highlight-box" style="margin:1.25rem 0;">
+              This project understands resilience differently: as an emergent quality produced through continuous interactions between actors and their relations, formal and informal institutions, and the spatial and ecological settings in which they live (<span class="citation-chip" data-cite="davoudi2012">Davoudi et al., 2012</span>). If resilience is emergent, it cannot be delivered on demand. Planning and design can, however, cultivate the conditions from which it emerges: relations, capacities, institutional openings, and material settings.
+            </div>
+            <p>
+              Green-social infrastructures (GSIs) are a productive arena for studying this. They combine green spaces with the social relations and practices that sustain them, and they bring together residents, planners, designers, and public organisations. In practice, however, many participatory greening initiatives remain pilots. They give some actors limited agency, and they struggle to connect with statutory planning and long-term land management.
+            </p>
+            <p>
+              The research gap lies at the intersection of three areas that are usually studied separately: <strong>social resilience</strong>, <strong>socio-material understandings of planning</strong>, and the <strong>commoning and governance of green space</strong>. This project connects them.
+            </p>
+          </section>
+
+          <section id="doc-framework">
+            <h2>2. Conceptual Framework</h2>
+            <p>
+              The project develops a <strong>Resilient Urban Commons Framework</strong> as a shared conceptual and methodological foundation for WeGrowCircle. It places urban social resilience at the centre and reads it through three interacting dimensions:
+            </p>
+            <ul style="margin-left:1.5rem; line-height:1.75; margin-bottom:1.25rem;">
+              <li><strong>Social dynamics:</strong> actors, relations, practices, and agency, including trust, inclusion, and collective learning.</li>
+              <li><strong>Institutional frameworks:</strong> regulations, plans, climate policies, land ownership, and governance arrangements across actors, organisations, and institutions.</li>
+              <li><strong>Material-spatial configurations:</strong> land, green infrastructure, species, materials, and spatial layout, treated as active participants in producing resilience rather than a passive backdrop.</li>
+            </ul>
+            <p>
+              Four bodies of work support the framework:
+            </p>
+            <ol style="margin-left:1.5rem; line-height:1.75; margin-bottom:1.25rem;">
+              <li><strong>Resilience</strong> is approached critically and relationally, beyond equilibrium and recovery thinking (<span class="citation-chip" data-cite="davoudi2012">Davoudi et al., 2012</span>).</li>
+              <li><strong>Socio-material planning</strong> attends to how people, institutions, and material settings co-produce places (<span class="citation-chip" data-cite="healey2007">Healey, 2007</span>).</li>
+              <li><strong>Commons and commoning</strong> offer a lens on collective stewardship and rules for shared resources (<span class="citation-chip" data-cite="ostrom1990">Ostrom, 1990</span>).</li>
+              <li><strong>Co-production and co-design</strong> frame participation as shared creation rather than consultation (<span class="citation-chip" data-cite="brandsen2018">Brandsen et al., 2018</span>; <span class="citation-chip" data-cite="arnstein1969">Arnstein, 1969</span>).</li>
+            </ol>
+            <p>
+              Within this framework, <strong>agency</strong> is defined as the capacity of actors to shape decisions, practices, and spaces, and it is the central analytical concept.
+            </p>
+          </section>
+
+          <section id="doc-aims">
+            <h2>3. Aim, Research Questions, and Objectives</h2>
+            <p>
+              <strong>Aim:</strong> To understand and strengthen how urban social resilience emerges from the interplay of social, institutional, and material-spatial dynamics. The study maps how actors gain agency across actor landscapes and co-designs regenerative GSIs as urban commons, in close relation to local planning practice.
+            </p>
+            <p style="font-weight:700; color:var(--forest-900); margin:1rem 0 0.5rem 0;">Main Research Question:</p>
+            <p style="font-style:italic; color:var(--forest-800); margin-bottom:1rem;">
+              "How do social actors, relations, and practices gain agency in producing urban social resilience through the interplay of social, institutional, and material-spatial dimensions, and how can mapping, co-design, and planning processes strengthen this in regenerative GSIs?"
+            </p>
+            <p style="font-weight:700; color:var(--forest-900); margin:1rem 0 0.5rem 0;">Sub-Research Questions:</p>
+            <ul style="margin-left:1.5rem; line-height:1.75; margin-bottom:1.25rem;">
+              <li><strong>SRQ1 (mapping):</strong> What actor landscapes, relations, practices, and spatial conditions shape resilience around GSIs in the Aalborg Living Lab, and where are the gaps in agency and inclusion?</li>
+              <li><strong>SRQ2 (co-design):</strong> How can an inclusive co-design process build agency and the capacities for resilience among diverse actors?</li>
+              <li><strong>SRQ3 (stewardship and planning):</strong> Which stewardship and governance arrangements sustain resilience, and how can they be embedded in local planning and climate action?</li>
+            </ul>
+          </section>
+
+          <section id="doc-design">
+            <h2>4. Research Design and Methodology</h2>
+            <p>
+              The project follows an <strong>action research</strong> and <strong>research-by-design</strong> approach in the Aalborg Living Lab, working alongside residents, planners, designers, and public actors. Because resilience is treated as emergent, the design is longitudinal and process-oriented, and it uses mapping twice, as a baseline and as a re-mapping, to trace change.
+            </p>
+            <p>
+              The 4 phases span:
+            </p>
+            <ul style="margin-left:1.5rem; line-height:1.75; margin-bottom:1.25rem;">
+              <li><strong>Phase 1 (Year 1):</strong> Actor &amp; relational mapping, participatory GIS, policy review, and baseline semi-structured interviews.</li>
+              <li><strong>Phase 2 (Years 1.5–2):</strong> Workshops, design charrettes, and prototyping with generative maps as shared working material (<span class="citation-chip" data-cite="star1989">Star &amp; Griesemer, 1989</span>).</li>
+              <li><strong>Phase 3 (Years 2–3):</strong> Observation, follow-up interviews, re-mapping, and co-defined indicators for biodiversity, circular practices, sufficiency, and well-being.</li>
+              <li><strong>Phase 4 (Year 3):</strong> Synthesis, framework refinement, policy dialogue, and statutory planning recommendations.</li>
+            </ul>
+          </section>
+
+          <section id="doc-contributions">
+            <h2>5. Expected Contributions</h2>
+            <ul style="margin-left:1.5rem; line-height:1.75; margin-bottom:1.25rem;">
+              <li><strong>Theoretical:</strong> A conceptualisation of urban social resilience as an emergent socio-material quality, and a Resilient Urban Commons Framework linking agency, institutions, and spatial configurations.</li>
+              <li><strong>Methodological:</strong> Repeated relational and spatial mapping as both an analytical and generative method, and a tested inclusive co-design process for GSIs.</li>
+              <li><strong>Practical:</strong> Evidence and actionable recommendations for integrating GSIs into local planning, climate action, and community practice, including stewardship models.</li>
+            </ul>
+          </section>
+
+          <section id="doc-references">
+            <h2>References</h2>
+            <p style="font-size:0.85rem; line-height:1.65; color:var(--text-muted);">
+              Arnstein, S. R. (1969). A ladder of citizen participation. <em>Journal of the American Institute of Planners</em>, 35(4), 216-224.<br><br>
+              Brandsen, T., Steen, T., &amp; Verschuere, B. (Eds.) (2018). <em>Co-production and Co-creation: Engaging Citizens in Public Services</em>. Routledge.<br><br>
+              Davoudi, S., et al. (2012). Resilience: A bridging concept or a dead end? <em>Planning Theory &amp; Practice</em>, 13(2), 299-333.<br><br>
+              Healey, P. (2007). <em>Urban Complexity and Spatial Strategies: Towards a Relational Planning for Our Times</em>. Routledge.<br><br>
+              Ostrom, E. (1990). <em>Governing the Commons: The Evolution of Institutions for Collective Action</em>. Cambridge University Press.<br><br>
+              Star, S. L., &amp; Griesemer, J. R. (1989). Institutional ecology, 'translations' and boundary objects. <em>Social Studies of Science</em>, 19(3), 387-420.
+            </p>
+          </section>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Citation Modal -->
+  <div class="modal-overlay" id="citation-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modal-close-btn">✕</button>
+      <span class="triad-badge-pill" id="modal-cite-key" style="background:var(--forest-100); color:var(--forest-800); margin-bottom:0.75rem;">Citation</span>
+      <h4 id="modal-cite-title" style="font-family:var(--font-serif); font-size:1.35rem; color:var(--forest-900); margin-bottom:0.6rem;">Title</h4>
+      <p id="modal-cite-desc" style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:1.15rem;">Description</p>
+      <div id="modal-cite-relevance" style="background:var(--bg-primary); padding:1rem; border-radius:var(--radius-md); font-size:0.84rem; color:var(--forest-800); border-left:3px solid var(--forest-500); line-height:1.55;"></div>
+    </div>
+  </div>
+
+  <script>
+/**
+ * Emergent Urban Social Resilience - Interactive Research Platform
+ * Aalborg University / WeGrowCircle PhD Showcase
+ * 5-Module Application Engine
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ==========================================================================
+     1. Module View Navigation Controller
+     ========================================================================== */
+  const moduleTabs = document.querySelectorAll('.module-tab-btn');
+  const moduleViews = document.querySelectorAll('.module-view');
+  const brandTitleLink = document.getElementById('brand-title-link');
+
+  function switchModule(targetId) {
+    moduleTabs.forEach(tab => {
+      tab.classList.toggle('active', tab.dataset.target === targetId);
+    });
+
+    moduleViews.forEach(view => {
+      view.classList.toggle('active', view.id === targetId);
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  moduleTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      switchModule(tab.dataset.target);
+    });
+  });
+
+  if (brandTitleLink) {
+    brandTitleLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      switchModule('module-deck');
+    });
+  }
+
+  // Support deep linking via hash
+  const initialHash = window.location.hash.slice(1);
+  if (initialHash && document.getElementById(initialHash)) {
+    switchModule(initialHash);
+  }
+
+  /* ==========================================================================
+     2. MODULE 1: Split Presentation & Propositions Deck
+     ========================================================================== */
+  const slidesData = [
+    {
+      tag: "Proposition 1 • Core Vision",
+      title: "Emergent Urban Social Resilience",
+      subtitle: "Reframing resilience from a top-down policy decree to an emergent socio-material quality.",
+      body: `
+        <div class="quote-highlight-box">
+          "Resilience is not a fixed outcome of policy or a pre-existing trait of communities. It is an emergent quality produced through continuous interactions between actors and their relations, formal and informal institutions, and the spatial and ecological settings in which they live." (Davoudi et al., 2012)
+        </div>
+        <div class="slide-grid-3">
+          <div class="card-block">
+            <h5>Beyond Equilibrium</h5>
+            <p>Rejects traditional 'bounce-back' models to understand resilience as an ongoing adaptive and transformative capacity cultivated over time.</p>
+          </div>
+          <div class="card-block">
+            <h5>Green-Social Commons</h5>
+            <p>Treats green infrastructure not as static lawn ornaments, but as living commons co-sustained by everyday social practices and rules.</p>
+          </div>
+          <div class="card-block">
+            <h5>Aalborg Action Research</h5>
+            <p>Directly grounded in the Aalborg Living Lab (WeGrowCircle), working alongside residents, housing associations, and municipal planners.</p>
+          </div>
+        </div>
+      `,
+      notes: "Pitch Context: Open by framing the paradigm shift. Emphasize that traditional resilience planning often treats resilience as an engineering equilibrium or an intrinsic community trait. We argue that resilience is emergent—it cannot be decreed; planning must cultivate the socio-material conditions."
+    },
+    {
+      tag: "Proposition 2 • The Planning Dilemma",
+      title: "Breaking the 'Pilot Trap' in Urban Greening",
+      subtitle: "Why do well-intentioned participatory greening initiatives remain fragile, short-lived pilots?",
+      body: `
+        <div class="slide-grid-2">
+          <div class="card-block" style="border-left:4px solid var(--clay-500);">
+            <h5 style="color:var(--clay-700);">The Conventional Dilemma</h5>
+            <p>Municipal participatory greening projects frequently grant tokenistic consultation (Arnstein's lower rungs). Citizens are consulted on flowerbeds but have zero say in statutory zoning, maintenance budgets, or land tenure. Once the initial grant expires, the spaces decay.</p>
+          </div>
+          <div class="card-block" style="border-left:4px solid var(--forest-500);">
+            <h5 style="color:var(--forest-800);">This Project's Commons Solution</h5>
+            <p>Grounding green-social infrastructures in Ostrom's (1990) commoning principles and Brandsen's (2018) co-production: establishing clear community stewardship charters, mutual maintenance agreements, and formal integration into the Aalborg Kommuneplan.</p>
+          </div>
+        </div>
+        <div class="card-block" style="background:#fff; border:1px solid var(--border-medium);">
+          <strong>The Research Gap:</strong> Bridging three scholarly fields that are usually studied in isolation: critical social resilience, socio-material planning theory, and urban commons governance.
+        </div>
+      `,
+      notes: "Pitch Context: Point out the practical friction. In practice, public agencies install green spaces, but without relational ownership or institutional openings, the interventions decay. We address this systemic agency gap."
+    },
+    {
+      tag: "Proposition 3 • Conceptual Architecture",
+      title: "Resilient Urban Commons Framework",
+      subtitle: "Reading urban social resilience through three interacting dimensions with Agency at the core.",
+      body: `
+        <div class="slide-grid-3">
+          <div class="card-block" style="border-top:4px solid var(--forest-600);">
+            <span class="triad-badge-pill" style="background:var(--forest-100); color:var(--forest-800); margin-bottom:0.5rem;">Dimension 1</span>
+            <h5>Social Dynamics</h5>
+            <p>Actors, relational networks, everyday practices, trust building, inclusion of marginalized groups, and collective learning.</p>
+          </div>
+          <div class="card-block" style="border-top:4px solid var(--blue-500);">
+            <span class="triad-badge-pill" style="background:var(--blue-100); color:var(--blue-700); margin-bottom:0.5rem;">Dimension 2</span>
+            <h5>Institutional Frameworks</h5>
+            <p>Regulations, statutory municipal plans (Kommuneplan), Danish climate policies (Skybrudssikring), and property rights.</p>
+          </div>
+          <div class="card-block" style="border-top:4px solid var(--clay-500);">
+            <span class="triad-badge-pill" style="background:var(--clay-100); color:var(--clay-700); margin-bottom:0.5rem;">Dimension 3</span>
+            <h5>Material-Spatial</h5>
+            <p>Land, rainwater swales, species, soil, and spatial layout—treated as active co-producers of resilience rather than a passive backdrop.</p>
+          </div>
+        </div>
+        <div style="background:var(--bg-primary); padding:1rem 1.25rem; border-radius:var(--radius-md); border:1px solid var(--border-light); display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <strong>Central Analytical Concept:</strong>
+            <span style="color:var(--text-muted); margin-left:0.5rem;"><strong>Agency</strong> — the capacity of actors to shape decisions, practices, and physical spaces.</span>
+          </div>
+          <button class="btn-pill" onclick="document.getElementById('tab-triad').click();" style="font-size:0.75rem;">Explore Interactive Triad →</button>
+        </div>
+      `,
+      notes: "Pitch Context: Ground this in key theoretical literature: Davoudi's evolutionary resilience, Patsy Healey's relational socio-material planning, Elinor Ostrom's governing the commons, and Brandsen & Arnstein's co-production."
+    },
+    {
+      tag: "Proposition 4 • Inquiry Architecture",
+      title: "Aim, Main RQ & Three Sub-Questions",
+      subtitle: "A tightly structured inquiry answering how agency is generated and embedded in planning practice.",
+      body: `
+        <div style="background:var(--forest-50); border:1px solid var(--forest-200); padding:1.25rem 1.5rem; border-radius:var(--radius-md); margin-bottom:1rem;">
+          <div style="font-family:var(--font-mono); font-size:0.72rem; font-weight:700; text-transform:uppercase; color:var(--forest-700); margin-bottom:0.35rem;">Main Research Question</div>
+          <p style="font-family:var(--font-serif); font-size:1.15rem; font-weight:600; color:var(--forest-900); line-height:1.45;">
+            "How do social actors, relations, and practices gain agency in producing urban social resilience through the interplay of social, institutional, and material-spatial dimensions, and how can mapping, co-design, and planning processes strengthen this in regenerative GSIs?"
+          </p>
+        </div>
+        <div class="slide-grid-3">
+          <div class="card-block">
+            <span class="triad-badge-pill" style="background:var(--forest-100); color:var(--forest-800); margin-bottom:0.4rem;">SRQ 1: Mapping</span>
+            <h5>Actor Landscapes &amp; Gaps</h5>
+            <p>Diagnosing baseline power asymmetries, excluded groups, and spatial disconnects in Aalborg East.</p>
+          </div>
+          <div class="card-block">
+            <span class="triad-badge-pill" style="background:var(--clay-100); color:var(--clay-700); margin-bottom:0.4rem;">SRQ 2: Co-Design</span>
+            <h5>Capacity Building</h5>
+            <p>Testing generative mapping and charrettes as shared boundary objects to co-produce physical interventions.</p>
+          </div>
+          <div class="card-block">
+            <span class="triad-badge-pill" style="background:var(--blue-100); color:var(--blue-700); margin-bottom:0.4rem;">SRQ 3: Governance</span>
+            <h5>Statutory Embedding</h5>
+            <p>Formulating Ostrom stewardship charters and embedding them into the Aalborg Kommuneplan.</p>
+          </div>
+        </div>
+      `,
+      notes: "Pitch Context: Walk the committee through the three SRQs. Highlight the clear logical sequence: SRQ1 diagnoses existing relational networks and gaps; SRQ2 intervenes and co-designs through action research; SRQ3 institutionalizes long-term governance models."
+    },
+    {
+      tag: "Proposition 5 • Methodological Rigor",
+      title: "Longitudinal 4-Phase Research Design",
+      subtitle: "Combining Action Research and Research-by-Design with dual-point mapping to track agency shifts.",
+      body: `
+        <div class="slide-grid-2">
+          <div class="card-block">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--forest-700);">Phase 1 (Year 1) &bull; Baseline Mapping</span>
+            <p style="margin-top:0.35rem;">Constructing an actor-network atlas and diagnosing baseline inclusion gaps using participatory GIS and semi-structured stakeholder interviews.</p>
+          </div>
+          <div class="card-block">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--clay-700);">Phase 2 (Years 1.5–2) &bull; Inclusive Co-Design</span>
+            <p style="margin-top:0.35rem;">Multi-actor charrettes using generative maps as boundary objects to prototype physical GSIs and draft commons stewardship rules.</p>
+          </div>
+          <div class="card-block">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--blue-700);">Phase 3 (Years 2–3) &bull; Sustain &amp; Re-Mapping</span>
+            <p style="margin-top:0.35rem;">Re-mapping relational networks over time to measure the delta in agency across biodiversity, circularity, sufficiency, and well-being.</p>
+          </div>
+          <div class="card-block">
+            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--forest-800);">Phase 4 (Year 3) &bull; Policy Translation</span>
+            <p style="margin-top:0.35rem;">Synthesizing the Resilient Urban Commons Framework into statutory planning amendments and comparative European recommendations.</p>
+          </div>
+        </div>
+        <div class="quote-highlight-box">
+          <strong>The Longitudinal Advantage:</strong> Mapping twice (baseline in Phase 1 and re-mapping in Phase 3) provides rigorous empirical proof of whether social agency and network trust actually expanded.
+        </div>
+      `,
+      notes: "Pitch Context: Emphasize the rigor of 'mapping twice' (baseline vs re-mapping). This resolves a major flaw in many PhD proposals that only capture a static snapshot. Mention also potential comparison with partner labs in Brussels, Gothenburg, and Bucharest."
+    },
+    {
+      tag: "Proposition 6 • Empirical Anchor",
+      title: "Aalborg Living Lab: Kildeparken & Tornhøj",
+      subtitle: "Anchored in post-war social housing regeneration facing real Danish climate adaptation pressures.",
+      body: `
+        <div class="slide-grid-2">
+          <div>
+            <h5 style="font-family:var(--font-serif); font-size:1.25rem; color:var(--forest-900); margin-bottom:0.5rem;">Why Aalborg Øst?</h5>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.65; margin-bottom:1rem;">
+              Aalborg Øst is nationally recognized for physical social housing regeneration and large green corridors. However, it epitomizes the socio-material friction this project studies:
+            </p>
+            <ul style="list-style:disc; margin-left:1.25rem; font-size:0.88rem; color:var(--text-muted); line-height:1.6;">
+              <li>Top-down cloudburst water mandates (<em>Skybrudssikring</em>) requiring community stewardship.</li>
+              <li>Diverse demographic groups (social housing tenants, youth, immigrants, seniors) seeking self-determined agency.</li>
+              <li>Multiple institutional jurisdictions: Aalborg Municipality, Himmerland Housing Association, Sundhedens Hus.</li>
+            </ul>
+          </div>
+          <div class="card-block" style="background:#fff; border:1px solid var(--border-medium); display:flex; flex-direction:column; justify-content:center;">
+            <div style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--forest-700); text-transform:uppercase; margin-bottom:0.5rem;">Comparative European Horizon</div>
+            <p style="font-size:0.86rem; color:var(--text-muted); line-height:1.55; margin-bottom:0.75rem;">
+              Findings from Aalborg will be comparatively mirrored against partner living labs in the WeGrowCircle network:
+            </p>
+            <div style="display:flex; flex-direction:column; gap:0.4rem; font-size:0.8rem;">
+              <div><strong>Brussels:</strong> Dense post-industrial urban commons &amp; civic self-organization.</div>
+              <div><strong>Gothenburg:</strong> Nordic municipal welfare planning &amp; circular ecology.</div>
+              <div><strong>Bucharest:</strong> Post-socialist spatial fragmentation &amp; institutional transition.</div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <button class="btn-pill btn-pill-primary" onclick="document.getElementById('tab-lab').click();">Launch Living Lab Simulator →</button>
+        </div>
+      `,
+      notes: "Pitch Context: Grounding the research in Aalborg Øst demonstrates local feasibility and high relevance to Aalborg University's research priorities. It shows the committee you understand local planning realities (Kommuneplan, Himmerland Boligforening)."
+    },
+    {
+      tag: "Proposition 7 • Expected Impact",
+      title: "Triad of Research Contributions",
+      subtitle: "Delivering theoretical innovation, methodological rigor, and actionable municipal policy tools.",
+      body: `
+        <div class="slide-grid-3">
+          <div class="card-block" style="border-top:4px solid var(--forest-700);">
+            <div style="font-size:1.3rem; margin-bottom:0.4rem;">📚</div>
+            <h5>Theoretical Contribution</h5>
+            <p>A novel conceptualisation of urban social resilience as an emergent socio-material quality, with a validated Resilient Urban Commons Framework linking agency, formal institutions, and physical spaces.</p>
+          </div>
+          <div class="card-block" style="border-top:4px solid var(--clay-500);">
+            <div style="font-size:1.3rem; margin-bottom:0.4rem;">📐</div>
+            <h5>Methodological Contribution</h5>
+            <p>Repeated relational and spatial mapping as both an analytical and generative boundary-object method; a tested co-creation playbook for regenerative green-social infrastructures.</p>
+          </div>
+          <div class="card-block" style="border-top:4px solid var(--blue-500);">
+            <div style="font-size:1.3rem; margin-bottom:0.4rem;">🏛️</div>
+            <h5>Planning Policy Impact</h5>
+            <p>Concrete co-governance models and statutory recommendations for Danish and European municipalities to integrate community-stewarded GSIs into statutory master plans (<em>Kommuneplaner</em>) and climate action.</p>
+          </div>
+        </div>
+        <div style="display:flex; justify-content:center; gap:0.75rem; margin-top:1.5rem;">
+          <button class="btn-pill btn-pill-primary" onclick="document.getElementById('tab-triad').click();">Explore Conceptual Triad</button>
+          <button class="btn-pill" onclick="document.getElementById('tab-codesign').click();">Open Co-Design Charrette</button>
+          <button class="btn-pill" onclick="document.getElementById('tab-reader').click();">Read Full Proposal</button>
+        </div>
+      `,
+      notes: "Pitch Context: Conclude the pitch by tying the three contributions together. Highlight that the PhD produces both high-impact academic journal papers (the theoretical and methodological frameworks) and a practical policy toolkit for Danish planning authorities."
+    }
+  ];
+
+  let currentSlide = 0;
+  const agendaBtns = document.querySelectorAll('.agenda-item-btn');
+  const slideTag = document.getElementById('slide-tag');
+  const slideTitle = document.getElementById('slide-title');
+  const slideSubtitle = document.getElementById('slide-subtitle');
+  const slideBody = document.getElementById('slide-body');
+  const speakerNotesText = document.getElementById('speaker-notes-text');
+  const speakerNotesDrawer = document.getElementById('speaker-notes-drawer');
+  const toggleNotesBtn = document.getElementById('toggle-notes-btn');
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+  function renderSlide(idx) {
+    currentSlide = idx;
+    const slide = slidesData[idx];
+    if (!slide) return;
+
+    agendaBtns.forEach((btn, i) => btn.classList.toggle('active', i === idx));
+
+    slideTag.textContent = slide.tag;
+    slideTitle.textContent = slide.title;
+    slideSubtitle.textContent = slide.subtitle;
+    slideBody.innerHTML = slide.body;
+    speakerNotesText.textContent = slide.notes;
+  }
+
+  agendaBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      renderSlide(parseInt(btn.dataset.slide, 10));
+    });
+  });
+
+  if (toggleNotesBtn && speakerNotesDrawer) {
+    toggleNotesBtn.addEventListener('click', () => {
+      speakerNotesDrawer.classList.toggle('open');
+      toggleNotesBtn.classList.toggle('btn-pill-primary');
+    });
+  }
+
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', () => {
+      const stage = document.getElementById('deck-stage-card');
+      if (!document.fullscreenElement) {
+        stage.requestFullscreen().catch(err => console.error(err));
+      } else {
+        document.exitFullscreen();
+      }
+    });
+  }
+
+  renderSlide(0);
+
+  /* ==========================================================================
+     3. MODULE 2: Socio-Material Triad Conceptual Framework Explorer
+     ========================================================================== */
+  const triadData = {
+    emergent: {
+      pillText: 'Analytical Core',
+      pillBg: 'var(--clay-100)',
+      pillColor: 'var(--clay-700)',
+      title: 'Agency as the Central Analytical Concept',
+      quote: '"Agency is defined as the capacity of actors to shape decisions, practices, and spaces."',
+      desc: 'Urban social resilience is not a fixed attribute of a neighborhood, but an emergent property generated when diverse actors gain the capacity to negotiate statutory rules and steward their physical environments. Agency is relational: it expands when institutions provide legal openings and physical spaces offer affordances for collective care.',
+      evidence: 'Davoudi, S., et al. (2012). Planning Theory & Practice • Healey, P. (2007). Routledge.'
+    },
+    social: {
+      pillText: 'Dimension 1',
+      pillBg: 'var(--forest-100)',
+      pillColor: 'var(--forest-800)',
+      title: 'Social Dynamics & Actor Landscapes',
+      quote: '"Social dynamics encompass the living web of human relations, informal trust, and collective learning that sustain communities."',
+      desc: 'Analyzes who acts, who is excluded, and how power is distributed. Focuses on social practices, collective learning, informal mutual aid, and inclusion of marginalized groups (such as immigrant collectives, youth, and elderly tenants in social housing).',
+      evidence: 'Brandsen, T., et al. (2018). Co-production and Co-creation. Routledge • Arnstein, S. R. (1969).'
+    },
+    institutional: {
+      pillText: 'Dimension 2',
+      pillBg: 'var(--blue-100)',
+      pillColor: 'var(--blue-700)',
+      title: 'Institutional Frameworks & Governance',
+      quote: '"Institutions structure what communities can legally and operationally achieve."',
+      desc: 'Encompasses statutory regulations, municipal master planning (Kommuneplan), Danish climate policies (Skybrudssikring cloudburst buffering), land ownership boundaries, and municipal maintenance budgets. Identifies institutional barriers and creates legal openings for co-governance.',
+      evidence: 'Ostrom, E. (1990). Governing the Commons. Cambridge University Press.'
+    },
+    material: {
+      pillText: 'Dimension 3',
+      pillBg: 'var(--sand-200)',
+      pillColor: 'var(--clay-700)',
+      title: 'Material-Spatial Configurations as Active Participants',
+      quote: '"Land, green infrastructure, species, and spatial layout are treated as active participants in producing resilience rather than a passive backdrop."',
+      desc: 'Drawing on socio-material planning theory, physical space and non-human ecological entities are not inert stages where human action takes place. Permeable soils, stormwater retention swales, mature tree canopies, and microclimate buffers actively shape what social practices and climate adaptations are possible.',
+      evidence: 'Healey, P. (2007). Urban Complexity and Spatial Strategies: Towards a Relational Planning for Our Times. Routledge.'
+    },
+    everyday: {
+      pillText: 'Intersection: Social + Material',
+      pillBg: 'var(--forest-100)',
+      pillColor: 'var(--forest-800)',
+      title: 'Everyday Commoning & Stewardship Practices',
+      quote: '"Collective care of shared natural and physical assets transforms neglected land into vibrant urban commons."',
+      desc: 'When human relations and material spaces intersect through shared routines of maintenance, gardening, and mutual aid, urban commons emerge. Tacit ecological knowledge is cultivated directly through hands-on care of green spaces, building resilient community ties.',
+      evidence: 'Ostrom, E. (1990). Governing the Commons. Cambridge University Press • Healey (2007).'
+    },
+    coproduction: {
+      pillText: 'Intersection: Social + Institutional',
+      pillBg: 'var(--clay-100)',
+      pillColor: 'var(--clay-700)',
+      title: 'Co-Production Openings & Shared Power',
+      quote: '"Moving beyond consultation toward genuine shared power and collaborative decision rights."',
+      desc: 'The critical interface between public institutions and citizen collectives. Instead of one-way consultative public hearings, co-production establishes institutional openings where residents, housing associations, and city planners co-decide resource allocation and land use.',
+      evidence: 'Brandsen, T., et al. (Eds.) (2018). Co-production and Co-creation. Routledge • Arnstein (1969).'
+    },
+    statutory: {
+      pillText: 'Intersection: Institutional + Material',
+      pillBg: 'var(--blue-100)',
+      pillColor: 'var(--blue-700)',
+      title: 'Statutory Spatial Governance & Climate Mandates',
+      quote: '"How legal rules, property rights, and master plans manifest in the physical urban environment."',
+      desc: 'Addresses how formal municipal zoning, cloudburst retention easements (Skybrudssikring), and municipal maintenance contracts dictate who owns, enters, and maintains physical green-blue infrastructures.',
+      evidence: 'Davoudi, S., et al. (2012). Planning Theory & Practice • Aalborg Kommune Kommuneplan.'
+    }
+  };
+
+  const triadPill = document.getElementById('triad-pill');
+  const triadTitle = document.getElementById('triad-title');
+  const triadQuote = document.getElementById('triad-quote');
+  const triadDesc = document.getElementById('triad-desc');
+  const triadEvidence = document.getElementById('triad-evidence');
+  const triadPillBtns = document.querySelectorAll('.triad-pill-btn');
+  const triadSvgNodes = document.querySelectorAll('.triad-svg-node');
+
+  function updateTriad(key) {
+    const data = triadData[key];
+    if (!data) return;
+
+    triadPill.textContent = data.pillText;
+    triadPill.style.background = data.pillBg;
+    triadPill.style.color = data.pillColor;
+    triadTitle.textContent = data.title;
+    triadQuote.textContent = data.quote;
+    triadDesc.textContent = data.desc;
+    triadEvidence.innerHTML = `<strong>Reliable Literature:</strong> ${data.evidence}`;
+
+    triadPillBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.triad === key));
+    triadSvgNodes.forEach(node => node.classList.toggle('active', node.dataset.triad === key));
+    const triadSvg = document.querySelector('.triad-svg');
+    if (triadSvg) triadSvg.dataset.active = key;
+  }
+
+  triadPillBtns.forEach(btn => {
+    btn.addEventListener('click', () => updateTriad(btn.dataset.triad));
+  });
+
+  triadSvgNodes.forEach(node => {
+    node.addEventListener('click', () => updateTriad(node.dataset.triad));
+    node.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        updateTriad(node.dataset.triad);
+      }
+    });
+  });
+
+  // Support deep linking via triad query param
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialTriad = urlParams.get('triad');
+  if (initialTriad && triadData[initialTriad]) {
+    updateTriad(initialTriad);
+  }
+
+  /* ==========================================================================
+     4. MODULE 3: Aalborg Living Lab Simulator (4 WeGrowCircle Dimensions)
+     ========================================================================== */
+  const dimensionsByYear = {
+    1: [
+      {
+        name: "1. Biodiversity & Ecosystem Health",
+        state: "Monoculture lawn grass with high mowing frequency. Stormwater runoff canalized into engineered, inaccessible concrete retention basins. Low pollinator connectivity."
+      },
+      {
+        name: "2. Circular Resource Practices",
+        state: "Zero organic waste composting on-site. Tools purchased individually; discarded household furniture and garden waste directed to municipal incinerators."
+      },
+      {
+        name: "3. Sufficiency & Maintenance",
+        state: "Municipal maintenance groundskeepers operate on rigid contract schedules. Zero resident stewardship; high incidence of public space neglect and vandalism."
+      },
+      {
+        name: "4. Social Well-Being & Community Agency",
+        state: "Arnstein (1969) Consultation level: residents attend periodic public hearings but hold zero formal authority over land tenure or physical courtyard design."
+      }
+    ],
+    3: [
+      {
+        name: "1. Biodiversity & Ecosystem Health",
+        state: "Stepped bioswales with perennial wetland vegetation, native micro-forest canopy windbreaks, and community fruit orchards establishing continuous wildlife corridors."
+      },
+      {
+        name: "2. Circular Resource Practices",
+        state: "Community composting hubs producing fertile soil for raised beds. Shared circular repair shed with mutual tool library reducing consumption and waste."
+      },
+      {
+        name: "3. Sufficiency & Maintenance",
+        state: "Shared maintenance charters: residents handle daily gardening and routine care; municipal operators manage heavy infrastructure and flood control."
+      },
+      {
+        name: "4. Social Well-Being & Community Agency",
+        state: "Arnstein (1969) Delegated Power / Partnership: formal co-governance charter signed between tenant assembly, Himmerland Housing, and Aalborg Municipality."
+      }
+    ]
+  };
+
+  const hotspotData = {
+    1: {
+      title: "Hotspot 1: Tornhøj Green Commons & Retention Swale",
+      descYear1: "Year 1 Baseline: A fenced municipal stormwater retention basin. High maintenance cost for the city, zero resident interaction, perceived as an unsafe physical barrier.",
+      descYear3: "Year 3 Re-Mapped: Co-designed into an open, stepped bioswale flanked by community fruit trees and raised planting beds, co-managed under an Ostrom stewardship charter.",
+      planning: "Planning Translation: From single-purpose flood engineering to certified multi-use urban commons in the Aalborg Kommuneplan."
+    },
+    2: {
+      title: "Hotspot 2: Kildeparken Central Green Spine",
+      descYear1: "Year 1 Baseline: Expansive, undifferentiated mowed lawns separating social housing blocks. High wind exposure, social isolation between immigrant and elderly tenants.",
+      descYear3: "Year 3 Re-Mapped: Regenerated into an edible forest trail with sheltered timber gathering pavilions and native pollinator corridors co-planted by youth and senior clubs.",
+      planning: "Planning Translation: Joint maintenance agreement between Himmerland Housing Association and municipal park authorities."
+    },
+    3: {
+      title: "Hotspot 3: Sundhedens Hus Civic Health Interface",
+      descYear1: "Year 1 Baseline: Clinical municipal healthcare facility physically detached from outdoor park areas. Citizen engagement limited to formal medical consultations.",
+      descYear3: "Year 3 Re-Mapped: Directly integrated with healing community gardens, green prescription outdoor therapy spaces, and resident-run herbal workshops.",
+      planning: "Planning Translation: Recognized as a leading Danish model for nature-based social prescribing and health commons."
+    },
+    4: {
+      title: "Hotspot 4: Skybrudssikring Cloudburst Buffer & Canal",
+      descYear1: "Year 1 Baseline: Engineered concrete runoff ditch designed strictly for peak storm volume. Poor water quality, steep inaccessible embankments.",
+      descYear3: "Year 3 Re-Mapped: Naturalized watercourse with daylighted gravel beds, wetland reeds, and wooden pedestrian boardwalks co-monitored by citizen science teams.",
+      planning: "Planning Translation: Integrated into Aalborg's municipal climate resilience mandate with decentralized citizen water monitoring."
+    }
+  };
+
+  let activeLabYear = 1;
+  let activeSpotId = 1;
+
+  const labYear1Btn = document.getElementById('lab-year1-btn');
+  const labYear3Btn = document.getElementById('lab-year3-btn');
+  const dimTimeLabel = document.getElementById('dim-time-label');
+  const dimensionsList = document.getElementById('dimensions-list');
+  const labRelationalLines = document.getElementById('lab-relational-lines');
+  const spotTitle = document.getElementById('spot-title');
+  const spotDesc = document.getElementById('spot-desc');
+  const spotPlanning = document.getElementById('spot-planning');
+
+  function renderDimensions(year) {
+    const dims = dimensionsByYear[year];
+    if (!dims || !dimensionsList) return;
+
+    dimTimeLabel.textContent = year === 1 ? 'Year 1: Baseline' : 'Year 3: Re-Mapped Commons';
+    dimensionsList.innerHTML = dims.map(d => `
+      <div class="dimension-row">
+        <div class="dim-name-line">
+          <span>${d.name}</span>
+        </div>
+        <div class="dim-state-text">${d.state}</div>
+      </div>
+    `).join('');
+  }
+
+  function renderRelationalLines(year) {
+    if (!labRelationalLines) return;
+    if (year === 1) {
+      labRelationalLines.innerHTML = `
+        <line x1="250" y1="180" x2="320" y2="210" stroke="#C87D32" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.4"/>
+      `;
+    } else {
+      labRelationalLines.innerHTML = `
+        <line x1="250" y1="180" x2="320" y2="210" stroke="#29523B" stroke-width="2.5" opacity="0.85"/>
+        <line x1="320" y1="210" x2="450" y2="120" stroke="#29523B" stroke-width="2" opacity="0.85"/>
+        <line x1="450" y1="120" x2="470" y2="310" stroke="#29523B" stroke-width="2" opacity="0.85"/>
+        <line x1="470" y1="310" x2="630" y2="260" stroke="#29523B" stroke-width="2.5" opacity="0.85"/>
+        <line x1="630" y1="260" x2="620" y2="250" stroke="#29523B" stroke-width="3" opacity="0.9"/>
+        <line x1="620" y1="250" x2="670" y2="370" stroke="#29523B" stroke-width="2.5" opacity="0.85"/>
+      `;
+    }
+  }
+
+  function renderHotspot(id) {
+    activeSpotId = id;
+    const spot = hotspotData[id];
+    if (!spot || !spotTitle) return;
+
+    spotTitle.textContent = spot.title;
+    spotDesc.textContent = activeLabYear === 1 ? spot.descYear1 : spot.descYear3;
+    spotPlanning.innerHTML = `<strong>Planning Translation:</strong> ${spot.planning}`;
+
+    document.querySelectorAll('.hotspot-pin').forEach(pin => {
+      pin.classList.toggle('active', parseInt(pin.dataset.spot, 10) === id);
+    });
+  }
+
+  function updateLabYear(year) {
+    activeLabYear = year;
+    labYear1Btn.classList.toggle('active', year === 1);
+    labYear3Btn.classList.toggle('active', year === 3);
+
+    renderDimensions(year);
+    renderRelationalLines(year);
+    renderHotspot(activeSpotId);
+  }
+
+  if (labYear1Btn) labYear1Btn.addEventListener('click', () => updateLabYear(1));
+  if (labYear3Btn) labYear3Btn.addEventListener('click', () => updateLabYear(3));
+
+  document.querySelectorAll('.hotspot-pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      renderHotspot(parseInt(pin.dataset.spot, 10));
+    });
+  });
+
+  // Layer toggles
+  const layerSpatialBtn = document.getElementById('layer-spatial-btn');
+  const layerInstBtn = document.getElementById('layer-inst-btn');
+  const layerSocialBtn = document.getElementById('layer-social-btn');
+  const labLayerSpatial = document.getElementById('lab-layer-spatial');
+  const labLayerInst = document.getElementById('lab-layer-inst');
+  const labLayerSocial = document.getElementById('lab-layer-social');
+
+  if (layerSpatialBtn && labLayerSpatial) {
+    layerSpatialBtn.addEventListener('click', () => {
+      layerSpatialBtn.classList.toggle('active');
+      labLayerSpatial.style.display = layerSpatialBtn.classList.contains('active') ? 'inline' : 'none';
+    });
+  }
+
+  if (layerInstBtn && labLayerInst) {
+    layerInstBtn.addEventListener('click', () => {
+      layerInstBtn.classList.toggle('active');
+      labLayerInst.style.display = layerInstBtn.classList.contains('active') ? 'inline' : 'none';
+    });
+  }
+
+  if (layerSocialBtn && labLayerSocial) {
+    layerSocialBtn.addEventListener('click', () => {
+      layerSocialBtn.classList.toggle('active');
+      labLayerSocial.style.display = layerSocialBtn.classList.contains('active') ? 'inline' : 'none';
+    });
+  }
+
+  updateLabYear(1);
+
+  /* ==========================================================================
+     5. MODULE 4: Co-Design & Generative Mapping Sandbox (GSI Model)
+     ========================================================================== */
+  const gsiData = {
+    orchard: {
+      title: "🍎 Community Agroforestry Corridor",
+      desc: "Transforming 1,200m² of monoculture lawn into an edible landscape of fruit trees, berry bushes, and perennial herb guilds. Serves as a social anchor for cross-generational gathering and collective food growing.",
+      tenant: '"Having fruit trees here gives our families a reason to spend weekends outdoors together and harvest fresh apples without fencing."',
+      planner: '"Agroforestry improves local rainwater infiltration and requires minimal municipal mowing operations, saving budget."',
+      ecology: '"Provides diverse perennial root structures and rich floral nectar for native wild pollinator populations."',
+      charter: "Ostrom Stewardship Charter: Collective harvesting rota managed by tenant assembly; municipal groundskeepers provide free compost in exchange for community weeding."
+    },
+    swale: {
+      title: "💧 Rainwater Commons & Stepped Bioswale",
+      desc: "An engineered flood basin retrofitted into a terraced amphitheater and stepped water garden that buffers up to 600m³ of cloudburst stormwater runoff while providing accessible civic gathering decks.",
+      tenant: '"The stepped water pavilion is wonderful for children to play and learn about nature right outside our flats without danger."',
+      planner: '"Fulfills Aalborg’s statutory Skybrudssikring mandate by relieving pressure on the central drainage network during peak rainfall."',
+      ecology: '"Gravel filter beds and wetland reeds naturally purify road runoff, fostering rich dragonfly and amphibian breeding grounds."',
+      charter: "Ostrom Stewardship Charter: Water quality monitored through citizen science teams; municipality retains structural flood gate liabilities."
+    },
+    repair: {
+      title: "🪵 Circular Tool & Repair Pavilion",
+      desc: "A shared timber workshop and repair space co-constructed from reclaimed building materials. Houses a neighborhood tool library and provides space for DIY bicycle and furniture restoration.",
+      tenant: '"We can repair bicycles and build planter boxes together without having to purchase expensive individual tools."',
+      planner: '"Fosters circular resource use and strengthens community surveillance, drastically reducing neighborhood vandalism."',
+      ecology: '"Promotes timber sufficiency, reduces bulky waste sent to municipal incinerators, and minimizes resource throughput."',
+      charter: "Ostrom Stewardship Charter: Tool access governed by keyholder group with deposit-based lending rules and volunteer tool maintenance shifts."
+    },
+    forest: {
+      title: "🌿 Native Pollinator Micro-Forest",
+      desc: "A dense, multi-layered pocket forest planted using native Danish species. Shields residential housing blocks from highway noise and creates a sheltered ecological microclimate.",
+      tenant: '"The dense micro-forest shields our courtyards from cold winds and creates a tranquil woodland shelter right in our estate."',
+      planner: '"High canopy density mitigates the urban heat island effect along the asphalt spine and requires zero supplemental irrigation."',
+      ecology: '"Rapidly establishes rich mycorrhizal soil fungi networks and provides nesting canopy for over 25 native bird species."',
+      charter: "Ostrom Stewardship Charter: Designated quiet ecological sanctuary; resident nature club manages seasonal pruning under municipal biodiversity guidelines."
+    }
+  };
+
+  const gsiNodes = document.querySelectorAll('.gsi-intervention-node');
+  const gsiTitle = document.getElementById('gsi-title');
+  const gsiDesc = document.getElementById('gsi-desc');
+  const gsiTenant = document.getElementById('gsi-tenant');
+  const gsiPlanner = document.getElementById('gsi-planner');
+  const gsiEcology = document.getElementById('gsi-ecology');
+  const gsiCharter = document.getElementById('gsi-charter');
+
+  function updateGSI(key) {
+    const data = gsiData[key];
+    if (!data || !gsiTitle) return;
+
+    gsiNodes.forEach(node => node.classList.toggle('active', node.dataset.gsi === key));
+
+    gsiTitle.textContent = data.title;
+    gsiDesc.textContent = data.desc;
+    gsiTenant.textContent = data.tenant;
+    gsiPlanner.textContent = data.planner;
+    gsiEcology.textContent = data.ecology;
+    gsiCharter.innerHTML = `<strong>Ostrom Stewardship Charter:</strong> ${data.charter}`;
+  }
+
+  gsiNodes.forEach(node => {
+    node.addEventListener('click', () => {
+      updateGSI(node.dataset.gsi);
+    });
+  });
+
+  /* ==========================================================================
+     6. MODULE 5: Proposal Reader & Citation Modal
+     ========================================================================== */
+  const citationsDb = {
+    davoudi2012: {
+      title: "Resilience: A Bridging Concept or a Dead End?",
+      author: "Davoudi, S., et al. (2012)",
+      journal: "Planning Theory & Practice, 13(2), 299-333",
+      desc: "Rejects engineering equilibrium (bounce-back to status quo) and defines resilience as continuous adaptive and transformative capacity. Argues that resilience cannot be delivered on demand by command.",
+      relevance: "Directly underpins the project's foundational premise: urban social resilience is an emergent quality that must be cultivated through relational and material conditions."
+    },
+    healey2007: {
+      title: "Urban Complexity and Spatial Strategies: Towards a Relational Planning for Our Times",
+      author: "Healey, P. (2007)",
+      journal: "Routledge",
+      desc: "Presents a relational, socio-material view of urban planning where space, institutions, and diverse communities dynamically co-constitute urban places.",
+      relevance: "Provides the socio-material foundation for treating physical green spaces and non-human entities as active participants rather than passive spatial containers."
+    },
+    ostrom1990: {
+      title: "Governing the Commons: The Evolution of Institutions for Collective Action",
+      author: "Ostrom, E. (1990)",
+      journal: "Cambridge University Press",
+      desc: "Demonstrates how communities self-organize robust governance institutions and collective stewardship rules to manage shared resources without relying solely on state control or private markets.",
+      relevance: "Supplies the core institutional logic for governing Green-Social Infrastructures (GSIs) as urban commons with shared operational rules and community stewardship contracts."
+    },
+    brandsen2018: {
+      title: "Co-production and Co-creation: Engaging Citizens in Public Services",
+      author: "Brandsen, T., Steen, T., & Verschuere, B. (2018)",
+      journal: "Routledge",
+      desc: "Analyzes citizen engagement not as mere consultation or outsourcing, but as genuine co-production where public authorities and residents share decision-making power and delivery.",
+      relevance: "Shapes Phase 2 and Phase 3 methodology: co-designing GSIs through participatory generative mapping as shared working material rather than top-down public hearings."
+    },
+    arnstein1969: {
+      title: "A Ladder of Citizen Participation",
+      author: "Arnstein, S. R. (1969)",
+      journal: "Journal of the American Institute of Planners, 35(4), 216-224",
+      desc: "Foundational critique dividing citizen involvement into non-participation (manipulation), degrees of tokenism (consultation, informing), and degrees of citizen power (partnership, delegated power).",
+      relevance: "Used analytically to identify existing gaps in agency in the Aalborg Living Lab and design processes that achieve genuine partnership."
+    },
+    star1989: {
+      title: "Institutional Ecology, 'Translations' and Boundary Objects",
+      author: "Star, S. L., & Griesemer, J. R. (1989)",
+      journal: "Social Studies of Science, 19(3), 387-420",
+      desc: "Explains how boundary objects (maps, prototypes, models) allow actors from disparate professional and community backgrounds to collaborate without requiring complete agreement on all values.",
+      relevance: "Explains why generative mapping and physical prototypes in Phase 2 function as effective boundary objects between municipal planners, landscape architects, and neighborhood residents."
+    }
+  };
+
+  const citationModal = document.getElementById('citation-modal');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalCiteKey = document.getElementById('modal-cite-key');
+  const modalCiteTitle = document.getElementById('modal-cite-title');
+  const modalCiteDesc = document.getElementById('modal-cite-desc');
+  const modalCiteRelevance = document.getElementById('modal-cite-relevance');
+
+  document.querySelectorAll('.citation-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const citeKey = chip.dataset.cite;
+      const item = citationsDb[citeKey];
+      if (item && citationModal) {
+        modalCiteKey.textContent = `${item.author} — ${item.journal}`;
+        modalCiteTitle.textContent = item.title;
+        modalCiteDesc.textContent = item.desc;
+        modalCiteRelevance.innerHTML = `<strong>Proposal Relevance:</strong> ${item.relevance}`;
+        citationModal.classList.add('open');
+      }
+    });
+  });
+
+  if (modalCloseBtn && citationModal) {
+    modalCloseBtn.addEventListener('click', () => {
+      citationModal.classList.remove('open');
+    });
+
+    citationModal.addEventListener('click', (e) => {
+      if (e.target === citationModal) {
+        citationModal.classList.remove('open');
+      }
+    });
+  }
+
+  // Reader Keyword Search
+  const readerSearchInput = document.getElementById('reader-search-input');
+  const readerBody = document.getElementById('reader-body');
+
+  if (readerSearchInput && readerBody) {
+    readerSearchInput.addEventListener('input', (e) => {
+      const term = e.target.value.trim().toLowerCase();
+      const textElements = readerBody.querySelectorAll('p, li');
+      if (!term) {
+        textElements.forEach(el => el.style.backgroundColor = 'transparent');
+        return;
+      }
+
+      textElements.forEach(el => {
+        if (el.textContent.toLowerCase().includes(term)) {
+          el.style.backgroundColor = 'rgba(254, 240, 138, 0.45)';
+          el.style.borderRadius = '4px';
+        } else {
+          el.style.backgroundColor = 'transparent';
+        }
+      });
+    });
+  }
+
+});
+
+  </script>
+</body>
+</html>
