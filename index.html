@@ -215,7 +215,7 @@
         </li>
         <li role="presentation">
           <button class="rail-item" data-scene="mapping" role="tab" aria-selected="false" id="rail-mapping"
-            title="Scene 4: Actor Mapping (SNA)">
+            title="Scene 4: Relational Actor Mapping">
             <span class="rail-icon-wrap"><svg class="icon" aria-hidden="true" style="width: 15px; height: 15px;">
                 <use href="#icon-network"></use>
               </svg></span>
@@ -300,7 +300,8 @@
           <div class="scene-panel"
             style="justify-content: center; gap: var(--space-3); padding-inline-end: var(--space-4);">
             <div class="cluster" style="gap: var(--space-2);">
-              <span class="badge badge--agency">Aalborg University • WeGrowCircle</span>
+              <span class="badge badge--agency">Aalborg University · Ref. 2026/1201 · WeGrowCircle</span>
+              <span class="badge badge--hypothesis">Applicant: Reni C. Ratriyani</span>
               <button class="source-chip" data-src="S1">[S1]</button>
               <button class="source-chip" data-src="S2">[S2]</button>
             </div>
@@ -311,13 +312,35 @@
 
             <p
               style="font-size: var(--fs-base); color: var(--on-surface-muted); line-height: var(--lh-normal); margin: 0; max-width: 65ch;">
-              How do social actors, relations, and practices gain agency in resilience-building through inclusive,
-              collaborative, and participatory planning? Grounded in socio-material planning and care ethics, this PhD
-              investigates how regenerative green-social infrastructures (GSIs) are co-created and sustained as
-              resilient urban commons.
+              How do social actors, relations and practices gain agency in producing urban social resilience through the
+              interplay of social, institutional and material-spatial dimensions, and how can mapping, co-design and
+              planning processes strengthen that agency in regenerative green-social infrastructures (GSIs)? Guided by
+              <strong>care ethics, participatory and interactive planning, and social innovation</strong>, this proposal
+              investigates how urban social resilience can emerge and last when diverse actors gain real agency over
+              local green commons.
             </p>
 
-            <div class="cluster" style="gap: var(--space-3); margin-block-start: var(--space-2);">
+            <div class="callout callout--info"
+              style="padding: var(--space-2) var(--space-3); font-size: var(--fs-xs); margin-block: var(--space-2); max-width: 65ch;">
+              <p style="margin: 0; color: var(--on-surface);">
+                <strong>Aalborg Living Lab Open Questions:</strong> Who maintains local green commons, where decision
+                rights sit, and how everyday care becomes visible to planning. GSIs are understood as circular
+                infrastructures that close loops of biomass, water, tools and knowledge.
+              </p>
+              <p style="margin: 4px 0 0; color: var(--on-surface-muted);">
+                <em>Research Gap &amp; Framework:</em> The literature documents projectification <button
+                  class="source-chip" data-src="S28">[S28]</button> <button class="source-chip"
+                  data-src="S27">[S27]</button> and stresses the value of participation, yet says less about how agency
+                across human and non-human actors changes over time, or how informal care arrangements get embedded in
+                statutory planning <button class="source-chip" data-src="S21">[S21]</button> <button class="source-chip"
+                  data-src="S37">[S37]</button>. I address this with three elements: longitudinal relational actor
+                mapping, co-designed stewardship charters, and a four-pillar agency matrix (decision rungs, deliberative
+                authority, temporal agency and spatial control rights)—forming a <strong>Resilient Urban Commons
+                  Framework</strong> for WeGrowCircle.
+              </p>
+            </div>
+
+            <div class="cluster" style="gap: var(--space-3); margin-block-start: var(--space-1);">
               <button class="btn-pill btn-pill-primary" id="hero-start-btn">
                 <span>Start Research Tour</span>
                 <svg class="icon" aria-hidden="true">
@@ -350,15 +373,16 @@
             <div class="card-block card-block--social"
               style="background: var(--surface); padding: var(--space-3) var(--space-4);">
               <div class="cluster" style="justify-content: space-between;">
-                <span class="badge badge--social">Scene 2 · The Dilemma</span>
+                <span class="badge badge--social">Scene 2 · Focus &amp; Problem</span>
                 <span style="font-size: 11px; color: var(--on-surface-subtle); font-family: var(--font-mono);">Pathway
                   Lab</span>
               </div>
-              <h3 style="font-size: var(--fs-base); margin-block: var(--space-1);">The "Pilot Trap" in Urban Greening
+              <h3 style="font-size: var(--fs-base); margin-block: var(--space-1);">Projectification &amp; Living Lab
+                Dilemmas
               </h3>
               <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 0;">
-                Why time-limited grants fail to create lasting resilience when citizen involvement is purely
-                consultative.
+                Why time-limited external grants encourage short-termism unless diverse actors gain decision rights and
+                stewardship over green commons.
               </p>
               <button class="btn-pill" style="margin-block-start: var(--space-2); padding: 2px 8px; font-size: 11px;"
                 onclick="window.AppRouter.goTo('problem')">
@@ -387,14 +411,14 @@
             <div class="card-block card-block--material"
               style="background: var(--surface); padding: var(--space-3) var(--space-4);">
               <div class="cluster" style="justify-content: space-between;">
-                <span class="badge badge--material">Scene 4 · Relational SNA</span>
+                <span class="badge badge--material">Scene 4 · Relational Actor Mapping</span>
                 <span style="font-size: 11px; color: var(--on-surface-subtle); font-family: var(--font-mono);">Living
                   Lab</span>
               </div>
               <h3 style="font-size: var(--fs-base); margin-block: var(--space-1);">3-Zone Actor-Network Mapping</h3>
               <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 0;">
-                Human and non-human actors across social, institutional, and ecological domains with live structural
-                metrics.
+                Human and non-human actors across social, institutional, and ecological domains with qualitative reading
+                prompts.
               </p>
               <button class="btn-pill" style="margin-block-start: var(--space-2); padding: 2px 8px; font-size: 11px;"
                 onclick="window.AppRouter.goTo('mapping')">
@@ -512,6 +536,11 @@
                 <span>Commons-anchored pathway</span>
               </div>
             </div>
+            <div
+              style="font-size: 10px; color: var(--on-surface-subtle); margin-block-start: var(--space-2); font-style: italic;">
+              * Note: Illustrative weights, not estimated from data. Curves represent a conceptual model exploring the
+              question: What happens when project grants expire?
+            </div>
           </div>
 
           <!-- Controls & Schematic Site Card Panel -->
@@ -624,11 +653,14 @@
         <!-- Sub-Tabs Navigation Strip -->
         <div class="cluster"
           style="justify-content: space-between; margin-block-end: var(--space-2); border-bottom: 1px solid var(--border); padding-block-end: var(--space-2);">
-          <div class="segmented" role="tablist" aria-label="Framework Sub-Views">
-            <button class="segmented__btn active" data-subtab="triad">1. Conceptual Triad</button>
-            <button class="segmented__btn" data-subtab="care">2. Care Lens</button>
-            <button class="segmented__btn" data-subtab="agency">3. Agency Operationalisation</button>
-            <button class="segmented__btn" data-subtab="operationalise">4. Methodology</button>
+          <div class="cluster" style="gap: var(--space-2);">
+            <span class="badge badge--agency">Objective 1 • Resilient Urban Commons Framework</span>
+            <div class="segmented" role="tablist" aria-label="Framework Sub-Views">
+              <button class="segmented__btn active" data-subtab="triad">1. Conceptual Triad</button>
+              <button class="segmented__btn" data-subtab="care">2. Care Lens</button>
+              <button class="segmented__btn" data-subtab="agency">3. Agency Operationalisation</button>
+              <button class="segmented__btn" data-subtab="operationalise">4. Methodology</button>
+            </div>
           </div>
           <div class="cluster" style="gap: 4px;">
             <button class="source-chip" data-src="S1">[S1]</button>
@@ -790,46 +822,104 @@
 
         <!-- Subtab 2: Care Lens (Required Tab) -->
         <div class="scene-subtab" id="subtab-care" style="display: none; height: calc(100% - 46px); overflow-y: auto;">
-          <div class="grid-auto" style="grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+          <div class="grid-auto"
+            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-3);">
             <div class="card-block card-block--social" style="background: var(--surface);">
-              <span class="badge badge--social">Guiding Perspective</span>
-              <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">The Care Ethics
-                Framework</h3>
+              <span class="badge badge--social">Guiding Perspective 1</span>
+              <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Care Ethics
+                (Tronto, 1993; Williams, 2020)</h3>
               <p style="font-size: var(--fs-xs); color: var(--on-surface-muted);">
-                A fundamental perspective named in the project call is the <strong>ethic of care</strong>: examining
-                <em>who cares for what, who is cared for, and who is left out</em>.
+                Care ethics <button class="source-chip" data-src="S18">[S18]</button> works through four dispositions:
+                <strong>attentiveness, responsibility, competence and responsiveness</strong> <button
+                  class="source-chip" data-src="S22">[S22]</button>. In urban research it asks <em>who cares for what,
+                  who is cared for and who is left out</em>, including more-than-human actors <button
+                  class="source-chip" data-src="S21">[S21]</button>, and makes visible the maintenance and repair that
+                usually go unnoticed <button class="source-chip" data-src="S22">[S22]</button> <button
+                  class="source-chip" data-src="S37">[S37]</button>.
               </p>
               <ul
                 style="font-size: var(--fs-xs); color: var(--on-surface-muted); padding-inline-start: var(--space-4); display: flex; flex-direction: column; gap: 4px;">
-                <li><strong>Caring about:</strong> Recognising unattended needs in open space <button
-                    class="source-chip" data-src="S18">[S18]</button>.</li>
-                <li><strong>Taking care of:</strong> Assuming collective responsibility rather than deferring <button
-                    class="source-chip" data-src="S18">[S18]</button>.</li>
-                <li><strong>Care-giving:</strong> The direct material labor of watering, pruning, clearing <button
-                    class="source-chip" data-src="S20">[S20]</button>.</li>
-                <li><strong>Care-receiving:</strong> Experiencing psychological safety and restorative greenery <button
+                <li><strong>Attentiveness (Caring about):</strong> Recognising unattended needs across human and
+                  more-than-human worlds <button class="source-chip" data-src="S18">[S18]</button> <button
                     class="source-chip" data-src="S21">[S21]</button>.</li>
-                <li><strong>Caring with:</strong> Democratic solidarity and mutual trust in urban commons <button
-                    class="source-chip" data-src="S19">[S19]</button>.</li>
+                <li><strong>Responsibility (Taking care of):</strong> Assuming collective stewardship rather than
+                  deferring <button class="source-chip" data-src="S18">[S18]</button>.</li>
+                <li><strong>Competence (Care-giving):</strong> Making visible everyday maintenance and repair <button
+                    class="source-chip" data-src="S22">[S22]</button>.</li>
+                <li><strong>Responsiveness (Care-receiving):</strong> Hearing who is cared for and who is left out
+                  <button class="source-chip" data-src="S21">[S21]</button> <button class="source-chip"
+                    data-src="S37">[S37]</button>.
+                </li>
               </ul>
             </div>
 
-            <div class="card-block card-block--material" style="background: var(--surface);">
-              <span class="badge badge--material">More-Than-Human Care</span>
-              <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Matters of Care in
-                Urban Soils &amp; Swales</h3>
+            <div class="card-block card-block--institutional" style="background: var(--surface);">
+              <span class="badge badge--institutional">Guiding Perspective 2</span>
+              <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Participatory &amp;
+                Interactive Planning</h3>
               <p style="font-size: var(--fs-xs); color: var(--on-surface-muted);">
-                Extending care beyond human actors to the biological substrates of resilience <button
-                  class="source-chip" data-src="S20">[S20]</button>:
+                Brings residents, designers, planners and public-sector actors together over time. Here
+                <strong>co-production</strong> means jointly making maps, prototypes and stewardship charters.
               </p>
               <div
-                style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border-left: 3px solid var(--dim-material); font-size: var(--fs-xs); margin-block-start: var(--space-2);">
-                <strong>Care Asymmetry Diagnosis:</strong> Single-purpose engineering treats stormwater retention canals
-                as flood overflow assets. A care-full city approach <button class="source-chip"
-                  data-src="S22">[S22]</button> re-values them as biodiverse commons providing daily restorative
-                encounters.
+                style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border-left: 3px solid var(--dim-institutional); font-size: var(--fs-xs); margin-block-start: var(--space-2);">
+                <strong>Urban Green Commons <button class="source-chip" data-src="S9">[S9]</button> <button
+                    class="source-chip" data-src="S10">[S10]</button>:</strong> Stewardship is analysed through Ostrom's
+                <button class="source-chip" data-src="S8">[S8]</button> design principles and research on urban green
+                commons, which defines these commons by the <em>right to manage green space collectively</em> rather
+                than
+                by who owns the land.
               </div>
             </div>
+
+            <div class="card-block card-block--agency" style="background: var(--surface);">
+              <div class="cluster" style="justify-content: space-between;">
+                <span class="badge badge--agency">Guiding Perspective 3</span>
+              </div>
+              <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Social Innovation
+                (Moulaert et al., 2013)
+              </h3>
+              <p style="font-size: var(--fs-xs); color: var(--on-surface-muted);">
+                Combines the satisfaction of unmet needs, changed social relations and empowerment <button
+                  class="source-chip" data-src="S36">[S36]</button>. It lets us ask how new relations, practices and
+                rules emerge, how they shift who holds agency, and whether they are institutionalised beyond the
+                project.
+              </p>
+              <div
+                style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border-left: 3px solid var(--dim-agency); font-size: var(--fs-xs); margin-block-start: var(--space-2);">
+                <p style="margin: 0 0 6px 0; color: var(--on-surface);">
+                  <strong>Circular Infrastructures:</strong> GSIs are understood as circular infrastructures that close
+                  loops of biomass, water, tools and knowledge.
+                </p>
+                <button class="btn-pill" style="padding: 2px 8px; font-size: 11px;"
+                  onclick="document.querySelector('[data-subtab=agency]').click();">
+                  Explore Four-Pillar Agency Matrix →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Gap Callout -->
+          <div class="callout callout--info" style="margin-block-start: var(--space-3); font-size: var(--fs-xs);">
+            <div class="cluster" style="gap: var(--space-2); margin-block-end: 4px;">
+              <strong>Research Gap &amp; Three-Element Response:</strong>
+              <span class="badge badge--illustrative">Resilient Urban Commons Framework</span>
+              <button class="source-chip" data-src="S28">[S28]</button>
+              <button class="source-chip" data-src="S27">[S27]</button>
+              <button class="source-chip" data-src="S21">[S21]</button>
+              <button class="source-chip" data-src="S37">[S37]</button>
+            </div>
+            <p style="margin: 0; color: var(--on-surface-muted); line-height: var(--lh-normal);">
+              The literature documents projectification <button class="source-chip" data-src="S28">[S28]</button>
+              <button class="source-chip" data-src="S27">[S27]</button> and stresses the value of participation. It says
+              less about how agency across human and non-human actors changes over time, or how informal care
+              arrangements get embedded in statutory planning <button class="source-chip" data-src="S21">[S21]</button>
+              <button class="source-chip" data-src="S37">[S37]</button>. This proposal addresses this with three
+              elements: <strong>longitudinal relational actor mapping, co-designed stewardship charters, and a
+                four-pillar agency matrix</strong> (decision rungs, deliberative authority, temporal agency and spatial
+              control rights). Together they form a Resilient Urban Commons Framework that WeGrowCircle can use as a
+              shared conceptual and methodological base.
+            </p>
           </div>
         </div>
 
@@ -839,13 +929,13 @@
           <div class="card-block card-block--agency" style="background: var(--surface);">
             <div class="cluster" style="justify-content: space-between;">
               <span class="badge badge--agency">Operationalising Agency</span>
-              <span class="badge badge--illustrative">Author's Working Proposal [✎]</span>
+              <span class="badge badge--illustrative">Four-Pillar Agency Matrix [✎]</span>
             </div>
-            <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Four-Pillar Analytical
-              Agency Matrix</h3>
+            <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Four-Pillar Agency
+              Matrix</h3>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin-block-end: var(--space-3);">
-              To rigorously trace agency over time without reducing it to attendance counts, this proposal combines
-              three foundational models:
+              Part of the Resilient Urban Commons Framework to trace how agency across human and non-human actors
+              changes over time:
             </p>
 
             <div class="grid-auto"
@@ -853,26 +943,27 @@
               <div
                 style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border);">
                 <strong>1. Decision Rungs <button class="source-chip" data-src="S11">[S11]</button>:</strong>
-                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Consultation $\rightarrow$ Advisory
-                  influence $\rightarrow$ Shared partnership $\rightarrow$ Delegated citizen control.</p>
+                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Consultation → Advisory influence → Shared
+                  partnership → Delegated citizen control over green commons.</p>
               </div>
               <div
                 style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border);">
-                <strong>2. Democracy Cube <button class="source-chip" data-src="S12">[S12]</button>:</strong>
-                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Who participates (selection), how they
-                  communicate (deliberation mode), and extent of municipal authority.</p>
+                <strong>2. Deliberative Authority <button class="source-chip" data-src="S12">[S12]</button>:</strong>
+                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Who participates, how actors communicate and
+                  deliberate, and how informal decisions connect to municipal authority.</p>
               </div>
               <div
                 style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border);">
-                <strong>3. Temporal Chordal Triad <button class="source-chip" data-src="S13">[S13]</button>:</strong>
-                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Iterational (routines), projective (vision),
-                  and practical-evaluative (responding to emergent stress).</p>
+                <strong>3. Temporal Agency <button class="source-chip" data-src="S13">[S13]</button>:</strong>
+                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Everyday care routines (iterational),
+                  long-term commons vision (projective), and adapting to emergent pressures (practical-evaluative).</p>
               </div>
               <div
                 style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); border: 1px solid var(--border);">
-                <strong>4. Spatial Control <button class="source-chip" data-src="S9">[S9]</button>:</strong>
-                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">The recognized legal and practical right to
-                  alter, plant, maintain, and adapt the material grounds.</p>
+                <strong>4. Spatial Control Rights <button class="source-chip" data-src="S9">[S9]</button> <button
+                    class="source-chip" data-src="S10">[S10]</button>:</strong>
+                <p style="margin: 2px 0 0; color: var(--on-surface-muted);">Collective management rights to alter,
+                  plant, maintain, and steward urban green commons regardless of land ownership.</p>
               </div>
             </div>
           </div>
@@ -887,7 +978,9 @@
               Transferability</h3>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin-block-end: var(--space-3);">
               The Resilient Urban Commons Framework provides a shared diagnostic across Aalborg and partner labs in
-              Brussels, Gothenburg, and Bucharest <button class="source-chip" data-src="S1">[S1]</button>:
+              Brussels, Gothenburg, and Bucharest <button class="source-chip" data-src="S1">[S1]</button>. Engagement
+              with other living labs is limited to exchange and light comparison (e.g. during the research stay), not
+              parallel fieldwork.
             </p>
             <div class="grid-auto"
               style="grid-template-columns: repeat(3, 1fr); gap: var(--space-3); font-size: var(--fs-xs);">
@@ -922,8 +1015,10 @@
         <!-- Top Toolbar -->
         <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-2);">
           <div class="cluster" style="gap: var(--space-2);">
-            <span class="badge badge--material">Actor-Network Analysis (SNA)</span>
-            <span class="badge badge--illustrative">Illustrative Dataset [◌]</span>
+            <span class="badge badge--social">Objective 2 • Actor Landscape Mapping</span>
+            <span class="badge badge--material">Relational Actor Mapping</span>
+            <span class="badge badge--illustrative">Illustrative visualisation, not measured. Actual relations will be
+              co-mapped with participants in Phase 1.</span>
             <button class="source-chip" data-src="S23">[S23]</button>
             <button class="source-chip" data-src="S24">[S24]</button>
             <button class="source-chip" data-src="S26">[S26]</button>
@@ -939,7 +1034,7 @@
             </div>
             <div class="segmented" role="group" aria-label="Network timepoint">
               <button class="segmented__btn active" id="btn-net-time-base">Baseline</button>
-              <button class="segmented__btn" id="btn-net-time-remap">Re-Mapping (Hypothesis)</button>
+              <button class="segmented__btn" id="btn-net-time-remap">Illustrative re-map (not a prediction)</button>
             </div>
             <button class="btn-pill" id="net-tour-start-btn" style="padding: 2px 8px; font-size: 11px;">
               Guided Tour (3 Steps)
@@ -955,12 +1050,13 @@
           <!-- SVG Network Canvas Card -->
           <div class="card-block" id="net-canvas-card"
             style="background: var(--surface); padding: var(--space-2); display: flex; flex-direction: column; overflow: hidden; position: relative;">
-            <!-- Live Computed Metrics Strip -->
+            <!-- Qualitative Reading Prompts Strip (No numeric statistics) -->
             <div class="cluster"
-              style="justify-content: space-between; background: var(--surface-sunken); padding: 4px 8px; border-radius: var(--radius-sm); font-size: 11px; font-family: var(--font-mono); margin-block-end: 4px;">
-              <span>Density: <strong id="metric-density">0.24</strong></span>
-              <span>Bridging Ties: <strong id="metric-bridging">6</strong></span>
-              <span>Civic Decision Share: <strong id="metric-civic-share">22%</strong></span>
+              style="justify-content: space-between; background: var(--surface-sunken); padding: 4px 8px; border-radius: var(--radius-sm); font-size: 11px; margin-block-end: 4px;">
+              <span id="metric-density" style="font-weight: 600; color: var(--forest-900);">Who bridges groups?</span>
+              <span id="metric-bridging" style="font-weight: 600; color: var(--forest-900);">Where are the gaps?</span>
+              <span id="metric-civic-share" style="font-weight: 600; color: var(--forest-900);">Who holds decision
+                rights?</span>
               <span id="metric-delta-tag" class="badge badge--illustrative"
                 style="padding: 0 4px; font-size: 10px;">Baseline State</span>
             </div>
@@ -1101,6 +1197,10 @@
           <div class="card-block" id="net-table-card"
             style="display: none; background: var(--surface); padding: var(--space-2); overflow-y: auto;">
             <table class="data-table" aria-label="Tabular data alternative of actor network">
+              <caption
+                style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: 6px; text-align: left;">
+                Illustrative rung (to be assessed in Phase 1)
+              </caption>
               <thead>
                 <tr>
                   <th>Actor</th>
@@ -1124,7 +1224,7 @@
                   Legend: How to Read This
                 </strong>
                 <button class="btn-pill" id="open-why-network-btn" style="padding: 1px 6px; font-size: 10px;">Why
-                  SNA?</button>
+                  relational actor mapping?</button>
               </div>
 
               <!-- Nodes encoding -->
@@ -1137,7 +1237,8 @@
                 <span class="badge badge--social" style="padding: 0 4px; font-size: 10px;">Social</span>
                 <span class="badge badge--institutional" style="padding: 0 4px; font-size: 10px;">Institutional</span>
                 <span class="badge badge--material" style="padding: 0 4px; font-size: 10px;">Material</span>
-                <span style="color: var(--on-surface-subtle); font-size: 10px;">Ring = Agency Rung 1–4</span>
+                <span style="color: var(--on-surface-subtle); font-size: 10px;">Ring = Illustrative rung (to be assessed
+                  in Phase 1)</span>
               </div>
 
               <!-- 5 Edge Types -->
@@ -1182,20 +1283,22 @@
               <h3 id="net-detail-name" style="font-size: var(--fs-base); margin: 0 0 4px;">Residents &amp; Tenants</h3>
               <p id="net-detail-role"
                 style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 0 0 var(--space-2);">
-                Everyday users and potential commoners in Aalborg Øst social housing.
+                Everyday users and potential commoners in Aalborg Øst social housing (candidate site, to be confirmed
+                with the WeGrowCircle team).
               </p>
 
               <div style="font-size: var(--fs-xs); display: flex; flex-direction: column; gap: 4px;">
                 <div><strong>Resources:</strong> <span id="net-detail-resources"
                     style="color: var(--on-surface-muted);">Lived local knowledge, neighborly care.</span></div>
-                <div><strong>Identified Gaps:</strong> <span id="net-detail-gaps" style="color: var(--clay-800);">Low
-                    formal authority in statutory planning.</span></div>
+                <div><strong>Research Inquiry (Hypothesis):</strong> <span id="net-detail-gaps"
+                    style="color: var(--clay-800);">What formal decision rights do residents currently hold in municipal
+                    planning hearings?</span></div>
                 <div
                   style="background: var(--surface-sunken); padding: var(--space-2); border-radius: var(--radius-sm); border-left: 2px solid var(--dim-agency); margin-block-start: 2px;">
                   <strong>Empirical Measurement:</strong>
                   <span id="net-detail-measure"
                     style="display: block; color: var(--on-surface); margin-block-start: 2px;">
-                    Assessed via participatory network surveys and walk-along interviews during Phase 1.
+                    Assessed via participatory mapping and interviews during Phase 1.
                   </span>
                 </div>
               </div>
@@ -1228,66 +1331,105 @@
           aria-label="Four stages of co-creation">
           <!-- Stage 1 -->
           <div class="stage-flow__step card-block--social">
-            <span class="badge badge--social">Stage 1 · Phase 1</span>
+            <div class="cluster" style="gap: 4px; margin-block-end: 2px;">
+              <span class="badge badge--social">Stage 1 · Phase 1 (M1–9)</span>
+            </div>
             <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Relational Diagnosis</h3>
             <p style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: var(--space-2);">
-              Diagnosing unvoiced power asymmetries, everyday care routines, and gaps in agency.
+              Diagnosing unvoiced power asymmetries, everyday care routines, and circular material flows.
             </p>
+            <div style="font-size: 11px; color: var(--on-surface); margin-block-end: var(--space-2); line-height: 1.4;">
+              <strong>Design role:</strong> mapping as a generative tool to surface everyday care routines.
+            </div>
             <div style="font-size: 11px;">
-              <strong>At the table:</strong> Tenants, youth club, elders, municipal field liaisons.<br>
-              <strong>Methods:</strong> PGIS walk-alongs, kitchen-table dialogues.<br>
-              <strong>Inclusion:</strong> Multilingual facilitation, evening timing, micro-stipends.
+              <strong>At the table:</strong> Tenants, youth, elders, municipal field liaisons.<br>
+              <strong>Methods:</strong> Ethics and data-management approval, participatory mapping (paper maps, simple
+              GIS), walk-alongs, kitchen-table
+              dialogues, semi-structured interviews.<br>
+              <strong>Inclusion:</strong> Languages to be identified with residents and local partners (e.g. via
+              community interpreters), evening timing, compensation (e.g. refreshments or vouchers) subject to project
+              budget; otherwise convenient times and venues.
             </div>
           </div>
 
           <!-- Stage 2 -->
           <div class="stage-flow__step card-block--agency">
-            <span class="badge badge--agency">Stage 2 · Phase 2</span>
+            <div class="cluster" style="gap: 4px; margin-block-end: 2px;">
+              <span class="badge badge--agency">Stage 2 · Phase 2 (M10–18)</span>
+            </div>
             <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Boundary Prototyping</h3>
             <p style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: var(--space-2);">
-              Using tactile models and generative maps as boundary objects <button class="source-chip"
-                data-src="S15">[S15]</button>.
+              Using low-cost boundary objects <button class="source-chip" data-src="S15">[S15]</button>, such as maps,
+              tactile models and 1:1 on-site layouts, tried out on site with residents to test circular loops of
+              biomass, water and shared tools.
             </p>
+            <div style="font-size: 11px; color: var(--on-surface); margin-block-end: var(--space-2); line-height: 1.4;">
+              <strong>Design role:</strong> boundary objects and prototypes that link residents, designers and engineers
+              to circular loops (biomass, water, tools).
+            </div>
             <div style="font-size: 11px;">
-              <strong>At the table:</strong> Residents, landscape students, municipal water engineers.<br>
-              <strong>Methods:</strong> 1:1 on-site chalk layouts, tactile wooden block charrettes.<br>
-              <strong>Inclusion:</strong> Childcare provided, non-text visual mapping kits.
+              <strong>Candidate participants:</strong> Residents, landscape students, municipal water engineers.<br>
+              <strong>Methods:</strong> Two or three workshops or charrettes using maps, tactile models and 1:1 on-site
+              layouts.<br>
+              <strong>Inclusion:</strong> Facilitation languages chosen with residents (community interpreters),
+              flexible scheduling, non-text visual kits.
             </div>
           </div>
 
           <!-- Stage 3 -->
           <div class="stage-flow__step card-block--institutional">
-            <span class="badge badge--institutional">Stage 3 · Phase 2–3</span>
+            <div class="cluster" style="gap: 4px; margin-block-end: 2px;">
+              <span class="badge badge--institutional">Stage 3 · Phase 2 (M10–18)</span>
+            </div>
             <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Stewardship Charters</h3>
             <p style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: var(--space-2);">
-              Negotiating reciprocal rights and Ostrom-inspired care rules <button class="source-chip"
-                data-src="S8">[S8]</button>.
+              Charter principles are drafted jointly <button class="source-chip" data-src="S8">[S8]</button> and
+              reviewed informally with municipal staff. Results go back to participants before the next stage begins.
             </p>
+            <div style="font-size: 11px; color: var(--on-surface); margin-block-end: var(--space-2); line-height: 1.4;">
+              <strong>Design role:</strong> co-drafting charters as designed artefacts that make care rules visible.
+            </div>
             <div style="font-size: 11px;">
-              <strong>At the table:</strong> Elected tenant board, municipal legal staff, park maintenance.<br>
-              <strong>Methods:</strong> Contract co-drafting, maintenance failure roleplays.<br>
-              <strong>Inclusion:</strong> Plain-language summaries, rotating assembly chairs.
+              <strong>Candidate participants:</strong> Residents, tenant board, municipal planning and maintenance
+              staff.<br>
+              <strong>Methods:</strong> Co-drafting charter principles, reviewed informally with municipal staff;
+              returning results to participants before the next stage.<br>
+              <strong>Inclusion:</strong> Plain-language summaries, community interpreters, flexible timing.
             </div>
           </div>
 
           <!-- Stage 4 -->
           <div class="stage-flow__step card-block--material">
-            <span class="badge badge--material">Stage 4 · Phase 4</span>
-            <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Statutory Integration</h3>
+            <div class="cluster" style="gap: 4px; margin-block-end: 2px;">
+              <span class="badge badge--material">Stage 4 · Phases 3–4 (M21–26 &amp; M31–36)</span>
+            </div>
+            <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Co-Evaluation &amp; Policy Translation
+            </h3>
             <p style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: var(--space-2);">
-              Embedding informal agreements into local plans and municipal contracts <button class="source-chip"
+              Co-evaluation workshop and short re-mapping (M21–26), followed by policy-translation workshop/interviews
+              and model zoning clauses, draft charter outlines and policy briefs (M31–36) <button class="source-chip"
                 data-src="S32">[S32]</button>.
             </p>
+            <div style="font-size: 11px; color: var(--on-surface); margin-block-end: var(--space-2); line-height: 1.4;">
+              <strong>Design role:</strong> translating tested instruments into clauses and briefs for planning
+              practice.
+            </div>
             <div style="font-size: 11px;">
-              <strong>At the table:</strong> Planning directors, city council committee reps, housing CEO.<br>
-              <strong>Methods:</strong> Policy translation roundtables, synthesis briefs.<br>
-              <strong>Inclusion:</strong> Tenant reps co-presenting testimony to municipal board.
+              <strong>At the table:</strong> Residents, housing association, Aalborg Municipality, supervisors.<br>
+              <strong>Methods:</strong> Co-evaluation workshop (M21–26); policy-translation workshop or interviews
+              (M31–36).<br>
+              <strong>Inclusion:</strong> Each stage returns results to participants before the next begins.
             </div>
           </div>
         </div>
 
+        <div
+          style="font-size: 11px; color: var(--on-surface-muted); margin-block-end: var(--space-2); font-style: italic;">
+          Scope: one living lab, one site, simple low-cost tools; specialist input is sought through the consortium.
+        </div>
+
         <!-- Conflict Protocol & Participant Note -->
-        <div class="grid-auto" style="grid-template-columns: 1.2fr 1fr; gap: var(--space-3);">
+        <div class="grid-auto" style="grid-template-columns: 1.1fr 1.1fr; gap: var(--space-3);">
           <div class="card-block card-block--agency"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
             <strong style="color: var(--forest-900);">Explicit Conflict Protocol:</strong>
@@ -1296,9 +1438,12 @@
               through multi-zoned boundary maps and graduated dispute circles before escalation.
             </p>
           </div>
-          <div class="card-block"
-            style="background: var(--surface-sunken); padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
-            <span class="badge badge--illustrative">Note on Spatial Sketches</span>
+          <div class="callout callout--warn" style="padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
+            <div class="cluster" style="gap: var(--space-2); margin-block-end: 2px;">
+              <span class="badge badge--illustrative">Note on Spatial Sketches</span>
+            </div>
+            <strong style="color: var(--on-surface);">Spatial sketches are exploratory options, not a
+              masterplan:</strong>
             <p style="color: var(--on-surface-muted); margin: 2px 0 0;">
               Any spatial sketches generated during charrettes represent options participants might co-create—not a
               pre-determined masterplan by the researcher.
@@ -1353,7 +1498,8 @@
             style="background: var(--surface); padding: var(--space-2) var(--space-3);">
             <span class="badge badge--institutional">Model 2</span>
             <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Housing Association Led</h3>
-            <p style="font-size: 11px; color: var(--on-surface-muted);">Himmerland Boligforening caretakers oversee
+            <p style="font-size: 11px; color: var(--on-surface-muted);">Himmerland Boligforening (candidate partner, to
+              be confirmed with the WeGrowCircle team) caretakers oversee
               estate grounds <button class="source-chip" data-src="S34">[S34]</button>.</p>
             <div style="font-size: 10px; border-top: 1px solid var(--border); padding-block-start: 4px;">
               <strong>Decides:</strong> Housing board • <strong>Maintains:</strong> Caretakers • <strong>Risk:</strong>
@@ -1378,8 +1524,8 @@
           <div class="card-block card-block--agency" data-care="3" data-inclusion="3" data-legal="2"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); border-color: var(--dim-agency);">
             <div class="cluster" style="justify-content: space-between;">
-              <span class="badge badge--agency">Model 4 · Proposed Focus</span>
-              <span class="badge badge--illustrative">Hybrid Charter</span>
+              <span class="badge badge--agency">Model 4 · Working Hypothesis · To Be Tested</span>
+              <span class="badge badge--hypothesis">Working hypothesis</span>
             </div>
             <h3 style="font-size: var(--fs-sm); margin-block: var(--space-1);">Hybrid Public-Civic Co-Management</h3>
             <p style="font-size: 11px; color: var(--on-surface-muted);">Contractual co-stewardship charter split between
@@ -1403,6 +1549,23 @@
             </div>
           </div>
         </div>
+
+        <!-- Comparative Note -->
+        <div class="callout callout--info"
+          style="margin-block-start: var(--space-2); padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
+          <div class="cluster" style="gap: var(--space-2); margin-block-end: 2px;">
+            <span class="badge badge--hypothesis">Working hypothesis</span>
+            <strong>Comparative Governance Options (Colding &amp; Barthel, 2013) <button class="source-chip"
+                data-src="S9">[S9]</button>:</strong>
+          </div>
+          <p style="margin: 0; color: var(--on-surface-muted); line-height: var(--lh-normal);">
+            Five stewardship options are compared, from municipal management to resident-led arrangements and community
+            land trusts, and the preferred arrangement is decided with residents, the housing association, the
+            municipality and the supervisors. Comparing several options follows Colding and Barthel (2013) <button
+              class="source-chip" data-src="S9">[S9]</button>, who argue that no single property-rights regime fits
+            every setting.
+          </p>
+        </div>
       </section>
 
 
@@ -1414,6 +1577,7 @@
         <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-2);">
           <div class="cluster" style="gap: var(--space-2);">
             <span class="badge badge--agency">Objective 5 • Evaluation Matrix</span>
+            <span class="badge badge--hypothesis">Working hypothesis</span>
             <span class="badge badge--illustrative">Co-Defined Candidate Indicators [◌]</span>
             <button class="source-chip" data-src="S2">[S2]</button>
             <button class="source-chip" data-src="S30">[S30]</button>
@@ -1421,100 +1585,165 @@
           </div>
           <!-- Baseline vs Hypothesis Toggle -->
           <div class="segmented" role="group" aria-label="Evaluation comparison">
-            <button class="segmented__btn active" id="btn-eval-base">Baseline Audit</button>
-            <button class="segmented__btn" id="btn-eval-hypo">Re-Mapping Hypothesis</button>
+            <button class="segmented__btn active" id="btn-eval-base">Baseline Questions</button>
+            <button class="segmented__btn" id="btn-eval-hypo">Re-Mapping Hypotheses</button>
           </div>
         </div>
 
-        <!-- 4 Dimension Cards -->
+        <!-- Non-deprivation framing banner & Contribution-Oriented Logic -->
         <div class="grid-auto"
-          style="grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-block-end: var(--space-3);">
+          style="grid-template-columns: 1fr 1.2fr; gap: var(--space-2); margin-block-end: var(--space-2);">
+          <div class="callout callout--info" style="padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
+            <span class="badge badge--hypothesis">Inquiry Stance</span>
+            <p style="margin: 2px 0 0; color: var(--on-surface); font-weight: 600;">
+              The project does not assume baseline deprivation; it asks what agency diverse actors currently have.
+            </p>
+          </div>
+          <div class="callout callout--info" style="padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
+            <span class="badge badge--agency">Evaluation Logic</span>
+            <p style="margin: 2px 0 0; color: var(--on-surface-muted);">
+              Evaluation is participatory and contribution-oriented: simple observation-based indicators, resident
+              reflections and secondary data are used to trace plausible pathways from co-design activities to changes
+              in agency, practices and conditions. Attribution within three years is partial.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Dimension Cards: Baseline Questions (Hypotheses to Test) -->
+        <div class="grid-auto" id="eval-cards-grid"
+          style="grid-template-columns: repeat(4, 1fr); gap: var(--space-2); margin-block-end: var(--space-2);">
           <div class="card-block"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); border-top: 4px solid var(--dim-material);">
-            <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">1.
-              Biodiversity</span>
-            <div id="eval-val-bio" style="font-size: var(--fs-base); font-weight: 700; color: var(--forest-900);">
-              Baseline Audit</div>
-            <p id="eval-desc-bio" style="font-size: 11px; color: var(--on-surface-muted); margin: 2px 0 0;">Monoculture
-              lawn; periodic herbicide spraying; low pollinator shelter.</p>
+            <div class="cluster" style="justify-content: space-between;">
+              <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">1.
+                Biodiversity</span>
+              <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Hypothesis</span>
+            </div>
+            <div id="eval-val-bio"
+              style="font-size: var(--fs-sm); font-weight: 700; color: var(--forest-900); margin-block: 2px;">
+              Vegetation &amp; management?</div>
+            <p id="eval-desc-bio"
+              style="font-size: 11px; color: var(--on-surface-muted); margin: 0; line-height: 1.35;">
+              What is the current vegetation structure and management regime? Working hypothesis: low-diversity,
+              intensively managed lawn.
+            </p>
           </div>
 
           <div class="card-block"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); border-top: 4px solid var(--dim-institutional);">
-            <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">2. Circular
-              Practices <button class="source-chip" data-src="S30">[S30]</button></span>
-            <div id="eval-val-circ" style="font-size: var(--fs-base); font-weight: 700; color: var(--forest-900);">
-              Linear Disposal</div>
-            <p id="eval-desc-circ" style="font-size: 11px; color: var(--on-surface-muted); margin: 2px 0 0;">Pruning
-              waste trucked off-site to incinerator; runoff drained directly to sewer.</p>
+            <div class="cluster" style="justify-content: space-between;">
+              <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">2. Circular
+                Practices <button class="source-chip" data-src="S30">[S30]</button></span>
+              <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Hypothesis</span>
+            </div>
+            <div id="eval-val-circ"
+              style="font-size: var(--fs-sm); font-weight: 700; color: var(--forest-900); margin-block: 2px;">
+              Material &amp; water flows?</div>
+            <p id="eval-desc-circ"
+              style="font-size: 11px; color: var(--on-surface-muted); margin: 0; line-height: 1.35;">
+              Where do pruning waste, rainwater and materials currently flow? Working hypothesis: largely linear
+              (off-site disposal, sewer drainage).
+            </p>
           </div>
 
           <div class="card-block"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); border-top: 4px solid var(--dim-agency);">
-            <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">3. Sufficiency
-              <button class="source-chip" data-src="S31">[S31]</button></span>
-            <div id="eval-val-suff" style="font-size: var(--fs-base); font-weight: 700; color: var(--forest-900);">
-              Privatised Tools</div>
-            <p id="eval-desc-suff" style="font-size: 11px; color: var(--on-surface-muted); margin: 2px 0 0;">No
-              collective tool sharing; residents purchase individual equipment.</p>
+            <div class="cluster" style="justify-content: space-between;">
+              <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">3. Sufficiency
+                <button class="source-chip" data-src="S31">[S31]</button></span>
+              <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Hypothesis</span>
+            </div>
+            <div id="eval-val-suff"
+              style="font-size: var(--fs-sm); font-weight: 700; color: var(--forest-900); margin-block: 2px;">
+              Shared vs private tools?</div>
+            <p id="eval-desc-suff"
+              style="font-size: 11px; color: var(--on-surface-muted); margin: 0; line-height: 1.35;">
+              Which tools and resources are shared or privately held? Do residents see value in sharing?
+            </p>
           </div>
 
           <div class="card-block"
             style="background: var(--surface); padding: var(--space-2) var(--space-3); border-top: 4px solid var(--dim-social);">
-            <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">4. Social
-              Well-Being</span>
-            <div id="eval-val-well" style="font-size: var(--fs-base); font-weight: 700; color: var(--forest-900);">
-              Isolated Use</div>
-            <p id="eval-desc-well" style="font-size: 11px; color: var(--on-surface-muted); margin: 2px 0 0;">Courtyard
-              spaces used in ethnic isolation; safety concerns after dark.</p>
+            <div class="cluster" style="justify-content: space-between;">
+              <span style="font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;">4. Social
+                Well-Being</span>
+              <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Hypothesis</span>
+            </div>
+            <div id="eval-val-well"
+              style="font-size: var(--fs-sm); font-weight: 700; color: var(--forest-900); margin-block: 2px;">
+              Who uses which spaces?</div>
+            <p id="eval-desc-well"
+              style="font-size: 11px; color: var(--on-surface-muted); margin: 0; line-height: 1.35;">
+              Who uses which outdoor spaces, when, and who does not? Do experiences of safety and belonging differ
+              across groups and times of day?
+            </p>
           </div>
         </div>
 
-        <!-- Scrollable Candidate Indicator Table -->
+        <!-- Scrollable Candidate Indicator Table with Limits Column -->
         <div class="data-table-container" style="flex: 1; min-height: 0; overflow-y: auto;">
-          <table class="data-table" aria-label="Candidate indicators table">
+          <table class="data-table" aria-label="Candidate indicators table with limits">
             <thead>
               <tr>
                 <th>Candidate Indicator</th>
                 <th>Dimension</th>
                 <th>Method</th>
-                <th>Timing</th>
+                <th>Indicative Timing</th>
                 <th>Who Measures</th>
+                <th>What it can show / Limits</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Pollinator floral continuity</strong></td>
-                <td><span class="badge badge--material">Biodiversity</span></td>
-                <td>Transect walks &amp; citizen science photo app</td>
-                <td>M6 (Base) $\rightarrow$ M30 (Re-map)</td>
-                <td>Residents + Researcher</td>
+                <td><strong>Visible habitat and planting features (e.g. flowering plants, mown vs unmown areas)</strong>
+                </td>
+                <td><span class="badge badge--material">Biodiversity <button class="source-chip"
+                      data-src="S10">[S10]</button></span></td>
+                <td>Resident-led photo points and an observation checklist (plausible because Stockholm allotment
+                  gardeners knew more about local ecological dynamics than park maintenance staff; Colding et al., 2013
+                  <button class="source-chip" data-src="S10">[S10]</button>); interpretation draws on consortium
+                  partners
+                </td>
+                <td>Indicative: Phase 1 (M1–9) &rarr; Phase 3 (M21–26)</td>
+                <td>Residents + researcher (+ consortium partners for interpretation)</td>
+                <td>Shows visible change in habitat features; ecological measurement is outside the scope.</td>
               </tr>
               <tr>
-                <td><strong>On-site biomass composting</strong></td>
+                <td><strong>Documented flows of pruning waste, water and tools in everyday maintenance</strong></td>
                 <td><span class="badge badge--institutional">Circularity <button class="source-chip"
                       data-src="S30">[S30]</button></span></td>
-                <td>Compost volume log and mulch redistribution</td>
-                <td>Quarterly seasonal records</td>
-                <td>Resident garden stewards</td>
+                <td>Interviews and maintenance documents, resident mapping of flows of pruning waste, water and tools
+                </td>
+                <td>Indicative: Phase 1 (M1–9) &rarr; Phase 3 (M21–26)</td>
+                <td>Researcher + caretakers + garden stewards</td>
+                <td>Describes circular practices and gaps; no quantitative flow accounting.</td>
               </tr>
               <tr>
-                <td><strong>Tool library check-out index</strong></td>
+                <td><strong>Shared use of tools and resources</strong></td>
                 <td><span class="badge badge--agency">Sufficiency <button class="source-chip"
                       data-src="S31">[S31]</button></span></td>
-                <td>Digital log &amp; volunteer repair café attendance</td>
-                <td>Monthly register</td>
-                <td>Tenant assembly</td>
+                <td>Participatory feedback in workshops and interviews; simple record of shared use of tools and
+                  resources</td>
+                <td>Indicative: Phase 1 (M1–9) &rarr; Phase 3 (M21–26)</td>
+                <td>Researcher + residents / tenant assembly</td>
+                <td>Shows perceived access and sharing practice; attribution within 3 years is partial.</td>
               </tr>
               <tr>
-                <td><strong>Perceived safety &amp; spatial belonging</strong></td>
+                <td><strong>Perceived safety and belonging</strong></td>
                 <td><span class="badge badge--social">Well-Being</span></td>
-                <td>Walk-along interviews &amp; survey sample (n=120)</td>
-                <td>M4 (Base) $\rightarrow$ M28 (Post-prototype)</td>
-                <td>Lead researcher + bilingual aides</td>
+                <td>Walk-along interviews and participatory reflection in workshops</td>
+                <td>Indicative: Phase 1 (M1–9) &rarr; Phase 3 (M21–26)</td>
+                <td>Researcher + community interpreters where needed</td>
+                <td>Qualitative contribution-oriented tracing of pathways from co-design to changes in agency, practices
+                  and conditions.</td>
               </tr>
             </tbody>
           </table>
+          <div
+            style="font-size: 11px; color: var(--on-surface-muted); margin-block-start: var(--space-2); font-style: italic;">
+            If WeGrowCircle provides a shared short instrument for the four dimensions, it may be adopted. Technical or
+            ecological measurement is outside the scope of the PhD.
+          </div>
         </div>
       </section>
 
@@ -1535,8 +1764,25 @@
           </span>
         </div>
 
+        <!-- Realistic 3-Year Scope & Policy Windows Banner -->
+        <div class="callout callout--info"
+          style="margin-block-end: var(--space-2); padding: var(--space-2) var(--space-3); font-size: var(--fs-xs);">
+          <div class="cluster" style="gap: var(--space-2); margin-block-end: 2px;">
+            <span class="badge badge--hypothesis">Working hypothesis</span>
+            <strong>Model zoning clauses (recommendations reviewed informally with municipal planners; no legal drafting
+              claimed), draft stewardship charter principles and co-management agreement outlines, discussed with
+              municipal staff and scenario-tested in workshops (not tested in operation), and policy briefs developed
+              with Aalborg
+              Municipality:</strong>
+          </div>
+          <p style="margin: 0; color: var(--on-surface-muted); line-height: var(--lh-normal);">
+            Formal adoption into Local Plans depends on municipal revision cycles and lies beyond the 36-month scope;
+            the project delivers evidence and instruments ready for those policy windows.
+          </p>
+        </div>
+
         <!-- 5-Tier Planning Pathway Stepper (Scrollable container) -->
-        <div class="stack" style="gap: var(--space-2); height: calc(100% - 40px); overflow-y: auto;">
+        <div class="stack" style="gap: var(--space-2); height: calc(100% - 100px); overflow-y: auto;">
           <div class="card-block card-block--institutional"
             style="background: var(--surface); padding: var(--space-2) var(--space-3);">
             <div class="cluster" style="justify-content: space-between;">
@@ -1560,7 +1806,8 @@
             </div>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 2px 0 0;">
               <strong>Policy Window:</strong> Estate courtyard renewal permits • <strong>Evidence Delivered:</strong>
-              Model zoning clauses mandating participatory open space stewardship.
+              Model zoning clauses and recommendations mandating participatory open space stewardship (recommendations
+              reviewed informally with municipal planners; no legal drafting claimed).
             </p>
           </div>
 
@@ -1585,8 +1832,10 @@
               <span class="badge badge--agency">Operational Tier</span>
             </div>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 2px 0 0;">
-              <strong>Policy Window:</strong> Annual maintenance tenders • <strong>Evidence Delivered:</strong> Tested
-              co-management contracts covering volunteer tool use and municipal safety liability.
+              <strong>Policy Window:</strong> Annual maintenance tenders • <strong>Evidence Delivered:</strong> Draft
+              stewardship charter principles and co-management agreement outlines, discussed with municipal staff and
+              scenario-tested in workshops (not tested in operation), covering volunteer tool use and municipal safety
+              liability.
             </p>
           </div>
 
@@ -1608,7 +1857,7 @@
 
       <!-- ==================================================================
            SCENE 9: TIMELINE & RISKS (#timeline)
-           Tabs: Gantt & 4-Paper Publication Plan / Risk & Positionality Table
+           Tabs: Gantt & 2-Paper Publication Plan / Risk & Positionality Table
            ================================================================== -->
       <section class="app-scene" id="scene-timeline" role="tabpanel" aria-labelledby="rail-timeline">
         <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-2);">
@@ -1616,69 +1865,153 @@
             <button class="segmented__btn active" data-subtab="gantt">1. 3-Year Gantt &amp; Publications</button>
             <button class="segmented__btn" data-subtab="risks">2. Risks &amp; Positionality</button>
           </div>
-          <button class="source-chip" data-src="S1">[S1]</button>
-          <button class="source-chip" data-src="S28">[S28]</button>
+          <div class="cluster" style="gap: 4px;">
+            <button class="source-chip" data-src="S1">[S1]</button>
+            <button class="source-chip" data-src="S28">[S28]</button>
+          </div>
         </div>
 
         <!-- Subtab: Gantt & Publications -->
         <div class="scene-subtab active" id="subtab-gantt" style="height: calc(100% - 46px); overflow-y: auto;">
           <div class="card-block"
-            style="background: var(--surface); padding: var(--space-3); margin-block-end: var(--space-3);">
-            <h3 style="font-size: var(--fs-sm); margin: 0 0 var(--space-2);">3-Year Longitudinal Schedule (4 Phases)
-            </h3>
-            <div class="gantt" style="min-width: 580px;">
-              <div class="gantt__header">Phase</div>
-              <div class="gantt__header">M1–6</div>
-              <div class="gantt__header">M7–12</div>
-              <div class="gantt__header">M13–18</div>
-              <div class="gantt__header">M19–24</div>
-              <div class="gantt__header">M25–30</div>
-              <div class="gantt__header">M31–36</div>
+            style="background: var(--surface); padding: var(--space-3); margin-block-end: var(--space-3); overflow-x: auto;">
+            <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-2);">
+              <h3 style="font-size: var(--fs-sm); margin: 0;">3-Year Longitudinal Schedule (4 Phases &amp; Doctoral
+                Requirements)</h3>
+              <span class="badge badge--hypothesis">Working hypothesis</span>
+            </div>
+            <div class="gantt" style="min-width: 820px;">
+              <div class="gantt__header" style="text-align: start;">Phase / Requirement</div>
+              <div class="gantt__header">M1–3</div>
+              <div class="gantt__header">M4–6</div>
+              <div class="gantt__header">M7–9</div>
+              <div class="gantt__header">M10–12</div>
+              <div class="gantt__header">M13–15</div>
+              <div class="gantt__header">M16–18</div>
+              <div class="gantt__header">M19–21</div>
+              <div class="gantt__header">M22–24</div>
+              <div class="gantt__header">M25–27</div>
+              <div class="gantt__header">M28–30</div>
+              <div class="gantt__header">M31–33</div>
+              <div class="gantt__header">M34–36</div>
 
+              <!-- Phase 1 -->
               <div><strong>Phase 1: Diagnosis</strong></div>
-              <div class="gantt__bar" style="grid-column: 2 / 4; background: var(--dim-social);">Baseline Mapping</div>
-              <div style="grid-column: 4 / 8;"></div>
+              <div class="gantt__bar" style="grid-column: 2 / 5; background: var(--dim-social);">M1–9: Ethics Approval
+                &amp; Baseline Mapping</div>
+              <div style="grid-column: 5 / 14;"></div>
 
-              <div><strong>Phase 2: Co-Design</strong></div>
-              <div style="grid-column: 2 / 3;"></div>
-              <div class="gantt__bar" style="grid-column: 3 / 6; background: var(--dim-agency);">Charrettes &amp;
-                Charters</div>
-              <div style="grid-column: 6 / 8;"></div>
-
-              <div><strong>Phase 3: Monitoring</strong></div>
+              <!-- Phase 2 -->
+              <div><strong>Phase 2: Co-Creation</strong></div>
               <div style="grid-column: 2 / 5;"></div>
-              <div class="gantt__bar" style="grid-column: 5 / 7; background: var(--dim-material);">Re-Mapping</div>
-              <div style="grid-column: 7 / 8;"></div>
+              <div class="gantt__bar" style="grid-column: 5 / 8; background: var(--dim-agency);">M10–18: Workshops &amp;
+                Charter Principles</div>
+              <div style="grid-column: 8 / 14;"></div>
 
+              <!-- Phase 3 -->
+              <div><strong>Phase 3: Co-Evaluation &amp; Re-Mapping</strong></div>
+              <div style="grid-column: 2 / 8;"></div>
+              <div class="gantt__bar" style="grid-column: 8 / 11; background: var(--dim-material);">M21–26:
+                Co-Evaluation &amp; Re-Mapping</div>
+              <div style="grid-column: 11 / 14;"></div>
+
+              <!-- Phase 4 -->
               <div><strong>Phase 4: Synthesis</strong></div>
-              <div style="grid-column: 2 / 6;"></div>
-              <div class="gantt__bar" style="grid-column: 6 / 8; background: var(--dim-institutional);">Dissertation
+              <div style="grid-column: 2 / 12;"></div>
+              <div class="gantt__bar" style="grid-column: 12 / 14; background: var(--dim-institutional);">M31–36:
+                Policy Translation &amp; Thesis</div>
+
+              <!-- Mandatory PhD Requirements (Change 4) -->
+              <div><span class="badge badge--doctoral" style="font-size: 10px;">PhD courses (30 ECTS)</span></div>
+              <div class="gantt__bar gantt__bar--doctoral" style="grid-column: 2 / 8;">M1–18: 30 ECTS PhD courses</div>
+              <div style="grid-column: 8 / 14;"></div>
+
+              <div><span class="badge badge--doctoral" style="font-size: 10px;">Teaching &amp; dissemination</span>
               </div>
+              <div class="gantt__bar gantt__bar--doctoral" style="grid-column: 4 / 14;">M7–36: Teaching &amp;
+                dissemination</div>
+
+              <div><span class="badge badge--doctoral" style="font-size: 10px;">External research stay</span></div>
+              <div style="grid-column: 2 / 10;"></div>
+              <div class="gantt__bar gantt__bar--doctoral" style="grid-column: 10 / 12;">M27–30 (3-month stay,
+                indicative)</div>
+              <div style="grid-column: 12 / 14;"></div>
+            </div>
+
+            <!-- Gantt Legend -->
+            <div class="legend" style="margin-block-start: var(--space-2); padding: 0;">
+              <div class="legend__item">
+                <span class="legend__swatch" style="background: var(--dim-social);"></span>
+                <span>Phase 1: Diagnosis (M1–9)</span>
+              </div>
+              <div class="legend__item">
+                <span class="legend__swatch" style="background: var(--dim-agency);"></span>
+                <span>Phase 2: Co-Creation (M10–18)</span>
+              </div>
+              <div class="legend__item">
+                <span class="legend__swatch" style="background: var(--dim-material);"></span>
+                <span>Phase 3: Co-Evaluation &amp; Re-Mapping (M21–26)</span>
+              </div>
+              <div class="legend__item">
+                <span class="legend__swatch" style="background: var(--dim-institutional);"></span>
+                <span>Phase 4: Synthesis (M31–36)</span>
+              </div>
+              <div class="legend__item">
+                <span class="legend__swatch"
+                  style="background: var(--surface-sunken); border: 1.5px dashed var(--dim-agency);"></span>
+                <span>Dashed = doctoral programme requirements</span>
+              </div>
+            </div>
+
+            <!-- Research Scope & Doctoral Stay Note -->
+            <div class="callout callout--info"
+              style="margin-block-start: var(--space-2); padding: var(--space-2) var(--space-3); font-size: 11px;">
+              <div class="cluster" style="gap: var(--space-2); margin-block-end: 2px;">
+                <span class="badge badge--hypothesis">Working hypothesis</span>
+                <strong>Research Scope &amp; Doctoral Programme (Section 5 &amp; 6):</strong>
+              </div>
+              <p style="margin: 0; color: var(--on-surface-muted); line-height: var(--lh-normal);">
+                The scope is deliberately limited: one site, one core method for each objective, and simple indicators.
+                Access depends on the housing association and the municipality; if restricted, the design falls back to
+                fewer interviews and workshops, which would still address SQ1 and SQ2.
+              </p>
+              <p style="margin: 4px 0 0; color: var(--on-surface-subtle); font-style: italic;">
+                The plan includes 30 ECTS of PhD courses (months 1–18), teaching and dissemination (months 7–36), and a
+                three-month external stay (indicatively months 27–30) to write the empirical paper and compare with a
+                partner living lab (Brussels, Gothenburg, Bucharest). During the stay, resident stewards continue simple
+                photo-point recording.
+              </p>
             </div>
           </div>
 
-          <!-- 4-Paper Compilation Plan -->
+          <!-- Indicative Publication Plan -->
+          <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-1);">
+            <strong style="font-size: var(--fs-xs); color: var(--on-surface);">Indicative Publication Plan:</strong>
+            <span style="font-size: 11px; color: var(--on-surface-muted); font-style: italic;">Two papers (indicative);
+              thesis form (collection of papers or monograph) to be decided with supervisors.</span>
+          </div>
           <div class="grid-auto"
-            style="grid-template-columns: repeat(4, 1fr); gap: var(--space-2); font-size: var(--fs-xs);">
+            style="grid-template-columns: repeat(2, 1fr); gap: var(--space-2); font-size: var(--fs-xs);">
             <div class="card-block" style="background: var(--surface-sunken); padding: var(--space-2);">
-              <span class="badge badge--agency">Paper 1 · M12</span>
-              <strong>Urban Commons Framework</strong>
-              <p style="color: var(--on-surface-muted); margin: 2px 0 0;">Target: <em>Planning Theory</em></p>
+              <div class="cluster" style="justify-content: space-between;">
+                <span class="badge badge--agency">Paper 1</span>
+                <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Window: M9–12</span>
+              </div>
+              <strong style="display: block; margin-block: 2px;">Urban Commons Framework</strong>
+              <p style="color: var(--on-surface-muted); margin: 0;">Conceptual · Target: <em>Planning Theory</em>
+                (indicative only)
+              </p>
             </div>
             <div class="card-block" style="background: var(--surface-sunken); padding: var(--space-2);">
-              <span class="badge badge--social">Paper 2 · M22</span>
-              <strong>Agency Landscapes SNA</strong>
-              <p style="color: var(--on-surface-muted); margin: 2px 0 0;">Target: <em>Cities</em></p>
-            </div>
-            <div class="card-block" style="background: var(--surface-sunken); padding: var(--space-2);">
-              <span class="badge badge--material">Paper 3 · M28</span>
-              <strong>Boundary Objects in GSIs</strong>
-              <p style="color: var(--on-surface-muted); margin: 2px 0 0;">Target: <em>CoDesign</em></p>
-            </div>
-            <div class="card-block" style="background: var(--surface-sunken); padding: var(--space-2);">
-              <span class="badge badge--institutional">Paper 4 · M34</span>
-              <strong>Statutory Co-Management</strong>
-              <p style="color: var(--on-surface-muted); margin: 2px 0 0;">Target: <em>Town Planning Review</em></p>
+              <div class="cluster" style="justify-content: space-between;">
+                <span class="badge badge--social">Paper 2</span>
+                <span class="badge badge--hypothesis" style="font-size: 9px; padding: 0 4px;">Window: M27–30</span>
+              </div>
+              <strong style="display: block; margin-block: 2px;">Actor Mapping and Co-Created Stewardship
+                Charters</strong>
+              <p style="color: var(--on-surface-muted); margin: 0;">Empirical · Target: <em>Cities</em> or
+                <em>CoDesign</em> (indicative only)
+              </p>
             </div>
           </div>
         </div>
@@ -1695,39 +2028,71 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Participation Fatigue</strong></td>
-                <td><span class="badge badge--social">Social</span></td>
-                <td>Direct compensation for resident workshop time, flexible timing, near-term tangible micro-wins.</td>
+                <td><strong>Scope and Workload</strong></td>
+                <td><span class="badge badge--agency">Feasibility</span></td>
+                <td>One site, one core method per objective, simple indicators; extensions only if time allows. Access
+                  depends on housing association and municipality; fallback is fewer interviews and workshops.</td>
               </tr>
               <tr>
-                <td><strong>Power Asymmetries</strong></td>
+                <td><strong>Technical Expertise Gap</strong></td>
+                <td><span class="badge badge--material">Method</span></td>
+                <td>Ecological or technical interpretation is sought from consortium partners or co-supervisors; the PhD
+                  does not run ecological or engineering measurements.</td>
+              </tr>
+              <tr>
+                <td><strong>Language barrier (no Danish)</strong></td>
+                <td><span class="badge badge--material">Method</span></td>
+                <td>Interviews with institutional actors in English where possible; community interpreters and
+                  co-facilitation for residents; Danish documents read via translation tools checked by Danish-speaking
+                  colleagues; Danish classes from the start.</td>
+              </tr>
+              <tr>
+                <td><strong>Participation Fatigue <button class="source-chip" data-src="S9">[S9]</button></strong></td>
+                <td><span class="badge badge--social">Social</span></td>
+                <td>Tangible early outcomes, and flexible scheduling because the time people can give varies widely
+                  (Colding &amp; Barthel, 2013 <button class="source-chip" data-src="S9">[S9]</button>); compensation
+                  subject to project budget.</td>
+              </tr>
+              <tr>
+                <td><strong>Power Asymmetries &amp; Exclusion <button class="source-chip" data-src="S10">[S10]</button>
+                    <button class="source-chip" data-src="S28">[S28]</button></strong>
+                </td>
                 <td><span class="badge badge--agency">Agency</span></td>
-                <td>Subgroup charrettes in native languages (Arabic, Somali), visual non-verbal generative mapping kits.
+                <td>Subgroup sessions, non-text visual kits, and facilitation languages identified with residents via
+                  community interpreters (Colding et al., 2013 <button class="source-chip"
+                    data-src="S10">[S10]</button>; Torrens &amp; von Wirth, 2021 <button class="source-chip"
+                    data-src="S28">[S28]</button>).
                 </td>
               </tr>
               <tr>
                 <td><strong>Institutional Capture</strong></td>
                 <td><span class="badge badge--institutional">Governance</span></td>
-                <td>Early formalisation of co-management agreements; direct involvement of maintenance staff.</td>
+                <td>Early involvement of maintenance staff and co-drafting of charter principles.</td>
               </tr>
               <tr>
-                <td><strong>Pilot Trap Dependency <button class="source-chip" data-src="S28">[S28]</button></strong>
+                <td><strong>Researcher Absence During Stay (M27–30)</strong></td>
+                <td><span class="badge badge--institutional">Governance</span></td>
+                <td>During the three-month external stay, resident stewards continue simple photo-point recording.</td>
+              </tr>
+              <tr>
+                <td><strong>Dependence on Project Funding <button class="source-chip"
+                      data-src="S28">[S28]</button></strong>
                 </td>
                 <td><span class="badge badge--material">Sustainability</span></td>
-                <td>Embedding care charters into municipal maintenance budgets from Year 1 rather than after grant
-                  expiry.</td>
+                <td>Testing from year one how charters could connect to municipal maintenance, without assuming they can
+                  (Torrens &amp; von Wirth, 2021 <button class="source-chip" data-src="S28">[S28]</button>).</td>
               </tr>
               <tr>
-                <td><strong>Researcher Positionality</strong></td>
+                <td><strong>Mismatch with Planning Cycles</strong></td>
+                <td><span class="badge badge--institutional">Governance</span></td>
+                <td>Outputs timed to policy windows identified in Phase 1; delivering evidence and instruments ready for
+                  relevant policy windows rather than relying on formal adoption within 36 months.</td>
+              </tr>
+              <tr>
+                <td><strong>Positionality, Ethics &amp; GDPR</strong></td>
                 <td><span class="badge badge--agency">Ethics</span></td>
-                <td>Reflexive journaling, external AAU supervisory checks, participatory member-checking with residents.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>GDPR in Spatial SNA</strong></td>
-                <td><span class="badge badge--institutional">Ethics</span></td>
-                <td>Full compliance with Datatilsynet &amp; AAU ethics review; block-level spatial data aggregation.
-                </td>
+                <td>Follows informed consent, the GDPR and AAU ethics review; reflexive journal on positionality as a
+                  planner.</td>
               </tr>
             </tbody>
           </table>
@@ -1741,7 +2106,9 @@
            ================================================================== -->
       <section class="app-scene" id="scene-contributions" role="tabpanel" aria-labelledby="rail-contributions">
         <div style="margin-block-end: var(--space-3);">
-          <span class="badge badge--agency">Significance &amp; Potential Impacts</span>
+          <div class="cluster" style="gap: var(--space-2);">
+            <span class="badge badge--agency">Significance &amp; Potential Impacts</span>
+          </div>
           <h2 style="font-size: var(--fs-xl); margin: var(--space-1) 0;">Doctoral Research Contributions</h2>
           <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); margin: 0;">
             Hedged academic contributions formulated to advance urban planning research and community resilience
@@ -1750,7 +2117,7 @@
         </div>
 
         <div class="grid-auto"
-          style="grid-template-columns: repeat(3, 1fr); gap: var(--space-4); height: calc(100% - 90px);">
+          style="grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: var(--space-3); height: calc(100% - 90px); overflow-y: auto;">
           <!-- Theoretical -->
           <div class="card-block card-block--agency"
             style="background: var(--surface); display: flex; flex-direction: column;">
@@ -1770,7 +2137,8 @@
           <div class="card-block card-block--social"
             style="background: var(--surface); display: flex; flex-direction: column;">
             <span class="badge badge--social">2. Methodological</span>
-            <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Longitudinal SNA &amp;
+            <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Longitudinal Relational
+              Actor Mapping &amp;
               Boundary Co-Design</h3>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); line-height: var(--lh-normal); flex: 1;">
               Tests repeated actor-network mapping as both an analytical diagnostic and an empowering community tool
@@ -1788,9 +2156,28 @@
               Pathways</h3>
             <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); line-height: var(--lh-normal); flex: 1;">
               Generates concrete co-management charters and policy recommendations for Danish municipalities and social
-              housing associations (Himmerland Boligforening <button class="source-chip" data-src="S34">[S34]</button>).
-              Demonstrates how to translate grassroots care into binding Local Plans (Lokalplaner) <button
-                class="source-chip" data-src="S32">[S32]</button>.
+              housing associations, notably Himmerland Boligforening (candidate partner, to be confirmed with the
+              WeGrowCircle team) <button class="source-chip" data-src="S34">[S34]</button>.
+              Demonstrates how to translate grassroots care into model zoning clauses and recommendations for Local
+              Plans (Lokalplaner) <button class="source-chip" data-src="S32">[S32]</button>.
+            </p>
+          </div>
+
+          <!-- Research Environment -->
+          <div class="card-block card-block--doctoral"
+            style="background: var(--surface); display: flex; flex-direction: column;">
+            <div class="cluster" style="gap: var(--space-2); margin-block-end: var(--space-1); flex-wrap: wrap;">
+              <span class="badge badge--agency">Research Environment</span>
+              <span class="badge badge--hypothesis">Working hypothesis</span>
+            </div>
+            <h3 style="font-size: var(--fs-base); margin-block: var(--space-2) var(--space-1);">Embedded in an
+              Interdisciplinary Research Environment</h3>
+            <p style="font-size: var(--fs-xs); color: var(--on-surface-muted); line-height: var(--lh-normal); flex: 1;">
+              The project is designed to contribute to the Urban Social Resilience (USR) initiative at the Department of
+              Sustainability and Planning, within the Sustainability, Innovation and Policy research group, and to
+              collaborate across disciplines with the Department of Architecture, Design &amp; Media Technology. Planned
+              exchange, to be shaped with supervisors: joint co-design sessions, shared mapping and prototyping methods,
+              joint seminars.
             </p>
           </div>
         </div>
@@ -1805,7 +2192,7 @@
         <div class="cluster" style="justify-content: space-between; margin-block-end: var(--space-2);">
           <div class="segmented" role="tablist" aria-label="Sources and Ledger Views">
             <button class="segmented__btn active" data-subtab="sources-ref">1. Complete Reference Registry
-              (S1–S35)</button>
+              (S1–S37)</button>
             <button class="segmented__btn" data-subtab="sources-ledger">2. Claim Ledger</button>
           </div>
           <span style="font-size: var(--fs-xs); color: var(--on-surface-muted);">
@@ -1858,10 +2245,14 @@
                 <td><button class="source-chip" data-src="S32">[S32]</button></td>
               </tr>
               <tr>
-                <td>Aalborg Øst underwent major holistic regeneration (2011–2021) led by Himmerland Boligforening.</td>
+                <td>
+                  Aalborg Øst underwent major holistic regeneration (2012–2021) led by Himmerland Boligforening.
+                  <div style="font-size: 11px; color: var(--on-surface-muted); margin-block-start: 4px;">Case status:
+                    candidate site/partner, to be confirmed.</div>
+                </td>
                 <td><span class="badge badge--institutional">Evidence</span></td>
                 <td><button class="source-chip" data-src="S33">[S33]</button> <button class="source-chip"
-                    data-src="S34">[S34]</button> <button class="source-chip" data-src="S35">[S35]</button></td>
+                    data-src="S34">[S34]</button></td>
               </tr>
               <tr>
                 <td>Four-pillar agency operationalisation matrix (Arnstein + Fung + Emirbayer/Mische + Spatial control).
@@ -1869,6 +2260,16 @@
                 <td><span class="badge badge--illustrative">Working Proposal [✎]</span></td>
                 <td><button class="source-chip" data-src="S11">[S11]</button> <button class="source-chip"
                     data-src="S12">[S12]</button> <button class="source-chip" data-src="S13">[S13]</button></td>
+              </tr>
+              <tr>
+                <td>The literature documents projectification and stresses participation, yet says less about how agency
+                  across human and non-human actors changes over time, or how informal care arrangements get embedded in
+                  statutory planning. Addressed through longitudinal relational actor mapping, co-designed stewardship
+                  charters, and a four-pillar agency matrix.</td>
+                <td><span class="badge badge--illustrative">Working Proposal [✎]</span></td>
+                <td><button class="source-chip" data-src="S28">[S28]</button> <button class="source-chip"
+                    data-src="S27">[S27]</button> <button class="source-chip" data-src="S21">[S21]</button> <button
+                    class="source-chip" data-src="S37">[S37]</button></td>
               </tr>
               <tr>
                 <td>Pathway Lab simulation curves and Actor Network numerical density/bridging scores.</td>
@@ -1920,72 +2321,259 @@
     </div>
 
     <div class="drawer-body" id="proposal-reader-body">
-      <!-- Complete Submitted Academic Proposal Text -->
+      <!-- Complete Submitted Academic Proposal Text (Proposal_Ratriyani_AAU.pdf) -->
       <article class="prose" style="max-width: 72ch; margin: 0 auto; font-size: var(--fs-sm);">
-        <h2>Emergent Urban Social Resilience: Mapping Agency in Actor Landscapes and Co-Designing Regenerative
-          Green-Social Infrastructures as Urban Commons</h2>
-        <p><em>Aalborg University · Department of Sustainability and Planning · Horizon Europe DUT WeGrowCircle
-            Consortium</em></p>
+        <h2>Emergent urban social resilience: mapping agency in actor landscapes and co-designing regenerative
+          green-social infrastructures as urban commons</h2>
+        <p><em>Preliminary research proposal for the PhD position in Urban Social Resilience within Sustainability and
+            Planning (Ref. 2026/1201), Aalborg University. Applicant: Reni C. Ratriyani</em> <button class="source-chip"
+            data-src="S1">[S1]</button> <button class="source-chip" data-src="S2">[S2]</button></p>
 
-        <h3>1. Aim and Research Questions</h3>
+        <h3>1. Focus and problem</h3>
         <p>
-          <strong>Aim:</strong> To understand and strengthen how urban social resilience emerges from the interplay of
-          social, institutional, and material-spatial dynamics, by mapping how actors gain agency and co-designing
-          regenerative green-social infrastructures (GSIs) as urban commons in close dialogue with local planning
-          practice.
+          Cities increasingly turn to green-social infrastructures (GSIs), such as shared gardens, courtyards and
+          stormwater landscapes, to respond to climate pressure and social fragmentation. Much of this work is organised
+          as experimentation, and urban living labs have become a common vehicle for it in Europe (Torrens &amp; von
+          Wirth, 2021 <button class="source-chip" data-src="S28">[S28]</button>). The projects are largely funded
+          externally and for a limited time. Torrens and von Wirth (2021) <button class="source-chip"
+            data-src="S28">[S28]</button> call this the projectification of urban change processes and argue that it
+          encourages short-termism and unambitious incrementalism. Bulkeley et al. (2019) <button class="source-chip"
+            data-src="S27">[S27]</button>, reviewing forty European living labs, find that most have an ambiguous
+          relationship to sustainability transition pathways and that their transformative potential is more modest than
+          the claims made for them.
+        </p>
+        <p>
+          For the Aalborg Living Lab, three questions remain open: who maintains local green commons, where decision
+          rights sit, and how everyday care becomes visible to planning. Care-focused urban research has mostly looked
+          at interpersonal care and welfare services rather than planning and governance (Power &amp; Williams, 2020
+          <button class="source-chip" data-src="S21">[S21]</button>), and Williams and Rodela (2025) <button
+            class="source-chip" data-src="S37">[S37]</button> call for more work on how care-based urban strategies last
+          and spread. This proposal asks how urban social resilience can emerge and last when diverse actors gain real
+          agency over local green commons, and how planning practice can support that. It responds to WeGrowCircle and
+          is a starting point to be developed with the supervisors.
+        </p>
+
+        <h3>2. Research questions</h3>
+        <p>
+          <strong>Aim.</strong> To understand how urban social resilience emerges from social, institutional and
+          material-spatial dynamics, and to strengthen it by mapping how actors gain agency and co-designing
+          regenerative GSIs as urban commons together with local planning practice.
         </p>
         <blockquote class="callout callout--info">
-          <strong>Main Research Question:</strong> How do social actors, relations, and practices gain agency in
-          producing urban social resilience through the interplay of social, institutional, and material-spatial
-          dimensions, and how can mapping, co-design, and planning processes strengthen this in regenerative GSIs?
+          <strong>Main question.</strong> How do social actors, relations and practices gain agency in producing urban
+          social resilience through the interplay of social, institutional and material-spatial dimensions, and how can
+          mapping, co-design and planning processes strengthen that agency in regenerative GSIs?
         </blockquote>
         <ul>
-          <li><strong>SRQ1 (Mapping):</strong> What actor landscapes, relations, practices, and spatial conditions shape
+          <li><strong>SQ1 (mapping).</strong> Which actor landscapes, relations, practices and spatial conditions shape
             resilience around GSIs in the Aalborg Living Lab, and where are the gaps in agency and inclusion?</li>
-          <li><strong>SRQ2 (Co-Design):</strong> How can an inclusive co-design process build agency and the capacities
-            for resilience among diverse actors?</li>
-          <li><strong>SRQ3 (Stewardship &amp; Planning):</strong> Which stewardship and governance arrangements sustain
+          <li><strong>SQ2 (co-design).</strong> How can an inclusive co-design process build agency and resilience
+            capacities among diverse actors?</li>
+          <li><strong>SQ3 (stewardship and planning).</strong> Which stewardship and governance arrangements sustain
             resilience, and how can they be embedded in local planning and climate action?</li>
         </ul>
 
-        <h3>2. Theoretical Grounding &amp; Guiding Care Perspective</h3>
+        <h3>3. Conceptual framework</h3>
         <p>
-          Resilience is framed not as an engineered return to equilibrium, but as an emergent capacity of
-          social-ecological systems <button class="source-chip" data-src="S3">[S3]</button>. Relational planning theory
-          <button class="source-chip" data-src="S6">[S6]</button> recognizes that urban dynamics are produced through
-          overlapping webs of social relations, statutory institutions, and material configurations. Elinor Ostrom's
-          <button class="source-chip" data-src="S8">[S8]</button> eight design principles provide an analytical lens for
-          collective land stewardship. Crucially, the project adopts a <strong>care ethics lens</strong> <button
-            class="source-chip" data-src="S18">[S18]</button> <button class="source-chip" data-src="S20">[S20]</button>
-          <button class="source-chip" data-src="S21">[S21]</button> to investigate who cares for what, who is cared for,
-          and who is excluded from green infrastructure.
+          The project takes a socio-material planning and design perspective. Resilience is treated as an emergent
+          quality produced by interactions among social dynamics, institutional frameworks, and material and spatial
+          configurations. I follow the evolutionary reading of resilience (Davoudi et al., 2012 <button
+            class="source-chip" data-src="S3">[S3]</button>), which sees it as the capacity of systems to adapt and
+          transform, so that it becomes a question of agency, institutions and power as well as system behaviour.
+          Relational planning (Healey, 2007 <button class="source-chip" data-src="S6">[S6]</button>) provides the
+          planning perspective.
+        </p>
+        <p>
+          Three perspectives guide the work. Care ethics (Tronto, 1993 <button class="source-chip"
+            data-src="S18">[S18]</button>) works through four dispositions: attentiveness, responsibility, competence
+          and responsiveness (see Williams, 2020 <button class="source-chip" data-src="S22">[S22]</button>). In urban
+          research it asks who cares for what, who is cared for and who is left out, including more-than-human actors
+          (Power &amp; Williams, 2020 <button class="source-chip" data-src="S21">[S21]</button>), and it makes visible
+          the maintenance and repair that usually go unnoticed (Williams, 2020 <button class="source-chip"
+            data-src="S22">[S22]</button>). Participatory and interactive planning brings residents, designers, planners
+          and public-sector actors together over time. Here co-production means jointly making maps, prototypes and
+          stewardship charters. Social innovation (Moulaert et al., 2013 <button class="source-chip"
+            data-src="S36">[S36]</button>) combines the satisfaction of unmet needs, changed social relations and
+          empowerment. It lets me ask how new relations, practices and rules emerge, how they shift who holds agency,
+          and whether they are institutionalised beyond the project. Stewardship is analysed through Ostrom's (1990
+          <button class="source-chip" data-src="S8">[S8]</button>) design principles and research on urban green commons
+          (Colding &amp; Barthel, 2013 <button class="source-chip" data-src="S9">[S9]</button>; Colding et al., 2013
+          <button class="source-chip" data-src="S10">[S10]</button>), which defines these commons by the right to manage
+          green space collectively rather than by who owns the land. GSIs are understood as circular infrastructures
+          that close loops of biomass, water, tools and knowledge.
+        </p>
+        <p>
+          The literature documents projectification and stresses the value of participation. It says less about how
+          agency across human and non-human actors changes over time, or how informal care arrangements get embedded in
+          statutory planning (Power &amp; Williams, 2020 <button class="source-chip" data-src="S21">[S21]</button>;
+          Williams &amp; Rodela, 2025 <button class="source-chip" data-src="S37">[S37]</button>). I address this with
+          three elements: longitudinal relational actor mapping, co-designed stewardship charters, and a four-pillar
+          agency matrix (decision rungs, deliberative authority, temporal agency and spatial control rights). Together
+          they form a Resilient Urban Commons Framework that WeGrowCircle can use as a shared conceptual and
+          methodological base.
         </p>
 
-        <h3>3. Research Design &amp; 4-Phase Longitudinal Methodology</h3>
-        <ul>
-          <li><strong>Phase 1 (M1–9): Relational Diagnosis &amp; Baseline Mapping.</strong> Participatory GIS, document
-            reviews, semi-structured interviews, and baseline SNA in Aalborg.</li>
-          <li><strong>Phase 2 (M10–20): Inclusive Co-Creation &amp; Boundary Prototyping.</strong> Generative mapping
-            charrettes <button class="source-chip" data-src="S15">[S15]</button> <button class="source-chip"
-              data-src="S16">[S16]</button>, physical on-site mockups, and stewardship charters.</li>
-          <li><strong>Phase 3 (M21–30): Longitudinal Monitoring, Co-Evaluation &amp; Re-Mapping.</strong> Repeated
-            network mapping to trace changes in agency, citizen science biodiversity audits, and multi-dimensional
-            WeGrowCircle indicator tracking.</li>
-          <li><strong>Phase 4 (M31–36): Synthesis &amp; Statutory Planning Pathways.</strong> Policy translation
-            workshops with Aalborg Municipality, formulating amendments for Local Plans (Lokalplaner) <button
-              class="source-chip" data-src="S32">[S32]</button> and maintenance service agreements.</li>
+        <h3>4. Research design and methods</h3>
+        <p>
+          The study is a single-case study in the Aalborg Living Lab. Aalborg Øst and a local housing association are
+          candidate site and partner, to be confirmed with the WeGrowCircle team. The methods are qualitative,
+          participatory and oriented towards planning practice. I do not assume baseline deprivation but ask what agency
+          diverse actors hold over green commons in an already regenerated district. Mapping serves two purposes: it is
+          an analytical diagnostic and a generative tool for working with participants.
+        </p>
+
+        <div class="data-table-container" style="margin-block: var(--space-3);">
+          <table class="data-table" aria-label="Research design and methods phases">
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Months</th>
+                <th>Main activities</th>
+                <th>Indicative outputs</th>
+                <th>Research Question</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Diagnosis</strong></td>
+                <td>1–9</td>
+                <td>Ethics and data-management approval, document review, semi-structured and walk-along interviews
+                  (indicatively 20–30 across the project), participatory mapping with paper maps and simple GIS, and
+                  baseline relational actor mapping. Actors and relations are drawn with participants and read
+                  descriptively: who bridges groups, where the gaps lie, who holds decision rights</td>
+                <td>the baseline actor map and a conceptual paper on the framework (months 9–12)</td>
+                <td>SQ1 (mapping)</td>
+              </tr>
+              <tr>
+                <td><strong>2. Co-creation</strong></td>
+                <td>10–18</td>
+                <td>Two or three workshops or charrettes use low-cost boundary objects, such as maps, tactile models and
+                  1:1 on-site layouts, tried out on site with residents. Facilitation languages are chosen with
+                  residents, with community interpreters, flexible scheduling and non-text visual kits.</td>
+                <td>Charter principles are drafted jointly and reviewed informally with municipal staff. Results go back
+                  to participants before the next stage</td>
+                <td>SQ2 (co-design)</td>
+              </tr>
+              <tr>
+                <td><strong>3. Co-evaluation and re-mapping</strong></td>
+                <td>21–26</td>
+                <td>One co-evaluation workshop, repeat interviews with a subset of earlier participants, and a short
+                  re-mapping of actor relations. Four co-defined indicators cover the dimensions required by
+                  WeGrowCircle: biodiversity (resident-led photo points and an observation checklist, which is plausible
+                  because Stockholm allotment gardeners knew more about local ecological dynamics than park maintenance
+                  staff; Colding et al., 2013 <button class="source-chip" data-src="S10">[S10]</button>), circular
+                  practices (flows of pruning waste, water and tools, from interviews and maintenance documents),
+                  sufficiency (shared use of tools and resources, through participatory feedback) and social well-being
+                  (perceived safety and belonging, through walk-along interviews).</td>
+                <td>The evaluation is contribution-oriented: it traces plausible pathways from co-design to changes in
+                  agency, practices and conditions, and accepts that attribution within three years can only be partial.
+                  Ecological measurement is outside the scope, and interpretation draws on consortium partners.</td>
+                <td>SQ1 (mapping)<br>SQ2 (co-design)</td>
+              </tr>
+              <tr>
+                <td><strong>4. Synthesis</strong></td>
+                <td>31–36</td>
+                <td>A policy-translation workshop or interviews with Aalborg Municipality, then writing. Five
+                  stewardship options are compared, from municipal management to resident-led arrangements and community
+                  land trusts, and the preferred arrangement is decided with residents, the housing association, the
+                  municipality and the supervisors. Comparing several options follows Colding and Barthel (2013 <button
+                    class="source-chip" data-src="S9">[S9]</button>), who argue that no single property-rights regime
+                  fits every setting</td>
+                <td>model zoning clauses, draft charter outlines, policy briefs and the thesis. Formal adoption into
+                  local plans depends on municipal revision cycles and falls outside the 36 months, so the project
+                  delivers evidence and instruments ready for the relevant policy windows</td>
+                <td>SQ3 (stewardship and planning)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          <strong>Relational actor mapping.</strong> Actors and their relations are mapped through interviews and
+          participatory network drawing, then read descriptively: who bridges groups, where the gaps are, and who holds
+          decision rights. The map is repeated at baseline and at re-mapping to trace change qualitatively, so mapping
+          serves both as an analytical diagnostic and as a generative tool with participants. No advanced network
+          statistics are required.
+        </p>
+        <p>
+          <strong>Co-creation.</strong> Each stage returns results to participants before the next begins. Inclusion is
+          supported by facilitation languages identified with residents (for example through community interpreters),
+          flexible timing and non-text visual mapping kits; compensation for participants is subject to project budget.
+        </p>
+        <p>
+
+        <h3>5. Doctoral programme and research environment</h3>
+        <p>
+          The plan includes 30 ECTS of PhD courses (months 1–18), teaching and dissemination (months 7–36), and a
+          three-month external stay (indicatively months 27–30), which I would use to write the empirical paper and to
+          compare with a partner living lab. Engagement with one or more of the other living labs (Brussels, Gothenburg,
+          Bucharest) is expected, and I leave the choice open. During the stay, resident stewards continue simple
+          photo-point recording. Two papers are targeted: the conceptual paper (months 9–12) and an empirical paper on
+          actor mapping and co-created charters (months 27–30). The thesis format will be decided with the supervisors.
+          I would contribute to the Urban Social Resilience initiative in the Sustainability, Innovation and Policy
+          research group, and I expect to collaborate with the Department of Architecture, Design &amp; Media Technology
+          on joint co-design sessions and shared mapping and prototyping methods.
+        </p>
+
+        <h3>6. Feasibility, risks and ethics</h3>
+        <p>
+          The scope is deliberately limited: one site, one core method for each objective, and simple indicators. Access
+          depends on the housing association and the municipality. If it is restricted, the design falls back to fewer
+          interviews and workshops, which would still address SQ1 and SQ2.
+        </p>
+        <p>
+          I do not currently speak Danish. Interviews with institutional actors will be in English where possible.
+          Fieldwork with residents relies on community interpreters and co-facilitation with Danish-speaking colleagues.
+          Danish planning documents are read with translation tools.
+        </p>
+        <p>
+          The main risks and responses are participation fatigue (tangible early outcomes, and flexible scheduling
+          because the time people can give varies widely; Colding &amp; Barthel, 2013 <button class="source-chip"
+            data-src="S9">[S9]</button>), power asymmetries and exclusion (subgroup sessions, non-text visual kits;
+          Colding et al., 2013 <button class="source-chip" data-src="S10">[S10]</button>; Torrens &amp; von Wirth, 2021
+          <button class="source-chip" data-src="S28">[S28]</button>), institutional capture (early involvement of
+          maintenance staff), dependence on project funding (testing from year one how charters could connect to
+          municipal maintenance, without assuming they can; Torrens &amp; von Wirth, 2021 <button class="source-chip"
+            data-src="S28">[S28]</button>), mismatch with planning cycles (outputs timed to policy windows identified in
+          Phase 1) and the gap in ecological expertise (sought through the consortium). The research follows informed
+          consent, the GDPR and AAU ethics review. I will keep a reflexive journal on my positionality as a planner.
+        </p>
+
+        <h3>References</h3>
+        <ul style="font-size: var(--fs-xs); line-height: 1.5; display: flex; flex-direction: column; gap: 6px;">
+          <li>Bulkeley, H., et al. (2019). Urban living laboratories: Conducting the experimental city? <em>European
+              Urban and Regional Studies</em>, 26(4), 317–335. <button class="source-chip" data-src="S27">[S27]</button>
+          </li>
+          <li>Colding, J., &amp; Barthel, S. (2013). The potential of "urban green commons" in the resilience building
+            of cities. <em>Ecological Economics</em>, 86, 156–166. <button class="source-chip"
+              data-src="S9">[S9]</button></li>
+          <li>Colding, J., Barthel, S., Bendt, P., Snep, R., van der Knaap, W., &amp; Ernstson, H. (2013). Urban green
+            commons: Insights on urban common property systems. <em>Global Environmental Change</em>, 23(5), 1039–1051.
+            <button class="source-chip" data-src="S10">[S10]</button>
+          </li>
+          <li>Davoudi, S., et al. (2012). Resilience: A bridging concept or a dead end? <em>Planning Theory &amp;
+              Practice</em>, 13(2), 299–333. <button class="source-chip" data-src="S3">[S3]</button></li>
+          <li>Healey, P. (2007). <em>Urban complexity and spatial strategies</em>. Routledge. <button
+              class="source-chip" data-src="S6">[S6]</button></li>
+          <li>Moulaert, F., MacCallum, D., Mehmood, A., &amp; Hamdouch, A. (2013). General introduction: The return of
+            social innovation as a scientific concept and a social practice. In F. Moulaert et al. (Eds.), <em>The
+              international handbook on social innovation</em> (pp. 1–6). Edward Elgar. <button class="source-chip"
+              data-src="S36">[S36]</button></li>
+          <li>Ostrom, E. (1990). <em>Governing the commons</em>. Cambridge University Press. <button class="source-chip"
+              data-src="S8">[S8]</button></li>
+          <li>Power, E. R., &amp; Williams, M. J. (2020). Cities of care. <em>Geography Compass</em>, 14(1), e12474.
+            <button class="source-chip" data-src="S21">[S21]</button>
+          </li>
+          <li>Torrens, J., &amp; von Wirth, T. (2021). Experimentation or projectification of urban change? <em>Urban
+              Transformations</em>, 3, Article 8. <button class="source-chip" data-src="S28">[S28]</button></li>
+          <li>Tronto, J. C. (1993). <em>Moral boundaries</em>. Routledge. <button class="source-chip"
+              data-src="S18">[S18]</button></li>
+          <li>Williams, M. J. (2020). The possibility of care-full cities. <em>Cities</em>, 98, 102591. <button
+              class="source-chip" data-src="S22">[S22]</button></li>
+          <li>Williams, M., &amp; Rodela, R. (2025). <em>Care-full city planning: Insights across contexts</em> (GOLD
+            VII contribution). UCLG, Global Observatory on Local Democracy and Decentralization. <button
+              class="source-chip" data-src="S37">[S37]</button></li>
         </ul>
-
-        <h3>4. Context: Aalborg Living Lab</h3>
-        <p>
-          <em>Note: Exact site to be confirmed with the WeGrowCircle team; Aalborg Øst is shown as a schematic
-            illustrative setting (not to scale).</em> Aalborg Øst underwent significant physical and social regeneration
-          between 2011 and 2021 under a housing-association-led model with active tenant democracy <button
-            class="source-chip" data-src="S33">[S33]</button> <button class="source-chip" data-src="S34">[S34]</button>
-          <button class="source-chip" data-src="S35">[S35]</button>. Rather than assuming baseline deprivation, this
-          research asks: <em>what agency do diverse actors have over green commons in an already-regenerated district,
-            and how can co-management prevent post-grant abandonment?</em>
-        </p>
       </article>
     </div>
   </aside>
@@ -2120,20 +2708,19 @@
       </button>
       <span class="badge badge--material">Methodological Foundation</span>
       <h3 id="why-network-title" style="font-size: var(--fs-lg); margin-block: var(--space-1) var(--space-2);">Why
-        Social Network Analysis (SNA)?</h3>
+        relational actor mapping?</h3>
       <div style="font-size: var(--fs-xs); color: var(--on-surface-muted); line-height: var(--lh-normal);"
         class="stack">
         <p>
-          Conventional stakeholder analysis assumes static categories (e.g. "residents", "planners"). Social Network
-          Analysis (SNA) <button class="source-chip" data-src="S23">[S23]</button> <button class="source-chip"
-            data-src="S24">[S24]</button> investigates actual structural relations: who shares resources, who holds
-          authority, and where friction blocks collaboration.
-        </p>
-        <p>
-          Following Latour <button class="source-chip" data-src="S7">[S7]</button> and Puig de la Bellacasa <button
-            class="source-chip" data-src="S20">[S20]</button>, this project extends SNA to include non-human actors
-          (soil, stormwater retention swale, tree canopy, pollinators) to evaluate how human care practices recursively
-          shape ecological health.
+          Actor relations are mapped through interviews and participatory network drawing with residents and
+          stakeholders, then read descriptively: who connects whom, which actors bridge groups, where gaps and frictions
+          are. No advanced network statistics are required. The map is repeated at baseline (Phase 1) and re-mapping
+          (Phase 3) to trace change qualitatively.
+          <button class="source-chip" data-src="S23">[S23]</button>
+          <button class="source-chip" data-src="S24">[S24]</button>
+          <button class="source-chip" data-src="S26">[S26]</button>
+          <button class="source-chip" data-src="S7">[S7]</button>
+          <button class="source-chip" data-src="S20">[S20]</button>
         </p>
       </div>
     </div>
@@ -2158,12 +2745,13 @@
           projectification critique <button class="source-chip" data-src="S28">[S28]</button> in under 10 seconds:
         </p>
         <ul>
-          <li><strong>Grant-Led Curve:</strong> Initial funding creates high care capacity. After Year 2
-            grant expiry, capacity collapses exponentially due to municipal budget cuts and lack of
-            citizen ownership.</li>
-          <li><strong>Commons Curve:</strong> Starts with relationship building. Its slope and sustained capacity are
-            dynamically modified by the 3 governance switches: Decision Rights (+15 to +25), Stewardship Charter (+15),
-            and Planning Anchoring (+15).</li>
+          <li><strong>Grant-Led Curve:</strong> Initial funding creates high care capacity. In this illustrative model,
+            capacity declines after grant expiry (assumed pattern, not data).</li>
+          <li><strong>Commons Curve:</strong> Starts with relationship building. Its trajectory and sustained capacity
+            are
+            dynamically shaped by the 3 governance switches: Decision Rights, Stewardship Charter,
+            and Planning Anchoring <em>(illustrative weights for conceptual demonstration, not estimated from
+              data)</em>.</li>
         </ul>
       </div>
     </div>
@@ -2201,44 +2789,46 @@
        ==================================================================== -->
   <script>
     /* ====================================================================
-       1. COMPLETE SOURCE REGISTRY (S1 – S35)
+       1. COMPLETE SOURCE REGISTRY (S1 – S36)
        ==================================================================== */
     const SOURCES_REGISTRY = {
-      S1: { id: 'S1', short: 'AAU (2024)', full: 'Aalborg University. (2024). PhD position in Urban Social Resilience within Sustainability and Planning (WeGrowCircle; Driving Urban Transitions Partnership).', link: 'https://www.vacancies.aau.dk/phd-positions/show-vacancy/vacancyId/978645', status: 'project', label: 'Project document', supports: 'PhD call objectives, Aalborg Living Lab context, care lens expectation' },
-      S2: { id: 'S2', short: 'DUT / NWO (2024)', full: 'DUT Partnership. (2024). Driving Urban Transitions: Circular Urban Economies (CUE) pathway.', link: 'https://www.nwo.nl/en/researchprogrammes/international-programmes/european-partnerships/driving-urban-transitions-to-a-sustainable-future-dut', status: 'verified', label: 'Verified online', supports: 'Consortium funding context, circularity and sufficiency objectives' },
-      S3: { id: 'S3', short: 'Davoudi et al. (2012)', full: 'Davoudi, S., Brooks, E., & Mehmood, A. (2012). Resilience: A bridging concept or a dead end? Planning Theory & Practice, 13(2), 299–333.', link: 'https://scholar.google.com/scholar?q=Resilience%3A+A+bridging+concept+or+a+dead+end%3F+Davoudi', status: 'standard', label: 'Standard reference', supports: 'Evolutionary resilience vs engineering resilience; adaptive transformation' },
+      S1: { id: 'S1', short: 'AAU (2026)', full: 'Aalborg University. (2026). PhD position in Urban Social Resilience within Sustainability and Planning (WeGrowCircle; Driving Urban Transitions Partnership).', link: 'https://www.vacancies.aau.dk/phd-positions/show-vacancy/vacancyId/978645', status: 'project', label: 'Project document', supports: 'PhD call objectives, Aalborg Living Lab context, care lens expectation' },
+      S2: { id: 'S2', short: 'DUT', full: 'DUT Partnership. Driving Urban Transitions: Circular Urban Economies pathway.', link: 'https://dutpartnership.eu/about', status: 'verified', label: 'Verified online', supports: 'Consortium funding context, circularity and sufficiency objectives' },
+      S3: { id: 'S3', short: 'Davoudi et al. (2012)', full: 'Davoudi, S., Brooks, E., & Mehmood, A. (2012). Resilience: A bridging concept or a dead end? Planning Theory & Practice, 13(2), 299–333.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Evolutionary resilience vs engineering resilience; adaptive transformation' },
       S4: { id: 'S4', short: 'Meerow et al. (2016)', full: 'Meerow, S., Newell, J. P., & Stults, M. (2016). Defining urban resilience: A review. Landscape and Urban Planning, 147, 38–49.', link: 'https://doi.org/10.1016/j.landurbplan.2015.11.011', status: 'verified', label: 'Verified online', supports: 'Multi-scalar definitions of urban resilience and systemic trade-offs' },
-      S5: { id: 'S5', short: 'MacKinnon & Derickson (2013)', full: 'MacKinnon, D., & Derickson, K. D. (2013). From resilience to resourcefulness: A critique of resilience policy and activism. Progress in Human Geography, 37(2), 253–270.', link: 'https://scholar.google.com/scholar?q=From+resilience+to+resourcefulness+MacKinnon+Derickson', status: 'verified', label: 'Verified online', supports: 'Critique of conservative resilience policies; resourcefulness and political agency' },
-      S6: { id: 'S6', short: 'Healey (2007)', full: 'Healey, P. (2007). Urban Complexity and Spatial Strategies: Towards a Relational Planning for Our Times. Routledge.', link: 'https://scholar.google.com/scholar?q=Urban+Complexity+and+Spatial+Strategies+Patsy+Healey', status: 'standard', label: 'Standard reference', supports: 'Relational planning theory; cities as overlapping webs of relational dynamics' },
-      S7: { id: 'S7', short: 'Latour (2005)', full: 'Latour, B. (2005). Reassembling the Social: An Introduction to Actor-Network-Theory. Oxford University Press.', link: 'https://scholar.google.com/scholar?q=Reassembling+the+Social+Bruno+Latour', status: 'standard', label: 'Standard reference', supports: 'Non-human actors (soil, stormwater, flora) as active participants in social networks' },
-      S8: { id: 'S8', short: 'Ostrom (1990)', full: 'Ostrom, E. (1990). Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press.', link: 'https://scholar.google.com/scholar?q=Governing+the+Commons+Elinor+Ostrom', status: 'standard', label: 'Standard reference', supports: 'Eight core design principles for self-governing common-pool resources' },
+      S5: { id: 'S5', short: 'MacKinnon & Derickson (2013)', full: 'MacKinnon, D., & Derickson, K. D. (2013). From resilience to resourcefulness: A critique of resilience policy and activism. Progress in Human Geography, 37(2), 253–270.', link: '#', status: 'verified', label: 'Verified online', supports: 'Critique of conservative resilience policies; resourcefulness and political agency' },
+      S6: { id: 'S6', short: 'Healey (2007)', full: 'Healey, P. (2007). Urban Complexity and Spatial Strategies: Towards a Relational Planning for Our Times. Routledge.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Relational planning theory; cities as overlapping webs of relational dynamics' },
+      S7: { id: 'S7', short: 'Latour (2005)', full: 'Latour, B. (2005). Reassembling the Social: An Introduction to Actor-Network-Theory. Oxford University Press.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Non-human actors (soil, stormwater, flora) as active participants in social networks' },
+      S8: { id: 'S8', short: 'Ostrom (1990)', full: 'Ostrom, E. (1990). Governing the Commons: The Evolution of Institutions for Collective Action. Cambridge University Press.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Eight core design principles for self-governing common-pool resources' },
       S9: { id: 'S9', short: 'Colding & Barthel (2013a)', full: 'Colding, J., & Barthel, S. (2013). The potential of "Urban Green Commons" in the resilience building of cities. Ecological Economics, 86, 156–166.', link: 'https://doi.org/10.1016/j.ecolecon.2012.10.016', status: 'verified', label: 'Verified online', supports: 'Urban Green Commons (UGC) concept and socio-ecological memory' },
       S10: { id: 'S10', short: 'Colding et al. (2013b)', full: 'Colding, J., Barthel, S., Bendt, P., Snep, R., van der Knaap, W., & Ernstson, H. (2013). Urban green commons: Insights on urban common property systems. Global Environmental Change, 23(5), 1039–1051.', link: 'https://doi.org/10.1016/j.gloenvcha.2013.07.020', status: 'verified', label: 'Verified online', supports: 'Property rights and collective stewardship in urban greening' },
-      S11: { id: 'S11', short: 'Arnstein (1969)', full: 'Arnstein, S. R. (1969). A ladder of citizen participation. Journal of the American Institute of Planners, 35(4), 216–224.', link: 'https://scholar.google.com/scholar?q=A+ladder+of+citizen+participation+Arnstein', status: 'standard', label: 'Standard reference', supports: 'Participation rungs: non-participation, tokenism, partnership, delegated power' },
-      S12: { id: 'S12', short: 'Fung (2006)', full: 'Fung, A. (2006). Varieties of participation in complex governance. Public Administration Review, 66(s1), 66–75.', link: 'https://scholar.google.com/scholar?q=Varieties+of+participation+in+complex+governance+Archon+Fung', status: 'standard', label: 'Standard reference', supports: 'Democracy cube: participant selection, communication mode, extent of authority' },
-      S13: { id: 'S13', short: 'Emirbayer & Mische (1998)', full: 'Emirbayer, M., & Mische, A. (1998). What is agency? American Journal of Sociology, 103(4), 962–1023.', link: 'https://scholar.google.com/scholar?q=What+is+agency+Emirbayer+Mische', status: 'standard', label: 'Standard reference', supports: 'Chordal triad of agency: iterational (past), projective (future), practical-evaluative (present)' },
-      S14: { id: 'S14', short: 'Brandsen et al. (2018)', full: 'Brandsen, T., Steen, T., & Verschuere, B. (Eds.). (2018). Co-production and Co-creation: Engaging Citizens in Public Services. Routledge.', link: 'https://scholar.google.com/scholar?q=Co-production+and+Co-creation+Brandsen', status: 'standard', label: 'Standard reference', supports: 'Shared decision-making power between authorities and citizens' },
-      S15: { id: 'S15', short: 'Star & Griesemer (1989)', full: 'Star, S. L., & Griesemer, J. R. (1989). Institutional ecology, "translations" and boundary objects. Social Studies of Science, 19(3), 387–420.', link: 'https://scholar.google.com/scholar?q=Institutional+ecology+translations+and+boundary+objects+Star+Griesemer', status: 'standard', label: 'Standard reference', supports: 'Boundary objects facilitating collaboration without demanding consensus' },
-      S16: { id: 'S16', short: 'Sanders & Stappers (2008)', full: 'Sanders, E. B.-N., & Stappers, P. J. (2008). Co-creation and the new landscapes of design. CoDesign, 4(1), 5–18.', link: 'https://scholar.google.com/scholar?q=Co-creation+and+the+new+landscapes+of+design+Sanders+Stappers', status: 'standard', label: 'Standard reference', supports: 'Generative mapping tools and participatory design methods' },
-      S17: { id: 'S17', short: 'Corner (1999)', full: 'Corner, J. (1999). The agency of mapping: Speculation, critique and invention. In D. Cosgrove (Ed.), Mappings (pp. 213–252). Reaktion Books.', link: 'https://scholar.google.com/scholar?q=The+agency+of+mapping+James+Corner', status: 'standard', label: 'Standard reference', supports: 'Generative and productive capacity of mapping to discover new spatial relations' },
-      S18: { id: 'S18', short: 'Tronto (1993)', full: 'Tronto, J. C. (1993). Moral Boundaries: A Political Argument for an Ethic of Care. Routledge.', link: 'https://scholar.google.com/scholar?q=Moral+Boundaries+Joan+Tronto', status: 'standard', label: 'Standard reference', supports: 'Ethic of care framework: attentiveness, responsibility, competence, responsiveness' },
-      S19: { id: 'S19', short: 'Tronto (2013)', full: 'Tronto, J. C. (2013). Caring Democracy: Markets, Equality, and Justice. NYU Press.', link: 'https://scholar.google.com/scholar?q=Caring+Democracy+Joan+Tronto', status: 'standard', label: 'Standard reference', supports: 'Fifth phase of care: caring with, democratic solidarity and institutional care' },
-      S20: { id: 'S20', short: 'Puig de la Bellacasa (2017)', full: 'Puig de la Bellacasa, M. (2017). Matters of Care: Speculative Ethics in More than Human Worlds. University of Minnesota Press.', link: 'https://scholar.google.com/scholar?q=Matters+of+Care+Puig+de+la+Bellacasa', status: 'verified', label: 'Verified online', supports: 'More-than-human care: soil care, microbial ecology, and non-human dependencies' },
+      S11: { id: 'S11', short: 'Arnstein (1969)', full: 'Arnstein, S. R. (1969). A ladder of citizen participation. Journal of the American Institute of Planners, 35(4), 216–224.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Participation rungs: non-participation, tokenism, partnership, delegated power' },
+      S12: { id: 'S12', short: 'Fung (2006)', full: 'Fung, A. (2006). Varieties of participation in complex governance. Public Administration Review, 66(s1), 66–75.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Democracy cube: participant selection, communication mode, extent of authority' },
+      S13: { id: 'S13', short: 'Emirbayer & Mische (1998)', full: 'Emirbayer, M., & Mische, A. (1998). What is agency? American Journal of Sociology, 103(4), 962–1023.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Chordal triad of agency: iterational (past), projective (future), practical-evaluative (present)' },
+      S14: { id: 'S14', short: 'Brandsen et al. (2018)', full: 'Brandsen, T., Steen, T., & Verschuere, B. (Eds.). (2018). Co-production and Co-creation: Engaging Citizens in Public Services. Routledge.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Shared decision-making power between authorities and citizens' },
+      S15: { id: 'S15', short: 'Star & Griesemer (1989)', full: 'Star, S. L., & Griesemer, J. R. (1989). Institutional ecology, "translations" and boundary objects. Social Studies of Science, 19(3), 387–420.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Boundary objects facilitating collaboration without demanding consensus' },
+      S16: { id: 'S16', short: 'Sanders & Stappers (2008)', full: 'Sanders, E. B.-N., & Stappers, P. J. (2008). Co-creation and the new landscapes of design. CoDesign, 4(1), 5–18.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Generative mapping tools and participatory design methods' },
+      S17: { id: 'S17', short: 'Corner (1999)', full: 'Corner, J. (1999). The agency of mapping: Speculation, critique and invention. In D. Cosgrove (Ed.), Mappings (pp. 213–252). Reaktion Books.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Generative and productive capacity of mapping to discover new spatial relations' },
+      S18: { id: 'S18', short: 'Tronto (1993)', full: 'Tronto, J. C. (1993). Moral Boundaries: A Political Argument for an Ethic of Care. Routledge.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Ethic of care framework: attentiveness, responsibility, competence, responsiveness' },
+      S19: { id: 'S19', short: 'Tronto (2013)', full: 'Tronto, J. C. (2013). Caring Democracy: Markets, Equality, and Justice. NYU Press.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Fifth phase of care: caring with, democratic solidarity and institutional care' },
+      S20: { id: 'S20', short: 'Puig de la Bellacasa (2017)', full: 'Puig de la Bellacasa, M. (2017). Matters of Care: Speculative Ethics in More than Human Worlds. University of Minnesota Press.', link: '#', status: 'verified', label: 'Verified online', supports: 'More-than-human care: soil care, microbial ecology, and non-human dependencies' },
       S21: { id: 'S21', short: 'Power & Williams (2020)', full: 'Power, E. R., & Williams, M. J. (2020). Cities of care: A platform for urban geographical care research. Geography Compass, 14(1), e12474.', link: 'https://doi.org/10.1111/gec3.12474', status: 'verified', label: 'Verified online', supports: 'Cities of care analytical platform in urban geography' },
       S22: { id: 'S22', short: 'Williams (2020)', full: 'Williams, M. (2020). The possibility of care-full cities. Cities, 98, 102591.', link: 'https://doi.org/10.1016/j.cities.2019.102591', status: 'verified', label: 'Verified online', supports: 'Care-full planning infrastructures and urban solidarity' },
-      S23: { id: 'S23', short: 'Prell et al. (2009)', full: 'Prell, C., Hubacek, K., & Reed, M. (2009). Stakeholder analysis and social network analysis in natural resource management. Society & Natural Resources, 22(6), 501–518.', link: 'https://scholar.google.com/scholar?q=Stakeholder+analysis+and+social+network+analysis+Prell', status: 'verified', label: 'Verified online', supports: 'Social Network Analysis (SNA) for environmental stakeholder mapping' },
+      S23: { id: 'S23', short: 'Prell et al. (2009)', full: 'Prell, C., Hubacek, K., & Reed, M. (2009). Stakeholder analysis and social network analysis in natural resource management. Society & Natural Resources, 22(6), 501–518.', link: '#', status: 'verified', label: 'Verified online', supports: 'Social Network Analysis (SNA) for environmental stakeholder mapping' },
       S24: { id: 'S24', short: 'Bodin & Crona (2009)', full: 'Bodin, Ö., & Crona, B. (2009). The role of social networks in natural resource governance: What relational patterns make a difference? Global Environmental Change, 19(3), 366–374.', link: 'https://doi.org/10.1016/j.gloenvcha.2009.05.002', status: 'verified', label: 'Verified online', supports: 'Structural network properties (density, bridging ties) in adaptive resource governance' },
-      S25: { id: 'S25', short: 'Bodin et al. (2006)', full: 'Bodin, Ö., Crona, B., & Ernstson, H. (2006). Social networks in natural resource management: What is there to learn from a structural perspective? Ecology and Society, 11(2), r2.', link: 'https://scholar.google.com/scholar?q=Social+networks+in+natural+resource+management+Bodin', status: 'verified', label: 'Verified online', supports: 'Network centrality and communication bottlenecks in environmental commons' },
-      S26: { id: 'S26', short: 'Bodin & Prell (2011)', full: 'Bodin, Ö., & Prell, C. (Eds.). (2011). Social Networks and Natural Resource Management: Uncovering the Social Fabric of Environmental Governance. Cambridge University Press.', link: 'https://scholar.google.com/scholar?q=Social+Networks+and+Natural+Resource+Management+Bodin+Prell', status: 'verified', label: 'Verified online', supports: 'Comprehensive methodological handbook for relational mapping in sustainability' },
+      S25: { id: 'S25', short: 'Bodin et al. (2006)', full: 'Bodin, Ö., Crona, B., & Ernstson, H. (2006). Social networks in natural resource management: What is there to learn from a structural perspective? Ecology and Society, 11(2), r2.', link: '#', status: 'verified', label: 'Verified online', supports: 'Network centrality and communication bottlenecks in environmental commons' },
+      S26: { id: 'S26', short: 'Bodin & Prell (2011)', full: 'Bodin, Ö., & Prell, C. (Eds.). (2011). Social Networks and Natural Resource Management: Uncovering the Social Fabric of Environmental Governance. Cambridge University Press.', link: '#', status: 'verified', label: 'Verified online', supports: 'Comprehensive methodological handbook for relational mapping in sustainability' },
       S27: { id: 'S27', short: 'Bulkeley et al. (2019)', full: 'Bulkeley, H., et al. (2019). Urban living laboratories: Conducting the experimental city? European Urban and Regional Studies, 26(4), 317–335.', link: 'https://doi.org/10.1177/0969776418787222', status: 'verified', label: 'Verified online', supports: 'Typologies and governance tensions in Urban Living Laboratories' },
       S28: { id: 'S28', short: 'Torrens & von Wirth (2021)', full: 'Torrens, J., & von Wirth, T. (2021). Experimentation or projectification of urban change? A critical appraisal and three steps forward. Urban Transformations, 3(1), 1–17.', link: 'https://doi.org/10.1186/s42854-021-00025-1', status: 'verified', label: 'Verified online', supports: 'Critique of projectification and the "pilot trap" in European urban transitions' },
-      S29: { id: 'S29', short: 'Folke et al. (2005)', full: 'Folke, C., Hahn, T., Olsson, P., & Norberg, J. (2005). Adaptive governance of social-ecological systems. Annual Review of Environment and Resources, 30, 441–473.', link: 'https://scholar.google.com/scholar?q=Adaptive+governance+of+social-ecological+systems+Folke', status: 'standard', label: 'Standard reference', supports: 'Polycentric adaptive governance and social-ecological system feedback' },
+      S29: { id: 'S29', short: 'Folke et al. (2005)', full: 'Folke, C., Hahn, T., Olsson, P., & Norberg, J. (2005). Adaptive governance of social-ecological systems. Annual Review of Environment and Resources, 30, 441–473.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Polycentric adaptive governance and social-ecological system feedback' },
       S30: { id: 'S30', short: 'Kirchherr et al. (2017)', full: 'Kirchherr, J., Reike, D., & Hekkert, M. (2017). Conceptualizing the circular economy: An analysis of 114 definitions. Resources, Conservation and Recycling, 127, 221–232.', link: 'https://doi.org/10.1016/j.resconrec.2017.09.005', status: 'standard', label: 'Standard reference', supports: 'Definition of circular economy principles for WeGrowCircle CUE pathway' },
-      S31: { id: 'S31', short: 'Princen (2005)', full: 'Princen, T. (2005). The Logic of Sufficiency. MIT Press.', link: 'https://scholar.google.com/scholar?q=The+Logic+of+Sufficiency+Thomas+Princen', status: 'standard', label: 'Standard reference', supports: 'Sufficiency framing: ecological restraint and non-consumptive urban amenities' },
-      S32: { id: 'S32', short: 'Danish Planning Act (2024)', full: 'Danish Planning Act (Planloven). In International Planning Law: Danish planning law – a short introduction. Technion / Retsinformation.', link: 'https://internationalplanninglaw.net.technion.ac.il/countries/denmark/', status: 'verified', label: 'Verified online', supports: 'Statutory hierarchy: only Local Plans (Lokalplaner) legally bind individual landowners' },
-      S33: { id: 'S33', short: 'New European Bauhaus (2022)', full: 'New European Bauhaus Prizes. (2022). Aalborg East: From isolated to inclusive (Regeneration showcase).', link: 'https://prizes.new-european-bauhaus.europa.eu/index.php/node/363698', status: 'verified', label: 'Verified online', supports: 'Aalborg Øst regeneration context (2011–2021); democratic social housing model' },
-      S34: { id: 'S34', short: 'Housing Europe (2021)', full: 'Housing Europe. (2021). Aalborg East: A decade of holistic social housing transformation.', link: 'https://www.housingeurope.eu/project/aalborg-east/', status: 'verified', label: 'Verified online', supports: 'Physical and social regeneration history in Himmerland Boligforening estates' },
-      S35: { id: 'S35', short: 'URBACT (2020)', full: 'URBACT Good Practice. (2020). Holistic method for urban regeneration (Tornhøj, Aalborg East).', link: 'https://urbact.eu/good-practices/holistic-method-urban-regeneration', status: 'verified', label: 'Verified online', supports: 'Tornhøj regeneration case study and municipal-community collaboration' }
+      S31: { id: 'S31', short: 'Princen (2005)', full: 'Princen, T. (2005). The Logic of Sufficiency. MIT Press.', link: '#', status: 'standard', label: 'Standard reference', supports: 'Sufficiency framing: ecological restraint and non-consumptive urban amenities' },
+      S32: { id: 'S32', short: 'Danish Planning Act (2024)', full: 'Danish Planning Act (Planloven). In International Planning Law: Danish planning law – a short introduction. Technion / Retsinformation.', link: 'https://internationalplanninglaw.net.technion.ac.il/countries/denmark/', status: 'verified', label: 'Outdated overview (2007); replace with current Planning Act on retsinformation.dk [link to be added]', supports: 'Statutory hierarchy: only Local Plans (Lokalplaner) legally bind individual landowners' },
+      S33: { id: 'S33', short: 'New European Bauhaus (2023)', full: 'New European Bauhaus Prizes. (2023). Aalborg East: From isolated to inclusive (Regeneration showcase).', link: 'https://prizes.new-european-bauhaus.europa.eu/index.php/node/363698', status: 'verified', label: 'Verified online', supports: 'Aalborg Øst regeneration context (2012–2021); democratic social housing model' },
+      S34: { id: 'S34', short: 'Housing Europe (2022)', full: 'Housing Europe. (2022). Aalborg East [European Responsible Housing Awards 2022 project page].', link: 'https://www.housingeurope.eu/project/aalborg-east/', status: 'verified', label: 'Verified online', supports: 'Physical and social regeneration history in Himmerland Boligforening estates' },
+      S35: { id: 'S35', short: 'URBACT (2017)', full: 'URBACT. (2017). Holistic method for urban regeneration (Good Practice, Aalborg: Skalborg and Tornhøj).', link: 'https://urbact.eu/good-practices/holistic-method-urban-regeneration', status: 'verified', label: 'Verified online', supports: 'Tornhøj regeneration case study and municipal-community collaboration' },
+      S36: { id: 'S36', short: 'Moulaert et al. (2013)', full: 'Moulaert, F., MacCallum, D., Mehmood, A., & Hamdouch, A. (2013). General introduction: The return of social innovation as a scientific concept and a social practice. In F. Moulaert et al. (Eds.), The international handbook on social innovation (pp. 1–6). Edward Elgar.', link: 'https://orca.cardiff.ac.uk/id/eprint/60072/', status: 'standard', label: 'Standard reference', supports: 'Social innovation framework; satisfaction of unmet needs, changed social relations and empowerment' },
+      S37: { id: 'S37', short: 'Williams & Rodela (2025)', full: 'Williams, M., & Rodela, R. (2025). Care-full city planning: Insights across contexts (GOLD VII contribution). UCLG, Global Observatory on Local Democracy and Decentralization.', link: 'https://gold.uclg.org/', status: 'standard', label: 'Standard reference', supports: 'How care-based urban strategies last and spread; embedding informal care arrangements in statutory planning' }
     };
 
     /* ====================================================================
@@ -2310,17 +2900,17 @@
        3. SPEAKER NOTES DATA (Concise, Defense-Focused)
        ==================================================================== */
     const SPEAKER_NOTES_DATA = [
-      "Scene 1 (Hero): Introduce the core PhD thesis: urban social resilience is an emergent quality, not a top-down decree. Grounded in socio-material planning and care ethics within DUT WeGrowCircle [S1, S2].",
-      "Scene 2 (Problem & Pathway Lab): Demonstrate the 'pilot trap' [S28]. Explain the scrubber: grant funding ends at Year 2. If decision rights are merely consultative, care collapses; if delegated and anchored in local plans [S32], commons care persists.",
-      "Scene 3 (Framework & Care): Present the Triad SVG. Emphasize the Care Lens [S18, S20]: who cares, who is cared for, who is excluded. Walk through the 4-pillar agency operationalisation [S11, S12, S13].",
-      "Scene 4 (Actor Mapping): Present the 3-zone SNA layout (Social, Institutional, Material). Point out the 5 edge types including human-to-nature care ties [S20]. Re-mapping hypothesis increases bridging ties and resident agency.",
-      "Scene 5 (Co-Creation): Stress that we demonstrate the PROCESS, not finished masterplans. Highlight boundary objects [S15], multilingual inclusion, and conflict mediation protocols.",
-      "Scene 6 (Governance): Compare 5 models. Highlight Model 4 (Hybrid Public-Civic Co-Management). Ostrom's 8 design principles [S8] serve as an analytical diagnostic lens, not a guaranteed fit.",
-      "Scene 7 (Evaluation): Present the 4 WeGrowCircle dimensions: Biodiversity, Circularity (CUE pathway) [S30], Sufficiency [S31], and Well-Being. Indicators are to be co-defined with participants.",
-      "Scene 8 (Planning Pathway): Detail statutory translation. Key legal principle under Danish Planloven [S32]: only Local Plans (Lokalplaner) legally bind individual landowners.",
-      "Scene 9 (Timeline & Risks): Review 3-year Gantt across 4 phases and 4-paper publication plan. Address participation fatigue (compensation, micro-wins) and researcher positionality.",
-      "Scene 10 (Contributions): Ground theoretical (socio-material commons), methodological (longitudinal SNA), and practical (Danish co-management charters) contributions.",
-      "Scene 11 (Sources & Ledger): Walk committee through the transparent Claim Ledger and the 35 verified academic sources mapping every proposition to its theoretical grounding."
+      "Scene 1 (Hero): Core Thesis & Vision. What is a working hypothesis: The candidate case (Aalborg Øst / Himmerland Boligforening) and theoretical framework synthesis (care ethics, participatory processes, social innovation) are working hypotheses [S1, S2]. Why: The AAU call asks for initial considerations; genuine co-creation cannot predetermine sites or solutions. How decided: Confirmed in Phase 1 in consultation with supervisors and the WeGrowCircle living lab consortium.",
+      "Scene 2 (Problem & Pathway Lab): Pilot Trap & Commons Dynamics. What is a working hypothesis: That moving from consultative tokenism to delegated governance and statutory anchoring enables persistent green-social care [S28, S32]. Why: Grant-funded pilots frequently experience maintenance declines post-funding ('pilot trap'); simulation curves and weights are illustrative heuristics, not estimated data. How decided: Tested and calibrated through empirical longitudinal fieldwork alongside municipal and housing partners in Phases 1–3.",
+      "Scene 3 (Framework & Care): Conceptual Triad & Circular Infrastructure. What is a working hypothesis: GSIs act as circular infrastructures closing loops of biomass, water, tools, and knowledge, filling the research gap on how human and non-human agency evolves over time [S18, S20]. Why: Establishes a rigorous multi-dimensional lens combining care ethics, relational planning, and social innovation. How decided: The four-pillar agency matrix will be operationalised with supervisors and tailored to living lab fieldwork.",
+      "Scene 4 (Relational Actor Mapping): Relational Actor Mapping & Agency Gaps. Scope feasibility: The scope is realistic for one researcher because actor relations are mapped descriptively through interviews and participatory mapping without computing complex network statistics. What is a working hypothesis: Baseline relations reveal institutional silos and peripheral non-human nodes, but we ask what agency diverse actors currently possess rather than assuming deficit or ethnic isolation [S23, S24]. Why: Avoids stigmatising assumptions. How decided: Network boundaries, tie strengths, and actor categories will be co-mapped and validated through participatory mapping and interviews with residents and Himmerland Boligforening during Phase 1.",
+      "Scene 5 (Co-Creation Process): 4-Stage Co-Design & Boundary Prototyping. Scope feasibility: Focus is kept strictly on a single living lab site using 2–3 low-cost workshops, simple paper maps, and qualitative boundary objects rather than resource-intensive design builds. What is a working hypothesis: Staged co-design using boundary objects [S15], multilingual facilitation, and tactile mockups builds lasting resident agency. Spatial sketches are illustrative options, not a masterplan. Why: Masterplans impose rigid solutions. How decided: Facilitation languages, meeting cadences, and charter terms will be agreed directly with residents, community interpreters, and supervisors in Phase 2.",
+      "Scene 6 (Governance Models): Comparative Institutional Arrangements. What is a working hypothesis: Model 4 (Public-Civic Co-Management) is an explicit hypothesis to be tested; all five models are comparative candidates [S8]. Why: No governance model can be mandated in advance; local institutional appetite and tenant democracy dictate feasibility. How decided: Deliberated and selected with residents, housing association, municipality, and supervisory team during Phases 1–2.",
+      "Scene 7 (Evaluation Matrix): WeGrowCircle Indicators & Contribution Logic. Scope feasibility: Measuring the four dimensions relies on simple resident photo points, observation checklists, and caretaker interviews, delegating ecological interpretation to consortium partners without running technical measurements or species surveys. What is a working hypothesis: Co-designed interventions shift practices across biodiversity, circular loops (pruning waste, tools), sufficiency, and perceived belonging. Baseline is framed as research questions, not deficits. Why: Follows contribution analysis rather than claiming full 3-year causal attribution. How decided: Specific indicators and baseline thresholds will be co-refined with living lab participants and supervisory mentors in Phase 1.",
+      "Scene 8 (Planning Pathway): Statutory Translation & Policy Windows. Scope feasibility: The researcher formulates model zoning clause recommendations and draft charter outlines reviewed informally with planners, claiming no formal legal drafting or operational management. What is a working hypothesis: The project delivers model zoning recommendations, draft stewardship charter principles and co-management agreement outlines, discussed with municipal staff and scenario-tested in workshops (not tested in operation), and policy briefs [S32]. Why: Formal municipal adoption into Local Plans (Lokalplaner) depends on political revision cycles beyond the 36-month PhD scope. How decided: Target policy windows, model clauses, and institutional interfaces will be co-formulated with Aalborg Municipality planners and supervisors in Phases 3–4.",
+      "Scene 9 (Timeline & Risks): 36-Month Gantt & Doctoral Milestones. Scope feasibility: The doctoral timeline is realistic for one researcher by structuring two papers only: Paper 1 'Urban Commons Framework' (conceptual, M9–12) and Paper 2 'Actor Mapping and Co-Created Stewardship Charters' (empirical, M27–30), simple indicators on a single site, and resident photo-point recording during the external research stay. What is a working hypothesis: Feasible 4-phase timeline (Phase 1 Diagnosis M1–9 with ethics and data-management approval and baseline mapping; Phase 2 Co-creation M10–18 with 2–3 workshops and draft charter principles; Phase 3 Co-evaluation and re-mapping M21–26 with one co-evaluation workshop, repeat interviews with a subset of earlier participants, short re-mapping; Phase 4 Synthesis M31–36 with policy-translation workshop or interviews) integrated with mandatory AAU PhD components (30 ECTS courses M1–18, teaching/dissemination M7–36, three-month external stay M27–30) and two papers (indicative); thesis format to be decided with supervisors. Access depends on housing association and municipality; fallback is fewer interviews and workshops (still addressing SQ1 and SQ2). Why: Transparent risk management (participation fatigue, power asymmetries, institutional capture, dependence on project funding, planning-cycle mismatch, ecological expertise gap). How decided: Phasing, research stay destination (Brussels, Gothenburg, or Bucharest), and mitigations agreed in the PhD plan with supervisors.",
+      "Scene 10 (Contributions): Theoretical, Methodological & Practical Impact. What is a working hypothesis: The Aalborg Living Lab candidate case generates transferable insights for European urban transitions. Why: Demonstrates doctoral relevance and consortium alignment within DUT WeGrowCircle. How decided: Contribution priorities and dissemination formats will be iteratively refined through supervisory feedback and consortium workshops. Research environment: The project contributes to the Urban Social Resilience (USR) initiative within the Sustainability, Innovation and Policy research group at the Department of Sustainability and Planning, and collaborates across disciplines with Architecture, Design & Media Technology on joint co-design, mapping and prototyping methods, and seminars.",
+      "Scene 11 (Sources & Ledger): Academic Rigor & Claim Transparency. What is a working hypothesis: Distinguishes established academic literature (S1–S37) from author's working proposals and illustrative models. Why: Guarantees research integrity by avoiding fabricated citations or unwarranted empirical claims. How decided: Evidence base and literature reviews will be expanded throughout Phase 1 in dialogue with supervisory guidance."
     ];
 
     function updateSpeakerNotes(idx) {
@@ -2555,30 +3145,30 @@
     })();
 
     /* ====================================================================
-       5. ACTOR-NETWORK ENGINE (3D Rotatable Spatial Map & Relational SNA)
+       5. ACTOR-NETWORK ENGINE (3D Rotatable Spatial Map & Relational Actor Mapping)
        ==================================================================== */
     const ActorNetwork = (() => {
       // 14 Nodes hand-placed in both Relational cluster and 3D Aalborg Øst model
       const nodes = [
         // Zone 1: Social Actors (Floating in air above courtyard and residential domain)
-        { id: 'residents', name: 'Residents & Tenants', shortName: 'Residents', zone: 'social', shape: 'circle', cx: 150, cy: 110, r: 20, x3d: 0, y3d: 0, z3d: 60, agency: 2, remapAgency: 4, role: 'Primary everyday users and prospective stewards in social housing.', resources: 'Lived local knowledge, informal care practices.', gaps: 'Low voting power in municipal planning hearings.', measure: 'Household spatial surveys and walking interviews (Phase 1).' },
-        { id: 'assembly', name: 'Tenant Assembly', shortName: 'Assembly', zone: 'social', shape: 'circle', cx: 270, cy: 90, r: 18, x3d: 85, y3d: 25, z3d: 58, agency: 2, remapAgency: 4, role: 'Elected tenant board (Beboerbestyrelse) under Danish Almenboliglov.', resources: 'Statutory mandate over estate maintenance budget.', gaps: 'Budget previously locked into building fabric repairs.', measure: 'Tenancy board meeting observations and charter reviews.' },
-        { id: 'youth', name: 'Youth Groups', shortName: 'Youth', zone: 'social', shape: 'circle', cx: 100, cy: 220, r: 16, x3d: 145, y3d: -75, z3d: 52, agency: 1, remapAgency: 3, role: 'Neighborhood teenagers seeking active recreational open spaces.', resources: 'Social energy, digital communication networks.', gaps: 'Frequently excluded from formal consultations.', measure: 'Participatory video mapping and peer workshops.' },
-        { id: 'seniors', name: 'Senior Residents', shortName: 'Seniors', zone: 'social', shape: 'circle', cx: 220, cy: 200, r: 15, x3d: -55, y3d: -30, z3d: 54, agency: 2, remapAgency: 3, role: 'Long-term elderly residents with neighborhood memory.', resources: 'Daily presence in courtyard benches, plant knowledge.', gaps: 'Mobility barriers on uneven gravel pathways.', measure: 'Accessibility audit walks and narrative oral histories.' },
-        { id: 'immigrants', name: 'Immigrant Collectives', shortName: 'Immigrants', zone: 'social', shape: 'circle', cx: 170, cy: 290, r: 16, x3d: 35, y3d: -65, z3d: 54, agency: 1, remapAgency: 3, role: 'Multicultural families with rich agro-ecological traditions.', resources: 'Diverse crop cultivation knowledge, solidarity.', gaps: 'Language barriers in standard Danish hearings.', measure: 'Bilingual focus groups facilitated by community brokers.' },
+        { id: 'residents', name: 'Residents & Tenants', shortName: 'Residents', zone: 'social', shape: 'circle', cx: 150, cy: 110, r: 20, x3d: 0, y3d: 0, z3d: 60, agency: 2, remapAgency: 4, role: 'Primary everyday users and prospective stewards in social housing (candidate site, to be confirmed with the WeGrowCircle team).', resources: 'Lived local knowledge, informal care practices (to be explored).', gaps: 'What formal decision rights do residents currently hold in municipal planning hearings?', measure: 'Participatory mapping and walk-along interviews (Phase 1).' },
+        { id: 'assembly', name: 'Tenant Assembly', shortName: 'Assembly', zone: 'social', shape: 'circle', cx: 270, cy: 90, r: 18, x3d: 85, y3d: 25, z3d: 58, agency: 2, remapAgency: 4, role: 'Elected tenant board (Beboerbestyrelse) under Danish Almenboliglov.', resources: 'Statutory mandate over estate maintenance budget.', gaps: 'How flexibly can tenant maintenance budgets support living green commons?', measure: 'Tenancy board meeting observations and charter reviews.' },
+        { id: 'youth', name: 'Youth Groups', shortName: 'Youth', zone: 'social', shape: 'circle', cx: 100, cy: 220, r: 16, x3d: 145, y3d: -75, z3d: 52, agency: 1, remapAgency: 3, role: 'Neighborhood youth who may seek active recreational open spaces (to be explored).', resources: 'Social energy, peer communication networks.', gaps: 'Through which channels are youth currently consulted or heard regarding outdoor spaces?', measure: 'Participatory video mapping and peer workshops.' },
+        { id: 'seniors', name: 'Senior Residents', shortName: 'Seniors', zone: 'social', shape: 'circle', cx: 220, cy: 200, r: 15, x3d: -55, y3d: -30, z3d: 54, agency: 2, remapAgency: 3, role: 'Long-term elderly residents with potential neighborhood memory (to be explored).', resources: 'Daily presence in outdoor spaces, potential plant knowledge.', gaps: 'What physical and social barriers affect seniors\' everyday use of outdoor spaces?', measure: 'Accessibility audit walks and narrative oral histories.' },
+        { id: 'immigrants', name: 'Residents with Diverse Backgrounds', shortName: 'Diverse residents', zone: 'social', shape: 'circle', cx: 170, cy: 290, r: 16, x3d: 35, y3d: -65, z3d: 54, agency: 1, remapAgency: 3, role: 'Residents with diverse backgrounds who may hold agro-ecological and other knowledge (to be explored).', resources: 'Possible knowledge of cultivation and neighbourly care (to be explored).', gaps: 'Possible language or procedural barriers in municipal hearings (hypothesis to test).', measure: 'Focus groups with community interpreters, facilitated by community brokers.' },
 
         // Zone 2: Institutional Actors (Floating in air above municipal gateway and estate offices)
-        { id: 'housing_assoc', name: 'Housing Association', shortName: 'Himmerland', zone: 'institutional', shape: 'circle', cx: 500, cy: 100, r: 20, x3d: 135, y3d: 105, z3d: 65, agency: 4, remapAgency: 4, role: 'Himmerland Boligforening: Property owner and estate management entity.', resources: 'Professional estate caretakers, capital budget.', gaps: 'Aversion to volunteer maintenance liability risks.', measure: 'Contract reviews and caretaker interviews.' },
-        { id: 'planners', name: 'Municipal Planners', shortName: 'Planners', zone: 'institutional', shape: 'circle', cx: 640, cy: 110, r: 18, x3d: 20, y3d: 140, z3d: 68, agency: 4, remapAgency: 4, role: 'Aalborg Kommune Strategic Planning & Environment Division.', resources: 'Statutory zoning authority over Kommuneplan and Lokalplan.', gaps: 'Institutional silos separating climate from social welfare.', measure: 'Municipal policy analysis and planning interviews.' },
-        { id: 'water_dept', name: 'Water Utility (Forsyning)', shortName: 'Forsyning', zone: 'institutional', shape: 'circle', cx: 580, cy: 210, r: 17, x3d: -160, y3d: 110, z3d: 68, agency: 4, remapAgency: 4, role: 'Aalborg Forsyning / Skybrudssikring flood engineers.', resources: 'Dedicated infrastructure funding for stormwater retention.', gaps: 'Monofunctional focus on hydraulic drainage volumes.', measure: 'Engineering blueprint reviews and joint workshops.' },
-        { id: 'ngos', name: 'Environmental NGOs', shortName: 'NGOs', zone: 'institutional', shape: 'circle', cx: 470, cy: 270, r: 15, x3d: 185, y3d: 15, z3d: 55, agency: 3, remapAgency: 3, role: 'Local biodiversity groups (e.g. Danmarks Naturfredningsforening).', resources: 'Botanical monitoring tools, volunteer training.', gaps: 'Weak ties to social housing immigrant youth.', measure: 'Joint bio-blitz citizen science logs.' },
-        { id: 'researchers', name: 'AAU / WeGrowCircle', shortName: 'AAU Lab', zone: 'institutional', shape: 'circle', cx: 630, cy: 280, r: 15, x3d: -65, y3d: 125, z3d: 65, agency: 3, remapAgency: 3, role: 'PhD researcher and action research facilitation team.', resources: 'Boundary objects, international consortium network.', gaps: 'Time-bounded project window; dependency risk.', measure: 'Reflexive field journaling and member-checking.' },
+        { id: 'housing_assoc', name: 'Housing Association', shortName: 'Himmerland', zone: 'institutional', shape: 'circle', cx: 500, cy: 100, r: 20, x3d: 135, y3d: 105, z3d: 65, agency: 4, remapAgency: 4, role: 'Himmerland Boligforening (candidate partner, to be confirmed with the WeGrowCircle team): Property owner and estate management entity.', resources: 'Professional estate caretakers, capital budget.', gaps: 'What legal frameworks govern tenant maintenance and volunteer liability?', measure: 'Contract reviews and caretaker interviews.' },
+        { id: 'planners', name: 'Municipal Planners', shortName: 'Planners', zone: 'institutional', shape: 'circle', cx: 640, cy: 110, r: 18, x3d: 20, y3d: 140, z3d: 68, agency: 4, remapAgency: 4, role: 'Aalborg Kommune Strategic Planning & Environment Division.', resources: 'Statutory zoning authority over Kommuneplan and Lokalplan.', gaps: 'How effectively do municipal climate adaptation and social welfare policies currently align?', measure: 'Municipal policy analysis and planning interviews.' },
+        { id: 'water_dept', name: 'Water Utility (Forsyning)', shortName: 'Forsyning', zone: 'institutional', shape: 'circle', cx: 580, cy: 210, r: 17, x3d: -160, y3d: 110, z3d: 68, agency: 4, remapAgency: 4, role: 'Aalborg Forsyning / Skybrudssikring flood engineers.', resources: 'Dedicated infrastructure funding for stormwater retention.', gaps: 'Can stormwater detention spaces serve ecological and civic functions alongside flood buffers?', measure: 'Engineering blueprint reviews and joint workshops.' },
+        { id: 'ngos', name: 'Environmental NGOs', shortName: 'NGOs', zone: 'institutional', shape: 'circle', cx: 470, cy: 270, r: 15, x3d: 185, y3d: 15, z3d: 55, agency: 3, remapAgency: 3, role: 'Local biodiversity groups (e.g. Danmarks Naturfredningsforening).', resources: 'Botanical observation guides, volunteer training.', gaps: 'What collaborative ties exist between environmental groups and social housing communities?', measure: 'Interviews and collaborative workshop dialogues.' },
+        { id: 'researchers', name: 'AAU / WeGrowCircle', shortName: 'AAU Lab', zone: 'institutional', shape: 'circle', cx: 630, cy: 280, r: 15, x3d: -65, y3d: 125, z3d: 65, agency: 3, remapAgency: 3, role: 'PhD researcher and action research facilitation team (candidate living lab, to be confirmed with the WeGrowCircle team).', resources: 'Boundary objects, international consortium network.', gaps: 'How can co-created governance persist after the 3-year research project closes?', measure: 'Reflexive field journaling and member-checking.' },
 
         // Zone 3: Material / Non-Human Actors (Grounded on physical landscape: z3d === 0)
-        { id: 'soil', name: 'Soil & Biosphere', shortName: 'Living Soil', zone: 'material', shape: 'rect', cx: 280, cy: 420, r: 18, x3d: -25, y3d: -85, z3d: 0, agency: 1, remapAgency: 3, role: 'Urban living soil and microbial composting networks.', resources: 'Water infiltration, carbon storage, microbial nutrient base.', gaps: 'Compacted fill; historically depleted organic matter.', measure: 'Soil core infiltration tests and citizen composting logs.' },
-        { id: 'swale', name: 'Stormwater Swale', shortName: 'Swale Canal', zone: 'material', shape: 'rect', cx: 400, cy: 440, r: 19, x3d: -150, y3d: -30, z3d: 0, agency: 1, remapAgency: 4, role: 'Stepped wetland retention canal and surface runoff spine.', resources: 'Peak flood buffer (10-year cloudburst protection).', gaps: 'Previously fenced off as an inaccessible hazard.', measure: 'Sensor water-level logging and wetland floral transects.' },
-        { id: 'trees', name: 'Tree Canopy', shortName: 'Tree Grove', zone: 'material', shape: 'rect', cx: 500, cy: 400, r: 16, x3d: -95, y3d: 55, z3d: 0, agency: 1, remapAgency: 3, role: 'Mature birch, alder, and fruit tree groves across courtyards.', resources: 'Microclimate shading, windbreak buffer, bird nesting.', gaps: 'Contractor topping and mechanical pruning damage.', measure: 'Canopy drone mapping and bird survey transects.' },
-        { id: 'pollinators', name: 'Pollinator Corridors', shortName: 'Pollinators', zone: 'material', shape: 'rect', cx: 340, cy: 480, r: 15, x3d: 0, y3d: -145, z3d: 0, agency: 1, remapAgency: 3, role: 'Native bumblebees, wild pollinators, and hedgehog corridors.', resources: 'Ecological pollination, natural pest moderation.', gaps: 'Severed biological connectivity across road corridors.', measure: 'Biannual citizen science pollinator counts.' }
+        { id: 'soil', name: 'Soil & Biosphere', shortName: 'Living Soil', zone: 'material', shape: 'rect', cx: 280, cy: 420, r: 18, x3d: -25, y3d: -85, z3d: 0, agency: 1, remapAgency: 3, role: 'Urban living soil and organic nutrient cycles.', resources: 'Water infiltration, carbon storage, microbial nutrient base.', gaps: 'What is the current soil compaction, organic matter, and management regime?', measure: 'Observation checklist and caretaker maintenance interviews.' },
+        { id: 'swale', name: 'Stormwater Swale', shortName: 'Swale Canal', zone: 'material', shape: 'rect', cx: 400, cy: 440, r: 19, x3d: -150, y3d: -30, z3d: 0, agency: 1, remapAgency: 4, role: 'Stepped wetland retention canal and surface runoff spine.', resources: 'Peak flood buffer (10-year cloudburst protection).', gaps: 'How accessible and safely integrated is stormwater retention infrastructure for daily use?', measure: 'Observation checklist and municipal drainage interviews.' },
+        { id: 'trees', name: 'Tree Canopy', shortName: 'Tree Grove', zone: 'material', shape: 'rect', cx: 500, cy: 400, r: 16, x3d: -95, y3d: 55, z3d: 0, agency: 1, remapAgency: 3, role: 'Mature birch, alder, and fruit tree groves across courtyards.', resources: 'Microclimate shading, windbreak buffer, bird nesting.', gaps: 'What are the current pruning regimes and health status of mature trees?', measure: 'Canopy observation checklist and caretaker interviews.' },
+        { id: 'pollinators', name: 'Pollinator Corridors', shortName: 'Pollinators', zone: 'material', shape: 'rect', cx: 340, cy: 480, r: 15, x3d: 0, y3d: -145, z3d: 0, agency: 1, remapAgency: 3, role: 'Native bumblebees, wild pollinators, and hedgehog corridors.', resources: 'Ecological pollination, natural pest moderation.', gaps: 'Where are biological connectivity corridors currently fragmented?', measure: 'Photo-point observations and secondary ecological data.' }
       ];
 
       // 5 Edge Types: resources, authority, trust, conflict, care
@@ -2590,9 +3180,9 @@
         { source: 'water_dept', target: 'swale', type: 'authority', base: true, remap: true, desc: 'Cloudburst hydraulic drainage mandate' },
         { source: 'residents', target: 'assembly', type: 'trust', base: true, remap: true, desc: 'Everyday tenant representation & elections' },
         { source: 'residents', target: 'seniors', type: 'trust', base: true, remap: true, desc: 'Informal mutual aid and courtyard greetings' },
-        { source: 'residents', target: 'immigrants', type: 'trust', base: true, remap: true, desc: 'Courtyard conversations & shared cooking' },
-        { source: 'residents', target: 'youth', type: 'conflict', base: true, remap: false, desc: 'Noise complaints and contested courtyard play' },
-        { source: 'residents', target: 'housing_assoc', type: 'conflict', base: true, remap: false, desc: 'Maintenance dispute over overgrown verges' },
+        { source: 'residents', target: 'immigrants', type: 'trust', base: true, remap: true, desc: 'Informal courtyard dialogues & shared meals (to be explored)' },
+        { source: 'residents', target: 'youth', type: 'conflict', base: true, remap: false, desc: 'Possible noise concerns and contested play areas (hypothesis to test)' },
+        { source: 'residents', target: 'housing_assoc', type: 'conflict', base: true, remap: false, desc: 'Potential maintenance friction over verge mowing regimes (hypothesised)' },
         { source: 'housing_assoc', target: 'trees', type: 'resources', base: true, remap: true, desc: 'Contractor pruning & lawn mowing schedule' },
 
         // Re-Mapping Edges (New & Strengthened Ties)
@@ -2600,13 +3190,13 @@
         { source: 'researchers', target: 'planners', type: 'trust', base: false, remap: true, desc: 'Policy evidence dialogues and whitepapers' },
         { source: 'researchers', target: 'housing_assoc', type: 'trust', base: false, remap: true, desc: 'Boundary object testing and mediation' },
         { source: 'residents', target: 'swale', type: 'care', base: false, remap: true, desc: 'Community wetland planting and reed bed care' },
-        { source: 'residents', target: 'soil', type: 'care', base: false, remap: true, desc: 'Onsite composting and mulch stewardship' },
+        { source: 'residents', target: 'soil', type: 'care', base: false, remap: true, desc: 'Biomass reuse and mulch stewardship' },
         { source: 'residents', target: 'pollinators', type: 'care', base: false, remap: true, desc: 'Wildflower meadow strip seeding' },
         { source: 'assembly', target: 'planners', type: 'authority', base: false, remap: true, desc: 'Direct resident seat on municipal green board' },
         { source: 'housing_assoc', target: 'residents', type: 'resources', base: false, remap: true, desc: 'Dedicated tool library and commons care budget' },
-        { source: 'ngos', target: 'youth', type: 'trust', base: false, remap: true, desc: 'Youth nature steward workshops & citizen science' },
+        { source: 'ngos', target: 'youth', type: 'trust', base: false, remap: true, desc: 'Youth nature steward workshops & outdoor activities' },
         { source: 'water_dept', target: 'swale', type: 'resources', base: false, remap: true, desc: 'Stepped bio-retention wetland weir construction' },
-        { source: 'youth', target: 'residents', type: 'trust', base: false, remap: true, desc: 'Joint harvest celebrations reduce generational tension' }
+        { source: 'youth', target: 'residents', type: 'trust', base: false, remap: true, desc: 'Joint community events to test whether intergenerational ties strengthen' }
       ];
 
       let isRemap = false;
@@ -2668,33 +3258,10 @@
       }
 
       function computeMetrics() {
-        const activeEdges = getActiveEdges();
-        const N = nodes.length; // 14
-        const E = activeEdges.length;
-
-        const density = (2 * E) / (N * (N - 1));
-
-        let bridging = 0;
-        activeEdges.forEach(e => {
-          const s = nodes.find(n => n.id === e.source);
-          const t = nodes.find(n => n.id === e.target);
-          if (s && t && s.zone !== t.zone) bridging++;
-        });
-
-        const socialNodes = nodes.filter(n => n.zone === 'social');
-        const highCivic = socialNodes.filter(n => (isRemap ? n.remapAgency : n.agency) >= 3).length;
-        const civicShare = Math.round((highCivic / socialNodes.length) * 100);
-
-        const densEl = document.getElementById('metric-density');
-        const bridgEl = document.getElementById('metric-bridging');
-        const civicEl = document.getElementById('metric-civic-share');
+        // Qualitative reading prompts are displayed; statistical metrics are omitted
         const deltaTag = document.getElementById('metric-delta-tag');
-
-        if (densEl) densEl.textContent = density.toFixed(2);
-        if (bridgEl) bridgEl.textContent = bridging;
-        if (civicEl) civicEl.textContent = `${civicShare}%`;
         if (deltaTag) {
-          deltaTag.textContent = isRemap ? 'Re-Mapping: +60% Bridging' : 'Baseline State';
+          deltaTag.textContent = isRemap ? 'Illustrative re-map (not a prediction)' : 'Baseline State';
           deltaTag.className = isRemap ? 'badge badge--agency' : 'badge badge--illustrative';
         }
       }
@@ -3802,10 +4369,21 @@
         if (citeIdEl) citeIdEl.textContent = `[${s.id}]`;
         if (citeShortEl) citeShortEl.textContent = s.short;
         if (citeFullEl) citeFullEl.textContent = s.full;
-        if (citeSupportsEl) citeSupportsEl.textContent = s.supports;
+        if (citeSupportsEl) {
+          citeSupportsEl.textContent = (s.supports && s.supports.trim()) ? s.supports : 'Theoretical and empirical grounding for proposal claims.';
+        }
         if (citeLinkEl) {
-          citeLinkEl.href = s.link;
-          citeLinkEl.textContent = s.status === 'verified' ? 'Open Verified Paper / DOI' : 'Search on Google Scholar';
+          if (!s.link || s.link === '#' || !s.link.startsWith('http')) {
+            citeLinkEl.removeAttribute('href');
+            citeLinkEl.textContent = 'Link to be added';
+            citeLinkEl.style.pointerEvents = 'none';
+            citeLinkEl.style.opacity = '0.6';
+          } else {
+            citeLinkEl.href = s.link;
+            citeLinkEl.textContent = s.status === 'verified' ? 'Open Verified Paper / DOI' : 'Search on Google Scholar';
+            citeLinkEl.style.pointerEvents = 'auto';
+            citeLinkEl.style.opacity = '1';
+          }
         }
         if (statusBadge) {
           statusBadge.textContent = s.label;
@@ -4021,8 +4599,8 @@
         badge: 'Social Dynamics',
         sources: ['S6', 'S11', 'S18'],
         title: 'Social Practices & Civic Trust',
-        desc: 'Examines everyday care routines, neighborhood social capital, and immigrant collectives in shared residential courtyards.',
-        questions: ['What informal watering or elder gatherings occur outside municipal knowledge?', 'How do generational differences affect space sharing?'],
+        desc: 'Examines everyday care routines, neighborhood social networks, and residents with diverse backgrounds in shared residential courtyards.',
+        questions: ['What informal watering or resident gatherings occur outside formal municipal channels?', 'How do generational and cultural differences affect space sharing?'],
         indicator: 'Number of active informal communal care events; cross-cultural participation rates.'
       },
       institutional: {
@@ -4053,9 +4631,9 @@
         badge: 'Everyday Commons Interface',
         sources: ['S9', 'S18', 'S20'],
         title: 'Lived Care & Non-Human Entanglements',
-        desc: 'The physical interface where residents engage in weeding, planting, composting, and observing seasonal weather.',
-        questions: ['What micro-infrastructures (taps, sheds) support daily volunteer care?', 'How is organic waste composted on site?'],
-        indicator: 'Hours of volunteer community stewardship; shared harvest yields.'
+        desc: 'The physical interface where residents engage in weeding, planting, biomass reuse, and observing seasonal weather.',
+        questions: ['What micro-infrastructures (taps, sheds) support daily volunteer care?', 'How is organic biomass recycled on site?'],
+        indicator: 'Documented everyday stewardship practices; shared plant and harvest yields.'
       },
       statutory: {
         badge: 'Statutory Spatial Governance',
@@ -4152,8 +4730,8 @@
         { title: 'Resilience, Adaptation & Complexity', ids: ['S1', 'S3', 'S4', 'S5', 'S29'] },
         { title: 'Socio-Material Planning & Boundary Objects', ids: ['S6', 'S7', 'S15', 'S16', 'S17'] },
         { title: 'Commons & Urban Green Commons', ids: ['S8', 'S9', 'S10'] },
-        { title: 'Participation & Agency Ladders', ids: ['S11', 'S12', 'S13', 'S14'] },
-        { title: 'Care Ethics & Care-Full Cities', ids: ['S18', 'S19', 'S20', 'S21', 'S22'] },
+        { title: 'Participation & Agency Ladders', ids: ['S11', 'S12', 'S13', 'S14', 'S36'] },
+        { title: 'Care Ethics & Care-Full Cities', ids: ['S18', 'S19', 'S20', 'S21', 'S22', 'S37'] },
         { title: 'Urban Living Labs & Projectification Critique', ids: ['S27', 'S28'] },
         { title: 'Social Network Analysis & Governance Methods', ids: ['S23', 'S24', 'S25', 'S26'] },
         { title: 'Circularity, Sufficiency & Danish Planning Context', ids: ['S2', 'S30', 'S31', 'S32', 'S33', 'S34', 'S35'] }
@@ -4174,9 +4752,12 @@
                     <strong>${s.short}:</strong> ${s.full}
                   </div>
                   <div style="flex-shrink: 0;">
-                    <a href="${s.link}" target="_blank" rel="noopener noreferrer" class="btn-pill" style="padding: 1px 6px; font-size: 10px;">
-                      Open <svg class="icon" aria-hidden="true"><use href="#icon-link-ext"></use></svg>
-                    </a>
+                    ${s.link && s.link !== '#' && s.link.startsWith('http')
+            ? `<a href="${s.link}" target="_blank" rel="noopener noreferrer" class="btn-pill" style="padding: 1px 6px; font-size: 10px;">
+                          Open <svg class="icon" aria-hidden="true"><use href="#icon-link-ext"></use></svg>
+                        </a>`
+            : `<span class="badge badge--illustrative" style="font-size: 10px; opacity: 0.7;">link to be added</span>`
+          }
                   </div>
                 </div>
               `;
@@ -4289,18 +4870,26 @@
         btnEvalBase.addEventListener('click', () => {
           btnEvalBase.classList.add('active');
           btnEvalHypo.classList.remove('active');
-          document.getElementById('eval-val-bio').textContent = 'Baseline Audit';
-          document.getElementById('eval-val-circ').textContent = 'Linear Disposal';
-          document.getElementById('eval-val-suff').textContent = 'Privatised Tools';
-          document.getElementById('eval-val-well').textContent = 'Isolated Use';
+          document.getElementById('eval-val-bio').textContent = 'Vegetation & management?';
+          document.getElementById('eval-desc-bio').textContent = 'What is the current vegetation structure and management regime? Working hypothesis: low-diversity, intensively managed lawn.';
+          document.getElementById('eval-val-circ').textContent = 'Material & water flows?';
+          document.getElementById('eval-desc-circ').textContent = 'Where do pruning waste, rainwater and materials currently flow? Working hypothesis: largely linear (off-site disposal, sewer drainage).';
+          document.getElementById('eval-val-suff').textContent = 'Shared vs private tools?';
+          document.getElementById('eval-desc-suff').textContent = 'Which tools and resources are shared or privately held? Do residents see value in sharing?';
+          document.getElementById('eval-val-well').textContent = 'Who uses which spaces?';
+          document.getElementById('eval-desc-well').textContent = 'Who uses which outdoor spaces, when, and who does not? Do experiences of safety and belonging differ across groups and times of day?';
         });
         btnEvalHypo.addEventListener('click', () => {
           btnEvalHypo.classList.add('active');
           btnEvalBase.classList.remove('active');
-          document.getElementById('eval-val-bio').textContent = 'Hypothesis: +38% Wild Flora';
-          document.getElementById('eval-val-circ').textContent = 'Hypothesis: 65% Closed Loop';
-          document.getElementById('eval-val-suff').textContent = 'Hypothesis: Shared Tool Shed';
-          document.getElementById('eval-val-well').textContent = 'Hypothesis: Bridging Ties';
+          document.getElementById('eval-val-bio').textContent = 'Re-map: floral continuity';
+          document.getElementById('eval-desc-bio').textContent = 'Re-ask: what has changed in visible habitat features, and for whom?';
+          document.getElementById('eval-val-circ').textContent = 'Re-map: material & water loops';
+          document.getElementById('eval-desc-circ').textContent = 'Re-trace flows of pruning waste, water and materials: what has changed in practice?';
+          document.getElementById('eval-val-suff').textContent = 'Re-map: tool-sharing practices';
+          document.getElementById('eval-desc-suff').textContent = 'Re-ask who shares or owns tools and whether sharing is valued.';
+          document.getElementById('eval-val-well').textContent = 'Re-map: belonging & bridging ties';
+          document.getElementById('eval-desc-well').textContent = 'Can inclusive spatial co-design improve perceived safety and cross-cultural belonging across diverse groups?';
         });
       }
 
